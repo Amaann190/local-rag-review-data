@@ -55,7 +55,10 @@ mapping = {"facets": dict(fac), "pairs": {f"{a}&{b}": n for (a, b), n in pairs.i
            "preprint_share": round(sum(recs[i].get("type") == "preprint" or recs[i]["source_db"] == "arXiv" for i in yes) / len(yes), 3)}
 json.dump(mapping, open(H / "mapping.json", "w"), indent=1)
 
-plt.rcParams.update({"font.size": 7, "font.family": "serif"})
+plt.rcParams.update({"font.size": 8, "font.family": "serif",
+                     "font.serif": ["Times New Roman", "Nimbus Roman", "DejaVu Serif"],
+                     "mathtext.fontset": "stix", "pdf.fonttype": 42,
+                     "axes.spines.top": False, "axes.spines.right": False})
 # Facet co-occurrence heatmap
 F = list(fac_names)
 fig, ax = plt.subplots(figsize=(3.4, 2.7))
@@ -65,8 +68,10 @@ ax.set_xticks(range(6)); ax.set_yticks(range(6))
 ax.set_xticklabels(F); ax.set_yticklabels([f"{f} {fac_names[f]}" for f in F])
 for a in range(6):
     for b in range(6):
-        ax.text(b, a, M[a][b], ha="center", va="center", fontsize=6, color="white" if M[a][b] > 200 else "black")
-ax.set_title("Facet counts (diagonal) and co-occurrence", fontsize=7)
+        ax.text(b, a, M[a][b], ha="center", va="center", fontsize=7, color="white" if M[a][b] > 200 else "black")
+ax.tick_params(length=0)
+for sp in ax.spines.values():
+    sp.set_visible(False)
 fig.tight_layout(); fig.savefig(H / "fig_facets.pdf", bbox_inches="tight"); plt.close(fig)
 
 # Facets by year
@@ -76,6 +81,7 @@ w = 0.13
 for k, f in enumerate(F):
     ax.bar([x + (k - 2.5) * w for x in range(len(years))], [fy[(f, y)] for y in years], w, label=f)
 ax.set_xticks(range(len(years))); ax.set_xticklabels(years)
-ax.set_ylabel("Eligible studies"); ax.legend(ncol=6, fontsize=5.5, frameon=False, loc="upper left")
+ax.set_ylabel("Eligible studies")
+ax.legend(ncol=6, fontsize=7, frameon=False, loc="lower center", bbox_to_anchor=(0.5, 1.0), handlelength=1.2, columnspacing=1.0)
 fig.tight_layout(); fig.savefig(H / "fig_years.pdf", bbox_inches="tight"); plt.close(fig)
 print(json.dumps(prisma, indent=1)); print(json.dumps(mapping, indent=1))
