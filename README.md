@@ -26,7 +26,7 @@ Screener A (Claude, Anthropic) screened every record at both stages. Screener B 
 | Title/abstract (seeded random) | 500 | 88.4% | 0.66 | `screening_input_sample.csv`, `screening_codex_sample.csv`, `agreement_claude_vs_codex_sample.json` |
 | Eligibility (seeded random) | 300 | 82.7% | 0.65 | `eligibility_input_sample.csv`, `eligibility_codex_sample.csv`, `agreement_eligibility_claude_vs_codex.json` |
 
-Disagreements are listed in `disagreements_*.csv`. The prompts given to Screener B are in `CODEX_*_PROMPT.md`. A 150-record human check sample with instructions is in `human_check_sample.csv` and `HUMAN_CHECK_INSTRUCTIONS.md`.
+Disagreements are listed in `disagreements_*.csv`. The prompts given to Screener B are in `CODEX_*_PROMPT.md`.
 
 The human authors wrote the protocol and codebooks, reviewed boundary cases, and adjudicated disagreements.
 
