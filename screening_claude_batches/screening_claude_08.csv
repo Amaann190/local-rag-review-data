@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R1751,include,I5,DP for multi-turn RAG leakage
+R1752,include,I5,RAG database leakage defense
+R1753,include,I2,survey of RAG hallucination mitigation
+R1754,include,I2,RAG hallucination ensemble voting
+R1755,include,I2,SLR on RAG hallucination mitigation
+R1756,exclude,E3,"legal argument agents, no retrieval"
+R1757,include,I5,"RAG privacy, title only"
+R1758,include,I4,LLM quantization
+R1759,include,I5,RAG privacy synthetic data
+R1760,include,I4,quantization hardware for inference
+R1761,exclude,E2,dataset; RAG only as baseline
+R1762,include,I1,multilingual retrieval evaluation
+R1763,include,I1,multilingual dense legal retrieval
+R1764,include,I5,multimodal RAG poisoning
+R1765,include,I1,multilingual passage ranking dataset
+R1766,include,I2,citation-grounded deep research benchmark
+R1767,include,I1,multilingual medical retrieval for RAG
+R1768,include,I1,multimodal RAG framework
+R1769,exclude,E3,"VLM long-context citation, no retrieval"
+R1770,exclude,E1,video retrieval
+R1771,include,I3,modular RAG benchmark
+R1772,include,I4,mobile LLM inference engine
+R1773,include,I4,edge LLM survey
+R1774,exclude,E3,mobile GUI agents
+R1775,include,I4,on-device RAG
+R1776,include,I4,LLM quantization
+R1777,include,I2,multimodal RAG hallucination
+R1778,include,I4,compression survey
+R1779,exclude,E2,MCP RAG system description
+R1780,include,I4,robustness under quantization
+R1781,include,I2,answer attribution in RAG
+R1782,include,I1,cross-lingual dense retrieval
+R1783,unsure,,general RAG review for web dev
+R1784,exclude,E2,code generation application
+R1785,exclude,E1,IMU sensor data
+R1786,include,I4,2-bit LLMs on consumer GPUs
+R1787,include,I1,local hybrid agentic RAG routing
+R1788,exclude,E1,molecules
+R1789,include,I4,KV cache quantization
+R1790,include,I1,mixture of sparse/dense retrievers
+R1791,include,I1,fusion of retrieval experts
+R1792,include,I4,KV cache compression
+R1793,include,I4,4-bit quantization
+R1794,include,I5,prompt injection benchmark incl RAG
+R1795,include,I2,citation-grounded RAG
+R1796,include,I4,MLLM quantization
+R1797,unsure,,vision-centric retrieval; possibly E1
+R1798,include,I3,medical RAG benchmark
+R1799,include,I3,visual RAG evaluation
+R1800,include,I1,multilingual RAG with BM25
+R1801,include,I3,multimodal RAG benchmark
+R1802,unsure,,cultural QA; retrieval minor
+R1803,include,I3,multi-source RAG benchmark
+R1804,include,I1,hybrid retriever tuning
+R1805,include,I3,multi-turn RAG benchmark
+R1806,include,I3,conversational retrieval benchmark
+R1807,include,I1,multilingual RRF RAG with abstention
+R1808,exclude,E6,duplicate of R1805
+R1809,include,I3,multi-turn RAG benchmark
+R1810,include,I1,hybrid RAG with retrieval evaluation
+R1811,include,I1,intent-aware retrieval with RRF
+R1812,include,I1,offline hybrid RAG with fusion
+R1813,include,I1,hybrid RRF retrieval evaluated
+R1814,exclude,E4,tutorial
+R1815,unsure,,theoretical multimodal file system retrieval
+R1816,exclude,E1,music recommendation
+R1817,include,I1,RAG-based multilingual debiasing method
+R1818,include,I1,conversational passage retrieval fusion
+R1819,exclude,E3,"prompt refinement, no retrieval"
+R1820,exclude,E2,product attribute RAG application
+R1821,include,I3,multi-hop RAG benchmark
+R1822,exclude,E4,thesis
+R1823,include,I1,multilingual graph RAG
+R1824,include,I1,multilingual dense retrieval reranking
+R1825,exclude,E2,RAG used to generate traces
+R1826,include,I1,multilingual adaptive hybrid RAG
+R1827,include,I3,multilingual RAG benchmark
+R1828,include,I1,multilingual RAG strategies
+R1829,exclude,E1,image captioning
+R1830,exclude,E2,industrial chatbot application
+R1831,exclude,E2,program repair
+R1832,exclude,E3,"claim extraction, no retrieval"
+R1833,include,I1,hybrid RAG with open SLMs
+R1834,exclude,E1,recommendation
+R1835,exclude,E1,multimodal prediction
+R1836,include,I1,multimodal hybrid retrieval RAG
+R1837,include,I1,retrieval mode comparison
+R1838,exclude,E1,multimodal representation
+R1839,unsure,,no abstract; multimodal financial RAG
+R1840,exclude,E2,depression chatbot
+R1841,include,I2,multi-source RAG hallucination
+R1842,exclude,E2,NL-to-NoSQL
+R1843,exclude,E3,no retrieval
+R1844,include,I4,on-device quantization
+R1845,exclude,E3,healthcare NLP review
+R1846,include,I1,routing and reranking evaluated
+R1847,include,I3,RAG agent drift benchmark
+R1848,exclude,E3,no retrieval
+R1849,include,I3,benchmark with RAG set
+R1850,include,I1,compares RAG/hybrid retrieval architectures
+R1851,exclude,E1,image retrieval
+R1852,include,I1,"dense vs BM25 retrieval, citations"
+R1853,include,I1,dense retrieval survey
+R1854,include,I1,visual document retrieval for RAG
+R1855,include,I4,low-bit quantization
+R1856,include,I5,prompt injection via RAG
+R1857,exclude,E1,molecular
+R1858,include,I5,RAG security auditing
+R1859,exclude,E3,no retrieval
+R1860,include,I1,ontology vs dense retrieval
+R1861,include,I1,hybrid retrieval reranking
+R1862,include,I5,RAG poisoning
+R1863,include,I4,energy-efficient LLM hardware
+R1864,unsure,,position paper neurosymbolic legal RAG
+R1865,exclude,E3,neurosymbolic survey
+R1866,include,I1,hybrid table retrieval fusion
+R1867,include,I1,reranking and citation RAG
+R1868,include,I2,RAG citations and hallucination
+R1869,include,I1,reranker vs dense zero-shot
+R1870,include,I4,RAG on small local models
+R1871,include,I1,RAG context compression
+R1872,exclude,E3,"encoder model, no retrieval eval"
+R1873,include,I5,privacy-preserving RAG
+R1874,include,I3,multilingual RAG benchmark
+R1875,include,I1,retriever comparison
+R1876,exclude,E2,NotebookLM application
+R1877,include,I1,agentic retrieval vs hybrid
+R1878,exclude,E2,novelty assessment application
+R1879,include,I1,legal retrieval pipeline
+R1880,include,I4,KV cache quantization
+R1881,exclude,E2,firewall auditing application
+R1882,exclude,E2,topic labeling
+R1883,include,I3,RAG benchmark with refusal
+R1884,include,I1,embedding model
+R1885,include,I5,corpus poisoning
+R1886,include,I1,dense retriever
+R1887,include,I4,PTQ
+R1888,include,I4,offline local RAG
+R1889,include,I4,quantization
+R1890,unsure,,document parsing benchmark for RAG
+R1891,include,I3,RAG benchmark
+R1892,include,I4,quantization
+R1893,unsure,,"source attribution, not retrieval-augmented"
+R1894,include,I4,on-device LM review
+R1895,include,I4,on-device reranking
+R1896,include,I1,elastic dense retrieval/reranking
+R1897,exclude,E3,summarization review
+R1898,include,I4,local quantized SLM document search
+R1899,include,I2,citation generation
+R1900,include,I4,quantized LLMs on edge
+R1901,include,I3,multilingual RAG context use
+R1902,include,I4,quantization theory
+R1903,include,I4,calibration for quantization
+R1904,include,I1,corpus enrichment for retrieval
+R1905,exclude,E3,general LLM privacy attacks
+R1906,include,I4,quantization robustness
+R1907,include,I1,hybrid retrieval embeddings
+R1908,include,I5,RAG poisoning
+R1909,include,I1,hybrid retrieval evaluated
+R1910,include,I5,knowledge poisoning
+R1911,exclude,E2,student chatbot application
+R1912,include,I5,DP RAG
+R1913,include,I4,on-prem RAG toolkit
+R1914,exclude,E1,sensor activity recognition
+R1915,include,I1,GraphRAG vs dense RAG
+R1916,include,I1,hybrid retrieval reranking
+R1917,exclude,E1,image generation
+R1918,include,I1,agentic hybrid RAG
+R1919,include,I2,citation-backed RAG
+R1920,include,I5,LLM/RAG security controls
+R1921,exclude,E1,surgical video
+R1922,include,I1,RAG runtime incl hybrid retrieval
+R1923,include,I1,BM25/dense/hybrid RAG comparison
+R1924,include,I1,hybrid fusion weights
+R1925,unsure,,likely thesis; local SLM RAG
+R1926,include,I1,retrieval strategies compared
+R1927,include,I1,retrieval benchmark Portuguese
+R1928,unsure,,deep research agent design
+R1929,include,I4,quantization
+R1930,include,I1,hybrid retrieval reranking
+R1931,include,I1,Amharic dense retrieval
+R1932,include,I3,enterprise RAG evaluation
+R1933,include,I1,dense retrieval efficiency
+R1934,include,I1,cross-lingual RAG
+R1935,include,I4,edge LLM deployment
+R1936,include,I4,quantization local inference
+R1937,include,I4,mobile quantization
+R1938,include,I4,compression
+R1939,include,I1,query generation for retrieval
+R1940,include,I1,Arabic RAG components
+R1941,include,I4,local Ollama RAG
+R1942,include,I1,hybrid search RRF
+R1943,include,I1,"embedding fine-tuning, injection defense"
+R1944,include,I1,BM25/BERT/SPLADE comparison
+R1945,include,I4,local SLM RAG
+R1946,include,I4,SLM MM-RAG consumer hardware
+R1947,include,I1,sparse-dense-rerank pipeline
+R1948,include,I1,hybrid retrieval finance
+R1949,exclude,E3,"NL2SQL fine-tuning, no retrieval"
+R1950,unsure,,no abstract; multimodal RAG
+R1951,include,I2,traceable enterprise RAG
+R1952,exclude,E2,classification application demo
+R1953,include,I1,hybrid retrieval
+R1954,include,I1,cross-lingual embedding
+R1955,include,I1,compression and reranking
+R1956,include,I4,quantization
+R1957,include,I2,RAG hallucination detection
+R1958,exclude,E3,"distractor prompts, no retrieval"
+R1959,exclude,E3,theoretical KG-FM roadmap
+R1960,include,I3,enterprise RAG benchmark
+R1961,unsure,,shared task overview; RAG minor
+R1962,include,I3,multilingual evidence QA task
+R1963,unsure,,product search retrieval track
+R1964,include,I3,TREC RAG track
+R1965,include,I4,quantization
+R1966,include,I5,privacy-preserving RAG
+R1967,include,I2,"RAG generator alignment, citations"
+R1968,unsure,,no abstract; privacy assessment
+R1969,include,I1,hybrid retrieval variants
+R1970,exclude,E1,VLM image comparison
+R1971,include,I4,mobile compressed LLM benchmark
+R1972,include,I5,RAG poisoning jailbreak
+R1973,include,I2,RAG hallucination mitigation
+R1974,include,I1,compact retrievers
+R1975,include,I1,cross-language dense retrieval
+R1976,exclude,E2,smart contract application
+R1977,include,I1,dense doc retrieval with RRF
+R1978,include,I4,quantization
+R1979,include,I2,passage attribution
+R1980,include,I1,chunking for retrieval
+R1981,include,I2,abstention
+R1982,unsure,,no abstract
+R1983,include,I5,prompt injection defense
+R1984,include,I1,dual-index retrieval
+R1985,exclude,E2,patient aid application
+R1986,include,I4,SLM cost-efficient inference
+R1987,include,I4,binarization
+R1988,exclude,E4,non-English
+R1989,exclude,E4,non-English
+R1990,exclude,E4,non-English
+R1991,unsure,,AI answer citation fabrication
+R1992,exclude,E4,non-English
+R1993,include,I4,SLM RAG local deployment
+R1994,exclude,E2,domain chatbot
+R1995,include,I4,local SLM RAG vs LLM
+R1996,exclude,E2,"domain application, no abstract"
+R1997,include,I5,information flow for retrieved inputs
+R1998,include,I1,Persian RAG
+R1999,exclude,E2,XAI assistant application
+R2000,include,I3,RAG benchmark private data

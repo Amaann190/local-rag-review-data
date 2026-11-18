@@ -1,0 +1,97 @@
+{
+ "run_utc": "2026-11-17T18:33:22Z",
+ "top_n_per_query": 200,
+ "years": "2019-2026",
+ "queries": [
+  {
+   "id": "Q1",
+   "openalex_query": "\"retrieval augmented generation\" AND \"hybrid retrieval\"",
+   "openalex_total_hits": 2547,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:\"retrieval augmented generation\" AND abs:\"hybrid retrieval\"",
+   "arxiv_total_hits": 123,
+   "arxiv_retrieved": 123
+  },
+  {
+   "id": "Q2",
+   "openalex_query": "BM25 AND \"dense retrieval\" AND (RAG OR fusion)",
+   "openalex_total_hits": 2174,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:BM25 AND abs:\"dense retrieval\" AND (abs:RAG OR abs:fusion)",
+   "arxiv_total_hits": 51,
+   "arxiv_retrieved": 51
+  },
+  {
+   "id": "Q3",
+   "openalex_query": "(\"reciprocal rank fusion\" OR \"fusion function\" OR \"rank fusion\") AND retrieval",
+   "openalex_total_hits": 2302,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:\"rank fusion\" AND abs:retrieval",
+   "arxiv_total_hits": 122,
+   "arxiv_retrieved": 119
+  },
+  {
+   "id": "Q4",
+   "openalex_query": "(\"local RAG\" OR \"offline RAG\" OR \"private RAG\" OR \"on-device\") AND (\"retrieval augmented\" OR \"retrieval-augmented\")",
+   "openalex_total_hits": 11063,
+   "openalex_retrieved": 200,
+   "arxiv_query": "(abs:local OR abs:offline OR abs:\"on-device\" OR abs:private) AND abs:\"retrieval augmented generation\"",
+   "arxiv_total_hits": 786,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q5",
+   "openalex_query": "(citation OR attribution) AND \"grounded generation\" AND (LLM OR \"language model\")",
+   "openalex_total_hits": 606,
+   "openalex_retrieved": 200,
+   "arxiv_query": "(abs:citation OR abs:attribution) AND abs:\"retrieval augmented\"",
+   "arxiv_total_hits": 543,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q6",
+   "openalex_query": "(hallucination OR abstention OR unanswerable) AND \"retrieval augmented generation\"",
+   "openalex_total_hits": 19556,
+   "openalex_retrieved": 200,
+   "arxiv_query": "(abs:abstention OR abs:unanswerable OR abs:hallucination) AND abs:\"retrieval augmented generation\"",
+   "arxiv_total_hits": 1044,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q7",
+   "openalex_query": "(\"RAG evaluation\" OR \"evaluating retrieval augmented\" OR faithfulness) AND \"retrieval augmented generation\" AND benchmark",
+   "openalex_total_hits": 6585,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:evaluation AND abs:benchmark AND abs:\"retrieval augmented generation\"",
+   "arxiv_total_hits": 1178,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q8",
+   "openalex_query": "(\"code-mixed\" OR \"code-switched\" OR Hinglish OR multilingual) AND (\"dense retrieval\" OR \"retrieval augmented\")",
+   "openalex_total_hits": 10690,
+   "openalex_retrieved": 200,
+   "arxiv_query": "(abs:\"code-mixed\" OR abs:\"code-switched\" OR abs:Hinglish OR abs:multilingual) AND (abs:\"dense retrieval\" OR abs:\"retrieval augmented\")",
+   "arxiv_total_hits": 228,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q9",
+   "openalex_query": "(quantization OR \"small language model\") AND (\"large language model\" OR LLM) AND (inference OR \"on-device\")",
+   "openalex_total_hits": 33718,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:quantization AND abs:\"large language models\" AND abs:inference",
+   "arxiv_total_hits": 730,
+   "arxiv_retrieved": 200
+  },
+  {
+   "id": "Q10",
+   "openalex_query": "(\"retrieval augmented\" OR \"retrieval-augmented\" OR \"embedding inversion\") AND (poisoning OR \"prompt injection\" OR privacy OR leakage)",
+   "openalex_total_hits": 19724,
+   "openalex_retrieved": 200,
+   "arxiv_query": "abs:\"retrieval augmented\" AND (abs:poisoning OR abs:\"prompt injection\" OR abs:privacy OR abs:leakage)",
+   "arxiv_total_hits": 545,
+   "arxiv_retrieved": 200
+  }
+ ]
+}

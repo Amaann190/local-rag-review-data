@@ -1,0 +1,241 @@
+record_id,eligible,facets,evidence,note
+R1873,yes,F4,yes,Anonymization framework against leakage in RAG; experiments
+R1874,yes,F5;F6,yes,Multilingual RAG benchmark Futurepedia; eight languages
+R1875,yes,F1,yes,"Sparse, dense, hybrid retrievers compared; BM25 robust"
+R1877,no,,yes,Agentic comparison system; hybrid only a baseline
+R1879,no,,no,Legal competition pipelines; no facet studied or quantitative result
+R1880,no,,yes,Generic KV cache quantization
+R1883,yes,F1;F2;F6,yes,"Traceable RAG benchmark with refusal items, hybrid RRF"
+R1884,no,,yes,General embedding model; pure IR
+R1885,yes,F4,yes,Title-only: corpus poisoning of RAG; quantitative implied
+R1886,no,,yes,Reasoning retriever; pure IR
+R1887,no,,yes,Generic PTQ method
+R1888,yes,F3,yes,Offline local RAG; pilot user study with open models
+R1889,no,,yes,Generic low-bit quantization
+R1890,no,,yes,"Document parsing benchmark, not RAG evaluation"
+R1891,yes,F6,yes,Financial RAG evaluation benchmark
+R1892,no,,yes,Generic quantization without edge setting
+R1893,no,,yes,Multimodal attribution not retrieval-specific
+R1894,no,,no,On-device LLM review without search method
+R1895,yes,F1;F3,yes,On-device cross-encoder reranking for RAG
+R1896,no,,yes,Elastic LM; no edge or RAG facet
+R1898,yes,F3;F2,yes,"Local small models, citation validity, newsroom search"
+R1899,yes,F2,yes,Citation generation evaluation and refinement for RAG
+R1900,no,F3,no,Edge compressibility discussion; no quantitative evaluation stated
+R1901,yes,F5,yes,Multilingual context utilization in mRAG
+R1902,no,,no,Theory of weight quantization
+R1903,no,,yes,Generic calibration data study
+R1904,no,,yes,Corpus enrichment; RAG/attribution only a demonstration
+R1906,no,,yes,Quantization without edge setting
+R1907,yes,F1,yes,BM25 vs embedding score fusion experiments
+R1908,yes,F4,yes,Universal poisoning attacks and detection defense
+R1909,no,,yes,Hybrid retrieval used but not compared or ablated
+R1910,yes,F4,yes,No abstract; title clearly corpus poisoning in RAG
+R1912,yes,F4,yes,Differentially private RAG budget framework
+R1913,no,F3,no,Local toolkit; no evaluation reported
+R1915,no,,yes,GraphRAG vs dense RAG; no listed facet studied
+R1916,no,,yes,Ontology RAG; hybrid retrieval not compared
+R1918,no,,yes,Agentic graph/vector RAG; facet not ablated
+R1919,yes,F2;F6,yes,Citation accuracy and ScholarQABench benchmark
+R1920,no,F4,no,Reference architecture; no quantitative evaluation
+R1922,no,,yes,GPU runtime efficiency; not constrained deployment
+R1923,yes,F1;F5,yes,"BM25, dense, hybrid RAG compared; bilingual"
+R1924,yes,F1,yes,Sparse-dense RRF weight study
+R1925,yes,F3;F2,yes,Local small model RAG hallucination mitigation
+R1926,yes,F1,yes,"BM25, dense, RRF, reranking compared"
+R1927,yes,F1;F5,yes,"Portuguese QA retrieval; sparse, dense, hybrid compared"
+R1928,no,,no,Agent case study; no facet or quantitative evaluation
+R1929,no,,yes,Generic quantization
+R1930,yes,F1,yes,BM25 plus dense plus reranking vs single method
+R1931,yes,F5,yes,Amharic retrieval models; non-English central
+R1932,no,,no,Experience report; no quantitative evaluation
+R1933,no,,yes,Pure IR passage ranking
+R1934,yes,F5,yes,Cross-lingual Hindi/Hinglish campus RAG
+R1935,yes,F3,yes,LLM edge deployment techniques; empirical data claimed
+R1936,yes,F3,yes,Quantization and local inference energy experiments
+R1937,yes,F3,yes,4-bit quantized LLM on Android; size reduction
+R1938,no,,yes,Generic compression; no specific edge setting
+R1939,no,,yes,Query generation; no facet
+R1940,yes,F5,yes,"Arabic RAG components incl. rerankers, RAGAS"
+R1941,yes,F3,yes,Local Ollama RAG vs naive baseline
+R1942,no,F1,no,Hybrid/RRF proposed; no results in abstract
+R1943,yes,F4,yes,Prompt injection mitigation in RAG FAQ
+R1944,yes,F1,yes,"BM25, BERT, SPLADE retrieval compared for RAG"
+R1945,yes,F3,yes,"Local SLM RAG optimization, privacy-preserving"
+R1946,yes,F3,yes,Small-model multimodal RAG on consumer hardware
+R1947,yes,F1,yes,Sparse-dense-rerank pipeline tuned and evaluated
+R1948,no,,yes,Hybrid retrieval a component; not compared
+R1950,no,,no,No abstract; title does not clearly meet facet
+R1951,yes,F2,yes,"Traceable claims, grounded citations, evidence coverage"
+R1953,no,,yes,Graph-path hybrid; not sparse-dense
+R1954,yes,F5,yes,Greek-English cross-lingual embedding for RAG
+R1955,no,,yes,Compression focus; reranking incidental
+R1956,no,,yes,Generic NVFP4 quantization
+R1957,yes,F2,yes,Small-model hallucination detection for RAG
+R1960,no,F6,no,Benchmark proposal; no results reported
+R1961,yes,F5,yes,Multilingual financial QA shared task results
+R1962,yes,F5,yes,Multilingual evidence QA shared task
+R1963,no,,yes,Product search IR track
+R1964,yes,F6;F2,yes,TREC RAG track with attribution evaluation
+R1965,no,,yes,Generic quantization
+R1966,yes,F4,yes,"Privacy-preserving RAG service, secret sharing"
+R1967,yes,F2,yes,Citation quality alignment of RAG generator
+R1968,no,,no,No abstract; title not clear facet
+R1969,yes,F1;F5,yes,"French RAG; dense, fusion, reranking vs BM25"
+R1971,yes,F3,yes,Compressed LLM benchmark on mobile devices
+R1972,yes,F4,yes,RAG poisoning jailbreak attack
+R1973,yes,F2,yes,Hallucination mitigation for RAG faithfulness
+R1974,yes,F5,yes,Polish/European retrievers; non-English central
+R1975,yes,F5,yes,Cross-language dense retrieval adapters
+R1977,no,,yes,Legal doc retrieval; pure IR
+R1978,no,,yes,Generic quantization
+R1979,yes,F2,yes,Passage attribution under noisy retrieval
+R1980,no,,yes,Chunking; no listed facet
+R1981,yes,F2,yes,Abstention under insufficient information
+R1982,no,,no,No abstract; title not clear facet
+R1983,no,F4,no,Conceptual analysis; no quantitative evaluation
+R1984,no,,yes,"Lexical-graph index stitching; synthetic, not sparse-dense RAG"
+R1986,no,,yes,SLM-LLM cost routing; not RAG
+R1987,no,,yes,Generic binarization
+R1991,no,,yes,Brand visibility metrics; not retrieval-context specific
+R1993,yes,F3,yes,"SLM plus RAG local deployment, energy compared"
+R1995,yes,F3,yes,"Local SLM RAG vs LLM, specialist evaluation"
+R1997,yes,F4,yes,Information-flow labels for poisoned retrieved data
+R1998,yes,F5,yes,Persian RAG on benchmark datasets
+R2000,yes,F6,yes,PersonaBench evaluates RAG on private data
+R2001,no,,yes,GraphRAG method; no listed facet
+R2004,no,,yes,Personalized RAG; no facet
+R2005,no,,yes,Domain benchmark; RAG only a setting
+R2006,no,,yes,Domain retrieval adaptation; pure IR
+R2007,yes,F4,yes,Backdoor poisoning attack on RAG
+R2008,yes,F6;F2,yes,"Dose-response metrics for RAG context, hallucination"
+R2011,yes,F4,yes,Prompt injection plus database poisoning attack
+R2012,yes,F4;F1,yes,Private hybrid BM25-dense retrieval via PIR
+R2014,yes,F4,yes,Private information retrieval for RAG
+R2015,yes,F4,yes,Knowledge base leakage attack
+R2016,no,,yes,Generic prompt injection red teaming
+R2019,no,,yes,Screenshot RAG; no facet
+R2020,no,,yes,Agent planning dataset
+R2021,no,,yes,GraphRAG domain application; facet not isolated
+R2022,yes,F1,yes,"BM25, TF-IDF, dense retrieval compared in domain RAG"
+R2023,yes,F6,yes,Pluri-hop multilingual RAG benchmark
+R2024,no,,yes,KV cache quantization
+R2025,yes,F3;F1,yes,On-device Android hybrid RAG with SLM
+R2026,yes,F3,yes,"Offline on-device RAG assistant, experiments"
+R2027,yes,F4,yes,"Private dense retrieval, embedding inversion mitigation"
+R2029,yes,F4,yes,Poisoned knowledge base jailbreak
+R2030,yes,F4,yes,Multimodal RAG poisoning attack and defenses
+R2031,yes,F4,yes,Knowledge poisoning of RAG security agents
+R2032,yes,F4,yes,PoisonedRAG knowledge corruption
+R2033,yes,F4,yes,Poisoning HNSW-based RAG
+R2034,yes,F2;F1,yes,"Citation tracing, reranking, configurations compared"
+R2035,yes,F2;F6,yes,Benchmark on modesty under absent/noisy evidence
+R2036,yes,F6,yes,PolyEVAL medical RAG benchmark
+R2037,yes,F2,yes,Abstention and hallucination in RAG training
+R2038,yes,F4,yes,Indirect prompt injection defense incl. RAG data
+R2039,no,,yes,Generic quantization
+R2040,no,,yes,KV cache quantization
+R2041,yes,F4,yes,Prompt-RAG poisoning attack
+R2042,yes,F4,yes,Provably robust aggregation against poisoning
+R2043,yes,F4,yes,Single-text poisoning attack
+R2044,yes,F6;F1,yes,"RAG metric and hybrid, rerank benchmark"
+R2045,yes,F4,yes,End-to-end privacy-preserving RAG
+R2046,no,,yes,Legal case retrieval; pure IR
+R2047,no,F2,no,Evaluation protocol only; no results
+R2048,yes,F3,yes,Local small-LLM RAG preprocessing for EHR
+R2049,no,,yes,NevIR ranking; pure IR
+R2050,no,,yes,KV placement serving; not facet
+R2051,yes,F4;F6,yes,Evaluation protocol for poisoning defenses
+R2052,no,,yes,Domain RAG; no facet compared
+R2053,yes,F6;F2,yes,RAG benchmark incl. context faithfulness
+R2054,no,,yes,Domain RAG; dual retrieval not sparse-dense
+R2055,no,,yes,Factuality fine-tuning; no listed facet
+R2056,yes,F4,yes,Privacy-aware decoding against leakage
+R2057,no,F4,no,No abstract; evidence unknown
+R2058,yes,F4,yes,Privacy-aware RAG with ablations
+R2059,no,,yes,Privacy architecture; no facet compared
+R2060,yes,F4,yes,PRISMA-ScR scoping review of healthcare RAG privacy
+R2061,yes,F4,yes,Leakage guardrails in RAG with abstain region
+R2062,no,,no,Graph database privacy; not RAG-specific evaluation
+R2063,yes,F4,yes,Federated embedding learning for private RAG
+R2064,yes,F1;F3;F4,yes,Title-only: systematic review of private hybrid local RAG
+R2065,yes,F4,yes,Embedding inversion defense for on-device RAG
+R2066,yes,F4,yes,Privacy rewriting of retrieved content
+R2067,no,F3,no,Local RAG feasibility; no quantitative evaluation
+R2068,yes,F4,yes,Differentially private RAG
+R2070,yes,F4;F6,yes,PrivacyBench leakage in RAG assistants
+R2071,yes,F2;F4,yes,"Selective-risk certification, hallucination, DP"
+R2072,yes,F3,yes,"Local embedded RAG on Apple Silicon, evaluated"
+R2073,yes,F4,yes,Privacy defense and evaluation framework for RAG
+R2074,yes,F4,yes,Multi-query DP-RAG
+R2075,yes,F4,yes,Random projection datastore privacy
+R2076,yes,F6,yes,Evaluation framework for RAG assistants
+R2077,no,,yes,Hybrid graph RAG audit application; no facet compared
+R2078,yes,F2,yes,Hallucination detection for RAG
+R2079,no,,no,No abstract; evidence not determinable
+R2083,yes,F2,yes,Abstention benchmark under misleading context
+R2084,no,,yes,Code completion retrieval; no facet
+R2085,yes,F4,yes,Prompt injection defense incl. retrieved segments
+R2086,no,,no,Narrative review without search method
+R2087,no,,no,Overview without explicit search method
+R2089,no,,no,No abstract; not RAG-specific
+R2090,no,,no,Survey without explicit search method; general
+R2091,no,,yes,General prompt injection review; not RAG-specific
+R2093,no,,yes,Systematic review of general prompt injection
+R2094,no,,no,No abstract; not RAG-specific
+R2096,yes,F5,yes,Foreign-language prompts change retrieval; local RAG
+R2097,no,,yes,Agent prompt injection; not retrieval-specific
+R2098,no,,yes,Structured-vector orchestration; not sparse-dense RAG
+R2099,yes,F4,yes,Systematic survey of RAG protection with method
+R2101,yes,F2;F4,yes,Faithfulness vs RAG; membership inference reduction
+R2103,yes,F4,yes,"Provably secure RAG, attacks resisted"
+R2104,yes,F2,yes,Citation fidelity and influence measurement
+R2105,yes,F2,yes,"Verifiable evidence, hallucination mitigation"
+R2106,yes,F6;F2,yes,Reliability benchmark; grounding and hallucination
+R2108,yes,F4,yes,Poisoning conflict resolution attack
+R2109,no,,no,Vision paper on edge LLMs
+R2110,no,,yes,SLM-LLM cost collaboration; not RAG
+R2111,no,,no,Generic quantization
+R2112,yes,F6;F5;F1,yes,"Agentic RAG retrieval benchmark, ten languages"
+R2113,no,,yes,Generic quantization-aware fine-tuning
+R2114,no,,yes,Dense retrieval augmentation; pure IR
+R2115,no,,yes,Embedding alignment; no facet central
+R2116,no,,yes,Generic quantization fine-tuning
+R2117,no,,yes,Generic quantization
+R2118,no,,yes,Chunking; hybrid retriever fixed
+R2120,no,,yes,Generic quantization
+R2121,no,,yes,Generic pruning and quantization
+R2122,no,,yes,Generic quantization
+R2123,no,,yes,Generic quantization decoding
+R2124,no,,yes,Generic quantization
+R2127,yes,F5,yes,Translation quality tagging for multilingual RAG
+R2128,yes,F1,yes,"BM25, dense, hybrid RRF for RCA evidence retrieval"
+R2129,yes,F3,yes,Static quantization for on-device mobile NPUs
+R2130,no,F1,no,Library description; no evaluation reported
+R2131,yes,F4,yes,Quantified security controls for RAG PII leakage
+R2132,yes,F1,yes,Hybrid retrieval with reranking ablation
+R2133,no,,yes,Dense retrieval architecture study; not facet
+R2134,yes,F4,yes,Private verifiable dense retrieval for RAG
+R2135,no,,yes,Generic quantization
+R2136,no,,yes,Generic quantization
+R2137,no,,yes,Generic quantization without edge setting
+R2138,no,,yes,Edge-cloud decoding; not local or RAG
+R2139,no,,yes,KV cache quantization
+R2140,no,,yes,Generic quantized fine-tuning
+R2142,yes,F5;F1,yes,"Punjabi RAG fusing sparse, dense embeddings"
+R2143,no,,yes,Quantum retrieval speedup; no facet
+R2144,no,,yes,E-commerce search IR; not RAG
+R2145,yes,F1,yes,Dense-sparse hybrid query expansion for RAG retrieval
+R2146,yes,F2,yes,Suggestions for unanswerable queries in agentic RAG
+R2147,yes,F5,yes,Sinhala-Tamil cross-lingual retrieval evaluation
+R2148,no,,no,Small pure-IR hybrid test; abstract lacks results
+R2149,no,,yes,Pure IR query robustness
+R2150,no,,yes,Domain RAG; no facet central
+R2151,no,,yes,"Text-to-query, not RAG"
+R2152,no,,yes,Generic CUDA quantization kernels
+R2153,no,,yes,Generic quantization
+R2154,no,,no,Generic quantization
+R2155,no,,yes,Generic quantization PEFT
+R2156,no,,yes,Relevance assessment; no facet
+R2157,no,,yes,Generic quantization
+R2158,no,,yes,Misinformation detection; no facet

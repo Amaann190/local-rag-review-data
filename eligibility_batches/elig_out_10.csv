@@ -1,0 +1,175 @@
+record_id,eligible,facets,evidence,note
+R2785,no,,yes,API hallucination in code gen; not retrieved-context grounding
+R2786,no,,yes,Multimodal medical VQA RAG; no facet
+R2787,yes,F1,yes,"Vector plus graph RRF hybrid retrieval, evaluated"
+R2788,yes,F6,yes,Query-agnostic RAG evaluation framework
+R2789,no,F2,no,Scoping study of hallucination; no explicit search method
+R2791,no,F1,no,Hybrid retrieval pipeline but no quantitative evaluation
+R2792,yes,F2;F6,yes,"RGB negative rejection and robustness, GraphRAG compared"
+R2793,no,F4,no,Security survey without explicit search method
+R2794,no,,yes,Generic LLM inference energy; not RAG or edge
+R2795,yes,F6,yes,Temporal multimodal RAG finance benchmark
+R2796,yes,F2,yes,Evidence citation tracing via RL
+R2797,no,F2;F4,no,Trustworthy RAG survey without explicit search method
+R2798,no,,yes,Dense retrieval ODQA generalization; no sparse-dense facet in abstract
+R2799,yes,F4,yes,Unsupervised adversarial document detection
+R2800,no,,yes,GPU quantization kernels; no RAG or edge
+R2801,yes,F2,yes,Hallucination detection in RAG
+R2802,yes,F2,yes,"Traceable cross-KB RAG, citation correctness, 7B generator"
+R2803,yes,F4,yes,Traceback of poisoned texts
+R2804,yes,F4,yes,Poisoning detection via token influence
+R2805,no,,yes,FP8 training; no RAG
+R2806,no,,yes,RAG used for alignment refusal; not retrieved-content security
+R2807,no,,yes,Knowledge modules LoRA; no facet
+R2808,no,,yes,MoE embedding model; multilingual not central
+R2809,no,,yes,Knowledge base write-back; no facet
+R2810,yes,F1;F5,yes,"BM25+dense+cross-encoder, Arabic Islamic QA"
+R2811,no,,no,General RAG review; no search method
+R2813,yes,F1;F3,yes,BM25+dense RAG with 4-bit quantized LLaMA reranker
+R2815,yes,F2,yes,Citation generation with trustworthiness metrics
+R2816,yes,F2,yes,Conformal prediction correctness guarantees for RAG
+R2817,no,F6,no,Theoretical framework; no quantitative evaluation
+R2818,yes,F6;F1;F2,yes,"Tri-domain RAG benchmark, dense vs BM25, attribution"
+R2819,yes,F1;F3,yes,"Hybrid SQL/vector/graph fusion, CPU latency, safety gate"
+R2821,yes,F3,yes,"Local-deployment domain LLM layer dropping, speedup"
+R2824,yes,F1;F2,yes,Dense/BM25 hybrid with evidence sufficiency abstention
+R2825,yes,F3;F2;F4,yes,"Offline RAG on Raspberry Pi, abstention, poisoned packs"
+R2826,yes,F2,yes,Abstain vs trust under knowledge conflict
+R2829,no,F2,no,Hallucination correction method; no quantitative evaluation
+R2831,no,F2,no,Citation enhancement framework demo; no quantitative results
+R2832,yes,F4,yes,Corpus poisoning defence
+R2833,yes,F6;F2;F4,yes,Trustworthiness survey with benchmark TRC Bench
+R2835,yes,F1;F2,yes,Hybrid BM25+dense RRF with attribution
+R2836,yes,F5;F1;F3,yes,"Multilingual hybrid retrieval, quantization finding"
+R2837,no,,yes,Attention quantization; no RAG or edge
+R2838,no,,yes,KV-cache latency for RAG; not local or edge
+R2839,yes,F2;F5,yes,Turkish RAG hallucination detection
+R2840,no,,yes,Generic quantization; no edge setting
+R2841,yes,F3,yes,Quantized 7B RAG for resource-constrained settings
+R2842,no,,yes,Domain RAG; ablation not on facet
+R2843,yes,F1;F5,yes,"English-Arabic lexical, dense, RRF diagnostic"
+R2844,yes,F6,yes,UDA document analysis RAG benchmark
+R2845,no,,no,Toolkit; no evaluation
+R2846,yes,F2;F6,yes,Unanswerability evaluation for RAG
+R2849,yes,F1,yes,Dense and sparse fusion by uncertainty
+R2850,no,,yes,Adaptive graph RAG; RRF only a component
+R2851,yes,F4;F6,yes,Competing poisoning attacks and PoisonArena benchmark
+R2852,no,,yes,Parametric RAG study; not core facet
+R2853,yes,F4,yes,Embedding inversion privacy risks
+R2854,yes,F2,yes,Attribution in long-form QA with annotated data
+R2856,no,,yes,Generic quantization; no edge setting
+R2858,no,F1,no,Survey without explicit search method
+R2859,no,,yes,Generic quantization
+R2860,yes,F1,yes,Hybrid BM25+dense with reranking chatbot
+R2861,yes,F1;F3,yes,Hybrid RRF RAG with AWQ 4-bit serving
+R2862,no,,yes,Generic quantization
+R2863,no,,yes,Climate misinformation; poisoning not via RAG
+R2865,no,,yes,KV cache quantization; no edge setting
+R2867,no,,yes,Model-native evidence selection; not sparse-dense facet
+R2868,yes,F5,yes,Multilingual dense retrieval central
+R2869,no,,yes,"Rank aggregation IR; not RAG, not multilingual"
+R2870,yes,F5,yes,Unsupervised multilingual dense retrieval
+R2871,yes,F1,yes,"Hybrid BM25 and dense, rank fusion ablations"
+R2872,no,F1,no,"TREC ranking, not RAG; no quantitative results"
+R2873,yes,F1;F5,yes,Urdu hybrid BM25+dense RRF ablation
+R2874,yes,F2,yes,Abstention risk calibration for RAG
+R2875,yes,F6;F2,yes,Uncertainty benchmark for RAG
+R2876,no,,yes,Adaptive GraphRAG routing; RRF only borderline
+R2877,yes,F3,yes,"Quantized SLMs on Raspberry Pi CPU, local agent"
+R2880,no,F1;F2,no,Shared-task report; no results in abstract
+R2881,yes,F6,yes,Benchmark with varying positive/negative retrieved samples
+R2884,no,,yes,Vector retrieval diversity; no facet
+R2885,no,,yes,"Domain app, edge local models not compared"
+R2886,yes,F6,yes,RAG evaluation framework VERA
+R2887,no,,yes,Domain agent; dense retrieval baseline only
+R2888,yes,F1;F5;F6,yes,Indonesian LC vs RAG benchmark with hybrid ablation
+R2889,yes,F2,yes,Citation verification framework
+R2890,yes,F2,yes,Claim verification and hallucination detection
+R2893,yes,F2,yes,"Citation accuracy across retrieval strategies, legal German"
+R2894,yes,F1;F2,yes,"Lexical/dense/RRF comparison, abstain gating"
+R2895,yes,F1;F2;F5,yes,"Multilingual hybrid RAG, unanswerable, citation"
+R2896,no,F1,no,Hybrid RAG framework; no quantitative results
+R2897,no,,yes,ANN vector index benchmark; not RAG evaluation
+R2899,yes,F1;F5,yes,Vietnamese RRF keyword+vector fusion
+R2900,yes,F1,yes,Hybrid retrieval compared with dense/keyword
+R2901,yes,F4,yes,Visual knowledge poisoning attack
+R2902,no,,yes,"Multimodal retrieval, not RAG"
+R2903,yes,F2,yes,Visual source attribution for RAG
+R2904,yes,F6,yes,Multimodal RAG benchmark finance
+R2905,yes,F1,yes,"BM25, dense, visual, RRF fusion compared"
+R2908,yes,F4,yes,Triggered knowledge poisoning attack
+R2909,yes,F1;F2,yes,"Sparse+dense hybrid, citation verification agent"
+R2911,yes,F6;F5,yes,Multilingual VL RAG benchmark
+R2914,no,,yes,Generic quantization
+R2915,yes,F1;F3,yes,Local-first hybrid BM25 plus vector RRF
+R2916,no,F4,no,"Security overview, no quantitative evaluation"
+R2917,no,,yes,Dense retriever training with BM25 candidates; not hybrid
+R2920,yes,F6;F1,yes,"Weather archive RAG benchmark, sparse/dense/rerank"
+R2921,yes,F3,yes,Open 7B LLM RAG tested across hardware
+R2922,no,F5,no,Dataset release; no results in abstract
+R2923,yes,F5,yes,Multilingual retrieval datasets with fine-tuning results
+R2924,no,,yes,Web traversal benchmark; no facet
+R2925,yes,F1;F2,yes,Sparse and dense retrieval with self-assessment
+R2926,yes,F6,yes,KG-RAG benchmark under incomplete knowledge
+R2927,yes,F5;F1,yes,"Cross-lingual retrieval, lexical vs dense and rerank"
+R2928,no,F4,no,Agent prompt injection via memory; no quantitative results
+R2929,no,,no,Small models survey; no search method
+R2930,yes,F1;F5,yes,"Arabic fiqh dense, lexical, hybrid comparison"
+R2932,yes,F1,yes,Hybrid BM25+dense slide retrieval with RRF
+R2933,yes,F6,yes,Citation prediction RAG benchmark
+R2934,yes,F5;F1,yes,Arabic poetry BM25 vs dense benchmark
+R2935,no,,yes,Feedback loops; retriever comparison incidental
+R2937,no,,yes,Generic compression; no explicit RAG
+R2938,no,,yes,Generative search engines; no facet
+R2939,yes,F4,yes,Poisoning detection via attention
+R2940,yes,F2,yes,Context vs parametric trust arbitration
+R2941,yes,F4,yes,Poisoned context detection and leakage
+R2942,yes,F4,yes,Prompt-injection worms in RAG memory
+R2943,no,,yes,Graph expansion pilot; no facet
+R2944,no,F1,no,No abstract; survey method unknown
+R2945,yes,F1;F2,yes,Retrieval fusion comparison plus abstention grounding
+R2946,yes,F5,yes,Mixed-language query embedding retrieval
+R2947,no,,yes,Streaming RAG latency; facet not central
+R2948,yes,F2,yes,Uncertainty as RAG hallucination risk
+R2949,yes,F3;F6,yes,Local Ollama 8B RAG compliance evaluation harness
+R2950,yes,F1,yes,"Hybrid vs dense+rerank routing, 4-bit Qwen"
+R2951,no,,yes,Bug report retrieval; not RAG or multilingual
+R2952,no,,yes,Generic quantization
+R2953,yes,F5;F1,yes,"Arabic BM25, dense, hybrid RAG"
+R2954,no,,yes,Quantization personality; not RAG
+R2955,yes,F4,yes,Corpus poisoning under chunking and reranking
+R2956,no,,yes,Generic quantization confidence
+R2957,yes,F1,yes,Dense vs BM25 RAG compared in domain study
+R2958,no,,yes,SOAP notes; no facet
+R2959,yes,F4,yes,Blocking attack on RAG
+R2960,yes,F2;F1,yes,Sufficiency gate with BM25/dense/RRF features
+R2961,yes,F1,yes,"BM25, dense, hybrid GraphRAG routing comparison"
+R2962,yes,F6,yes,GraphRAG benchmark
+R2963,yes,F1,yes,Lexical vs dense/hybrid agentic search ablations
+R2964,yes,F1;F5,yes,"Bengali BM25, dense, hybrid RRF evaluation"
+R2965,yes,F4,yes,Poisoned text responsibility attribution
+R2966,yes,F1,yes,BM25 plus dense fusion memory retrieval
+R2967,no,,yes,Domain dense retriever; BM25 only a control
+R2968,yes,F2,yes,Citation faithfulness in GraphRAG
+R2969,yes,F2;F6,yes,Abstention-aware RAG evaluation
+R2970,yes,F2,yes,RAG failure detection and grounding intervention
+R2971,no,F2,no,Hallucination review without explicit search method
+R2972,yes,F5;F1,yes,Russian BM25 vs neural retrieval datasets
+R2973,no,,yes,Generic quantization
+R2975,no,,yes,Generic quantization
+R2976,yes,F5;F1,yes,Multilingual BM25+dense+rerank ablations
+R2977,no,,yes,Hybrid RAG not compared or ablated
+R2979,no,,yes,Dense retrieval explainability; no facet
+R2980,no,F2,no,"Proposed framework, evaluation plan only"
+R2981,yes,F5,yes,Multilingual RAG context pruning
+R2982,yes,F5;F6,yes,Cross-lingual RAG benchmark
+R2983,no,,yes,Context compression; no facet
+R2984,no,,yes,Sparse retrieval fusion for TREC; not RAG
+R2985,no,,yes,Dialogue grounding 2023; no facet
+R2986,no,,yes,Multimodal embedding retrieval; no facet
+R2987,no,F3,no,On-device assistant; no quantitative evaluation
+R2988,yes,F1;F6;F2,yes,"Hybrid dense-sparse pathology RAG, benchmarks, evidence judge"
+R2989,no,,yes,Preregistration; hybrid levers not measured
+R2990,no,F2,no,Architecture without quantitative evaluation
+R2993,no,,yes,Decentralized routing; not privacy attack or local facet
+R2994,yes,F5,yes,Multilingual healthcare Q&A with RAG case study

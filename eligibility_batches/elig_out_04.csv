@@ -1,0 +1,241 @@
+record_id,eligible,facets,evidence,note
+R0942,yes,F1,yes,"Dense+sparse RRF and reranking, TriviaQA results"
+R0943,yes,F1;F5,yes,"RRF hybrid reranking, Italian QA, experiments"
+R0944,yes,F1,yes,Reranking two-stage RAG pipeline evaluated
+R0945,no,,yes,"Vector vs graph, not sparse-dense"
+R0948,no,F4;F6,no,Legal RAG survey; no explicit search method
+R0949,no,,yes,"Generic quantization, not local/edge RAG"
+R0950,yes,F6,yes,Benchmark for private-document RAG
+R0951,no,,yes,Entity index RAG; no facet
+R0952,no,F4,no,F4 position paper; no quantitative evaluation
+R0954,yes,F1,yes,"Hybrid BM25+dense RRF, production evaluation"
+R0956,yes,F1,yes,Hybrid beats dense-only and sparse-only
+R0957,yes,F1;F2;F4,yes,"Hybrid RRF, faithfulness, ACL leakage evaluated"
+R0958,yes,F1;F2;F4,yes,"BM25+dense RRF, injection defences, grounding"
+R0959,yes,F3,yes,Edge-device LLM compression and inference speed
+R0962,yes,F2,yes,"Abstention in RAG, benchmark experiments"
+R0963,yes,F1;F2,yes,"Dense+sparse, citation verification, RAGTruth"
+R0966,yes,F1;F3,yes,"On-premises local RAG, rerank ablation"
+R0967,yes,F1;F2;F5,yes,"Uzbek, hybrid vs dense, abstention, citation"
+R0968,yes,F1;F5,yes,"BM25/rerank vs dense, bilingual EN-ES"
+R0969,yes,F2;F6,yes,Attribution benchmark for grounded dialogue
+R0970,yes,F1;F3,yes,"Local RAG, dense+BM25+rerank evaluated"
+R0971,yes,F2;F6,yes,Faithfulness metrics for retrieval-based QA
+R0972,no,F6,no,Cultural benchmark; no quantitative results stated
+R0973,yes,F1;F5,yes,"BM25 rerank/hybrid, multilingual retrieval"
+R0974,yes,F1;F2;F6,yes,"Hybrid vs vector-only RAG, RAGAS faithfulness"
+R0975,yes,F1;F2,yes,"BM25+E5 hybrid, reranking, refusal rates"
+R0976,no,,yes,Incremental context strategy; hybrid retrieval only background
+R0977,no,F6,yes,KG-RAG incompleteness robustness; not listed facet
+R0979,no,,yes,LLM clinical QA benchmark; retrieval peripheral
+R0981,yes,F1;F6,yes,"Legal citation benchmark, hybrid rerank retrieval"
+R0982,no,,yes,"Agent memory benchmark, not RAG evaluation"
+R0983,yes,F6,yes,RAG evaluation benchmark with Ragas
+R0984,yes,F1;F6,yes,BM25 vs DPR vs hybrid retrieval metrics
+R0985,no,,yes,"Generic quantization evaluation, no local/RAG context"
+R0986,yes,F5;F6,yes,French legal RAG benchmark
+R0987,yes,F6,yes,RAGElo evaluation framework
+R0988,yes,F1;F3;F5,yes,"On-device SLM RAG, sparse/dense/hybrid, Indonesian"
+R0989,yes,F1,yes,"BM25, dense, RRF compared with local latency"
+R0990,yes,F6,yes,SLR of RAG evaluation frameworks
+R0991,yes,F6,yes,"RAG configs evaluation, LLM-judge calibration"
+R0992,yes,F1;F5,yes,"BM25 vs dense, German guidelines"
+R0993,no,F2;F6,no,Methodology only; no experiments completed
+R0995,no,F6,no,Evaluation framework; only preliminary qualitative results
+R0997,no,,yes,Financial RAG component comparison; no facet
+R0998,no,F5,no,Abstract lacks results; no evidence
+R0999,yes,F1,yes,"Dense, BM25, RRF on code RAG"
+R1000,yes,F1;F2;F3,yes,"Sparse/dense/hybrid, hallucination, on-prem"
+R1001,no,,yes,RAG vs long-context; no facet
+R1002,no,,yes,"LongEval IR, not RAG"
+R1003,yes,F6,yes,Evaluation methodology for KV reuse in RAG
+R1004,yes,F1,yes,Sparse vs dense retrievers efficiency for code RAG
+R1005,no,F3,no,Truncated abstract; no evidence
+R1006,no,,yes,"Compares RAG types, not sparse-dense"
+R1007,yes,F6,yes,Retriever evaluation framework for RAG
+R1008,yes,F6,yes,"Retrieval robustness benchmark, sparse and dense"
+R1009,no,,yes,LLM cost comparison; no listed facet
+R1010,yes,F1;F6,yes,"Hybrid retrieval, RAGAS vs expert evaluation"
+R1011,yes,F2,yes,Attribution bias in RAG experiments
+R1012,yes,F5,yes,Khmer chunking and dense retrieval
+R1013,yes,F6,yes,Game-theoretic RAG evaluation framework
+R1014,yes,F6,yes,RAGAS metrics analysis for telecom
+R1015,no,F6,no,RAG evaluation survey; no explicit search method
+R1016,yes,F2;F6,yes,"Evidence/verification, QUEST-LOFT evaluation"
+R1017,yes,F1,yes,Lexical vs semantic vs hybrid retrieval
+R1018,yes,F5;F6,yes,Arabic semantic search benchmark in RAG
+R1019,yes,F1;F6,yes,Benchmark of fusion and rerankers
+R1020,no,,yes,Neuromorphic LLM efficiency; not RAG/local
+R1021,no,,yes,Web search dense retrieval; not RAG
+R1022,no,,yes,Audio RAG; no listed facet
+R1023,no,,yes,Graph RAG; no listed facet
+R1025,no,,yes,"Hallucination correction, not retrieval-specific"
+R1026,yes,F2,yes,RAG hallucination detection
+R1027,yes,F1;F2;F5,yes,Persian abstention with BM25 baseline
+R1028,yes,F1;F2,yes,Hybrid RAG abstention on SQuAD 2.0
+R1029,yes,F2;F6,yes,Evidence conflict benchmark and citation metrics
+R1030,yes,F2,yes,RAG hallucination detection on RAGTruth
+R1031,yes,F1,yes,"Hybrid lexical+dense RAG evaluated, 8B models"
+R1033,yes,F1;F2;F5,yes,"BM25/dense/hybrid, citation, Chinese"
+R1034,yes,F1;F2,yes,"BM25/dense/hybrid fusion, traceable answers"
+R1035,no,,yes,"Dense+graph hybrid, not sparse-dense"
+R1037,yes,F1,yes,Sparse-dense fusion on FinDER
+R1038,yes,F2,yes,Evidence verification and citation drift
+R1039,yes,F2,yes,Conflict-aware abstention in RAG
+R1040,yes,F1,yes,Sparse/dense/hybrid retrieval with reranking
+R1042,no,,yes,"Evolving-knowledge LLM benchmark, not RAG-specific"
+R1043,yes,F1,yes,Exact adaptive hybrid dense-sparse RRF
+R1044,no,,yes,Generic quantization
+R1045,no,,yes,"Sparse-only fusion for IR, not RAG"
+R1046,no,F2,no,Non-systematic evaluation; no facet
+R1047,yes,F2;F6,yes,"Legal QA dataset with citations, RAG"
+R1048,yes,F3,yes,Local small LLMs RAG for closed-source software
+R1051,yes,F2,yes,Citation-constrained evidence grounding
+R1052,no,,yes,Vague explainability framework; no facet
+R1053,yes,F1;F5,yes,"BM25+XLM-R hybrid, Amharic, code-switching"
+R1054,yes,F4,yes,"Privacy-preserving retrieval, exposure metrics"
+R1055,no,,yes,"Rank fusion IR, not RAG"
+R1056,yes,F4,yes,Indirect prompt injection evaluation
+R1057,yes,F4,yes,PII leakage audit in RAG
+R1058,no,F4,no,No abstract available; evidence unverifiable
+R1059,no,,no,Compression survey; not RAG; no search method
+R1060,no,,yes,PEFT for code generation; no facet
+R1061,no,,no,SLM survey; no search method
+R1062,yes,F4,yes,Knowledge base poisoning in RAG code
+R1063,yes,F4,yes,Graph RAG data extraction attacks
+R1064,no,F4,no,No abstract available
+R1065,yes,F4,yes,RAG poisoning attack with ASR results
+R1066,yes,F3,yes,Edge LLM quantization accelerator
+R1067,no,,no,No abstract available
+R1068,yes,F6,yes,Benchmark of RAG fact-checking pipelines
+R1069,yes,F4,yes,Stance poisoning and defence
+R1070,yes,F2,yes,Citation hallucination detection in RAG
+R1073,no,,yes,Fairness testing; not listed facet
+R1074,no,,yes,Generic quantization
+R1075,yes,F2;F6,yes,Faithfulness hallucination benchmark vs source
+R1076,yes,F2;F6,yes,Context faithfulness incl. unanswerable benchmark
+R1077,yes,F2,yes,Citation/attributable RAG
+R1078,no,,yes,"Conversational search, not RAG sparse-dense"
+R1079,yes,F2,yes,Hallucination detection in RAG outputs
+R1080,yes,F2,yes,"Context-faithful RAG, knowledge conflicts"
+R1081,yes,F2,yes,Faithfulness hallucination detection
+R1082,no,,no,No abstract available
+R1083,yes,F2,yes,Citation grounding and hallucinated precedent metrics
+R1084,no,,yes,Generic quantization
+R1085,yes,F5;F6,yes,Persian embedding/retrieval benchmark
+R1086,yes,F2;F5,yes,"Citation verification, Arabic-English"
+R1087,no,,yes,Generic quantization
+R1088,no,,yes,Collaborative decoding; no facet
+R1090,no,,yes,Generic quantization kernel
+R1091,no,,yes,Generic quantization
+R1092,no,,yes,Local deployment only incidental; backend benchmark
+R1093,yes,F3,yes,Edge SLM deployment for navigation
+R1094,yes,F6,yes,RAG pipeline benchmark with hallucination metric
+R1095,yes,F3;F4,yes,"Edge federated RAG, privacy-preserving"
+R1097,yes,F4,yes,Privacy-preserving federated GraphRAG
+R1098,no,,yes,FL+RAG performance; not security study
+R1100,yes,F4,yes,"Federated RAG mapping study, Kitchenham method"
+R1101,yes,F3;F4,yes,"Scoping review PRISMA-ScR, edge RAG security"
+R1102,no,,yes,"On-device fine-tuning, not inference/RAG"
+R1104,yes,F4,yes,Knowledge base extraction attack
+R1105,yes,F4,yes,Prompt injection defence in RAG
+R1106,no,,yes,Relation extraction; no facet
+R1107,yes,F2,yes,Hallucination mitigation via retrieval grounding
+R1109,no,F2,no,Only simulated results reported
+R1110,yes,F6,yes,Financial RAG benchmark
+R1111,yes,F5;F6,yes,"Legal RAG benchmark, French/English"
+R1112,yes,F4,yes,Privacy extraction attack on RAG
+R1113,no,F1,yes,Legal IR search hybrid; not RAG/QA
+R1116,no,,yes,FT vs RAG comparison; safety secondary
+R1117,no,,yes,FT vs RAG knowledge injection; no facet
+R1119,no,,no,No abstract available
+R1120,yes,F2;F5;F6,yes,"Visual citation benchmark, bilingual"
+R1122,yes,F6,yes,Financial RAG benchmark
+R1123,yes,F2,yes,Source attribution and uncertainty flags
+R1124,no,,yes,Generic quantization
+R1125,yes,F4,yes,Membership inference on RAG
+R1127,no,,yes,Generic kernel optimization
+R1128,yes,F4,yes,Prompt injection and knowledge corruption red-teaming
+R1129,no,,yes,Generic quantization
+R1130,no,,yes,Generic quantization
+R1131,no,,yes,Generic quantization
+R1132,yes,F3,yes,"Edge SLM, privacy-preserving, latency"
+R1133,no,,yes,"Text-to-SQL benchmark, not RAG evaluation"
+R1135,no,F2;F3,no,SLM hallucination review; no search method
+R1136,yes,F4,yes,Datastore leakage via prompt injection
+R1138,no,,yes,Misinformation forecasting; no facet
+R1140,no,,yes,TEE for FM inference; not RAG-specific
+R1141,no,,yes,Guardrails not retrieved-content security
+R1143,no,,yes,Generic quantization
+R1144,no,,yes,Generic quantization
+R1145,no,,yes,Generic quantization
+R1146,yes,F1;F2,yes,"Dense+BM25 evidence retrieval, hallucination detection"
+R1147,no,F2,no,Proposal only; no evaluation
+R1148,no,,yes,Generic quantization deployment agent
+R1149,yes,F1,yes,Sparse/dense/hybrid/rerank benchmark
+R1150,yes,F5,yes,Cross-lingual retrieval-augmented ICL
+R1151,yes,F3,yes,"Edge SLM RAG, hybrid retrieval, cost"
+R1155,no,,no,Review without search method
+R1156,yes,F1;F6,yes,"Evidence-tier reranking, benchmark"
+R1157,yes,F2,yes,Faithfulness reward model for document-grounded answers
+R1159,no,F2,no,"Hallucination survey, not retrieval-specific; no search method"
+R1160,no,,yes,"KG+vector hybrid, not sparse-dense"
+R1161,yes,F3;F4;F6,yes,RAG survey with review protocol
+R1164,yes,F3,yes,"Small local models with RAG, privacy"
+R1166,no,,yes,GraphRAG; no listed facet
+R1167,yes,F1;F5,yes,"BM25 vs multilingual dense, isiZulu"
+R1168,no,,yes,Grammar benchmark; not multilingual retrieval
+R1169,no,F1,no,No quantitative evaluation reported
+R1173,no,F4,no,DP-RAG survey; no search method
+R1174,yes,F5,yes,Multilingual retrieval-augmented toxicity mitigation
+R1176,no,,no,"Agent threat survey, not RAG-specific; no search method"
+R1177,no,,yes,Generic quantization
+R1178,yes,F6,yes,User study of RAG evaluation criteria
+R1179,yes,F1;F2,yes,"Reranking and cited reports, TREC evaluation"
+R1180,yes,F2;F5;F6,yes,"Abstention benchmark, bilingual agentic RAG"
+R1181,no,,no,No abstract available
+R1182,no,F2,no,Conceptual review; no search method or results
+R1183,yes,F3,yes,Edge RAG compression on Jetson
+R1184,yes,F1,yes,"Hybrid lexical-dense RRF, benchmark results"
+R1185,no,,yes,Post-training survey; no facet
+R1186,yes,F1,yes,BM25 vs dense vs hybrid ablation
+R1187,yes,F5,yes,"Code-switched Singlish RAG, human evaluation"
+R1189,yes,F2,yes,Evidence-grounded faithfulness evaluation
+R1191,yes,F1;F4,yes,"BM25+vector RRF, ACL pre-retrieval filtering"
+R1194,no,,no,No abstract available
+R1196,no,,yes,Table RAG; no listed facet
+R1198,no,,yes,Generic quantization
+R1200,no,,yes,Graph expansion over BM25; not sparse-dense
+R1201,no,,yes,Generic quantization
+R1202,yes,F1,yes,"Dense, sparse and visual hybrid retrieval"
+R1204,yes,F6,yes,RAG benchmark generation tool
+R1205,no,F6,no,RAG benchmark generation; abstract reports no results
+R1206,no,,yes,Knowledge injection; no facet
+R1207,yes,F2,yes,Citation/attribution evaluation
+R1208,no,,no,No abstract available
+R1214,yes,F5,yes,Cross-lingual query expansion retrieval
+R1215,no,,yes,Materials LLM; no facet
+R1216,no,F4,yes,Memory privacy interface; not RAG security facet
+R1217,yes,F2,yes,Grounded nugget-based attribution
+R1221,no,F1;F2,no,No empirical results reported
+R1222,yes,F4,yes,Encrypted privacy-preserving retrieval
+R1223,no,,yes,Generic quantization
+R1224,no,,yes,Generic KV quantization
+R1225,yes,F3,yes,Lightweight self-hosted models for RAG
+R1226,no,,yes,"Generative retrieval, not RAG"
+R1227,no,,yes,GraphRAG; no listed facet
+R1228,no,,yes,Graph RAG for process mining; no facet
+R1229,yes,F6,yes,RAG evaluation framework
+R1230,yes,F5,yes,Multilingual dense/sparse embedding models
+R1231,yes,F5,yes,Multilingual and cross-lingual retrieval models
+R1232,no,,yes,English embedding release; no facet
+R1233,yes,F2,yes,RAG groundedness hallucination detectors
+R1234,yes,F1,yes,Reranking with rank fusion across granularities
+R1235,yes,F6,yes,Structural coverage metrics for RAG retrieval
+R1236,no,,yes,Graph RAG survey; no facet
+R1237,no,,yes,Graph RAG for e-commerce; no facet
+R1238,no,,yes,KV structure; no facet
+R1239,no,,yes,GraphRAG survey; no facet
+R1240,no,,yes,Graph hybrid for idea generation; no facet
+R1241,yes,F6,yes,GraphRAG benchmark
+R1242,yes,F3;F2,yes,"Local LLMs on consumer GPU, hallucination"

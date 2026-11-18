@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R2251,include,I2,RAG agent architecture eliminating data hallucination
+R2252,include,I2,"multimodal RAG with evidence attribution, hallucination rate"
+R2253,include,I1,"legal RAG: BM25, LSI, RRF, abstention"
+R2254,exclude,E2,claim normalization; retrieval only for few-shot examples
+R2255,unsure,,"context-grounded relational reasoning relevant to RAG, facts not retrieved"
+R2256,include,I1,hybrid dense+graph retrieval evaluated
+R2257,unsure,,"healthcare RAG review, no abstract"
+R2258,exclude,E4,non-English (Ukrainian) RRF modification
+R2259,include,I2,faithful citation verification with retrieval
+R2260,exclude,E1,recommender systems survey
+R2261,include,I1,compression of retrieved documents
+R2262,include,I5,embedding inversion/leakage in dense retrieval representations
+R2263,include,I3,RAG failure diagnosis workbench
+R2264,include,I5,"red teaming RAG app, poisoned RAG injection, local model"
+R2265,include,I2,RAG hallucination detection
+R2266,include,I2,routing hallucination in RAG
+R2267,include,I4,survey of LLM compression for edge
+R2268,include,I2,hybrid confidence retrieval and self-consistency
+R2269,include,I1,"RAG for structured outputs, small retriever"
+R2270,unsure,,hallucination review plus local small-model pilot
+R2271,unsure,,visual RAG for medical report hallucination
+R2272,include,I2,reference-based hallucination checker incl. noisy context
+R2273,include,I5,RAG poisoning attack
+R2274,include,I2,citation claim verification with evidence localization
+R2275,unsure,,domain RAG with reranking and abstention; evaluated on traffic task
+R2276,exclude,E1,conversational recommender system
+R2277,include,I4,local RAG conceptual framework for libraries
+R2278,exclude,E2,RAG applied to biomedical relation extraction
+R2279,include,I4,edge-cloud speculative decoding
+R2280,include,I2,fabrication/false citation metrics for legal RAG
+R2281,include,I5,corpus poisoning of RAG retrievers
+R2282,unsure,,position paper on retrieval-augmented LMs
+R2283,include,I1,hybrid retrieval with answerability gate
+R2284,exclude,E1,multimodal image instruction retrieval tags
+R2285,exclude,E1,text-to-motion generation
+R2286,exclude,E1,remote sensing imagery RAG
+R2287,include,I5,"privacy-preserving cloud RAG, embedding inversion"
+R2288,include,I2,debate-augmented RAG hallucination
+R2289,exclude,E3,QLoRA fine-tuning repeatability
+R2290,include,I1,context filtering for code RAG
+R2291,exclude,E2,Solidity benchmark; RAG only one compared strategy
+R2292,unsure,,no abstract
+R2293,include,I2,claim-level hallucination detection in RAG
+R2294,exclude,E4,non-English (Korean) abstract
+R2295,include,I1,hybrid retrieval with reranking
+R2296,exclude,E2,domain RAG documentation chatbot
+R2297,exclude,E1,video-language model hallucination
+R2298,include,I4,quantized local LLMs for RAG
+R2299,include,I4,PTQ review
+R2300,include,I4,LLM quantization
+R2301,unsure,,"LLM inference throughput scheduling, not edge-specific"
+R2302,include,I3,RAG evaluation framework climate documents
+R2303,include,I2,context faithfulness/abstention benchmark
+R2304,include,I1,"tri-modal hybrid retrieval, small embeddings"
+R2305,include,I4,on-device LLM with RAG
+R2306,include,I4,VLM PTQ calibration
+R2307,include,I5,privacy non-interference via retrieval augmentation
+R2308,include,I1,financial RAG reranking comparison
+R2309,include,I4,quantization outliers for edge deployment
+R2310,include,I1,boundary-aware reranker for RAG
+R2311,include,I2,retrieval for faithful CoT explanations
+R2312,unsure,,retrieving gradients vs RAG baseline
+R2313,include,I3,RAG benchmark African institutional data
+R2314,unsure,,news RAG chatbot for resource-constrained devices; vague
+R2315,exclude,E2,RAG for photodetector design
+R2316,include,I1,"biomedical QA retrieval, reranking, RRF"
+R2317,unsure,,"retrieval-augmented classification, leakage vs fine-tuning"
+R2318,include,I4,local hybrid RAG for legal clauses
+R2319,include,I1,enterprise hybrid retrieval evaluation
+R2320,exclude,E2,multimodal hateful meme detection
+R2321,exclude,E2,retrieval-augmented fine-tuning for ladder diagram code
+R2322,exclude,E4,non-English (Russian)
+R2323,unsure,,"RAG survey, no abstract"
+R2324,include,I1,RAG survey
+R2325,include,I3,simple RAG QA evaluation
+R2326,include,I1,RAG survey
+R2327,include,I1,"RAG survey, retrieval and chunking"
+R2328,include,I2,RAG and hallucination overview
+R2329,unsure,,no abstract
+R2330,unsure,,no abstract
+R2331,exclude,E2,medical education RAG application
+R2332,exclude,E2,RAG review for test instruments domain
+R2333,include,I1,RAG systems review
+R2334,exclude,E2,perception survey of enterprise RAG
+R2335,include,I1,BM25+vector RRF retrieval evaluation
+R2336,include,I1,RAG survey with benchmarks
+R2337,include,I3,enterprise RAG evaluation frameworks
+R2338,include,I2,theoretical account of RAG grounding
+R2339,include,I1,chunking and hybrid retrieval evaluated with RAGAS
+R2340,include,I1,"chunking, hybrid RRF, calibration"
+R2341,include,I3,"RAG vs FT with small model, RAGAS"
+R2342,unsure,,"IT support RAG system, small models"
+R2343,exclude,E2,RAG for relation extraction
+R2344,unsure,,no abstract
+R2345,include,I3,RAG composition evaluation framework
+R2346,include,I4,local LLM RAG radiology
+R2347,include,I2,RAG reliability review
+R2348,include,I3,RAG evaluation benchmark health
+R2349,include,I3,evaluation of 10 LLM-RAG models
+R2350,include,I1,RAG for AIGC survey
+R2351,unsure,,2020 retrieval-augmented code summarization
+R2352,exclude,E2,domain RAG proposal management
+R2353,include,I2,cybersecurity RAG review incl. citation checks
+R2354,include,I1,RAG document QA review
+R2355,include,I1,retriever fine-tuning domain QA
+R2356,exclude,E2,education RAG applications survey
+R2357,include,I1,theoretical RAG review
+R2358,include,I5,secure enterprise RAG leakage taxonomy
+R2359,include,I1,"retrieval comparison for drug labels, local LLM"
+R2360,include,I1,"chunking/embedding comparison, local LLMs"
+R2361,exclude,E1,semantic image transmission
+R2362,exclude,E4,perspective article
+R2363,unsure,,SLR of RAG in higher education
+R2364,exclude,E2,HR RAG review
+R2365,include,I3,regulatory RAG evaluation with retrieval error analysis
+R2366,include,I1,RAG survey
+R2367,include,I1,RAG methodological survey
+R2368,include,I1,RAG survey
+R2369,include,I1,survey with hybrid retrieval experiment
+R2370,include,I3,healthcare RAG systematic review of methods and evaluation
+R2371,include,I5,prompt injection evaluation with RAG system
+R2372,exclude,E2,RAG for MEC resource allocation
+R2373,exclude,E2,art provenance RAG application
+R2374,include,I1,RAG survey retrievers and fusion
+R2375,include,I1,RAG review
+R2376,include,I3,RAG QA architecture and evaluation
+R2377,include,I1,"hybrid dense-keyword retrieval, small model"
+R2378,include,I2,RAG hallucination reduction drug QA
+R2379,include,I4,local code RAG with small models
+R2380,include,I2,citation reliability RAG framework
+R2381,unsure,,no abstract
+R2382,include,I1,chunking for retrieval benchmark
+R2383,exclude,E2,CRM RAG conceptual architecture
+R2384,include,I1,hybrid RRF design for self-hosted Urdu RAG
+R2385,include,I1,BM25 vs E5 Nepali legal RAG
+R2386,include,I4,biomedical RAG survey incl. latency/privacy/local
+R2387,include,I1,hybrid retrieval and GraphRAG analysis
+R2388,include,I2,healthcare RAG grounding and evaluation review
+R2389,exclude,E2,domain SLR Brazilian health data
+R2390,include,I3,medical RAG scoping review incl. evaluation
+R2391,include,I1,multilingual RAG pipeline
+R2392,unsure,,no abstract
+R2393,include,I1,DPR-based RAG evaluation
+R2394,exclude,E4,vendor whitepaper
+R2395,exclude,E4,catchword/editorial
+R2396,include,I3,SLR of enterprise RAG incl. validation
+R2397,exclude,E2,HR enterprise RAG application
+R2398,include,I1,GraphRAG and hybrid reranking benchmark
+R2399,exclude,E2,education chatbot survey
+R2400,include,I1,RAG survey sparse/dense/hybrid
+R2401,include,I3,RAG reliability review with metrics
+R2402,exclude,E4,non-English (Portuguese)
+R2403,include,I3,healthcare RAG SLR evaluation metrics
+R2404,exclude,E4,poster
+R2405,include,I1,RAG framework with hybrid retrieval evaluation
+R2406,include,I1,chunking strategies and prompt injection
+R2407,include,I1,comparison of retrieval strategies
+R2408,include,I1,multi-format RAG survey
+R2409,exclude,E4,seminar report
+R2410,exclude,E4,technical overview article
+R2411,exclude,E2,domain case study
+R2412,unsure,,no abstract
+R2413,unsure,,no abstract
+R2414,include,I2,conflicting evidence and misinformation in RAG
+R2415,exclude,E1,time-series RAG
+R2416,include,I1,GraphRAG survey
+R2417,exclude,E2,proposal automation RAG application
+R2418,exclude,E2,clinical trial screening application
+R2419,unsure,,"no abstract, multimodal"
+R2420,exclude,E2,data warehousing RAG framework
+R2421,exclude,E2,drug contraindication RAG application
+R2422,include,I3,RAG benchmark and error taxonomy
+R2423,exclude,E1,pathology image models
+R2424,include,I3,retrieval-augmented MT benchmark multilingual docs
+R2425,exclude,E2,industrial extraction ensemble
+R2426,include,I1,cross-lingual dense retrieval
+R2427,include,I1,retrieval-augmented multilingual knowledge editing
+R2428,exclude,E1,text-image multimodal generation
+R2429,exclude,E1,recommender system
+R2430,include,I4,locally deployed RAG for physics QA
+R2431,exclude,E1,recommender poisoning
+R2432,include,I1,RAG survey
+R2433,include,I1,retrieval-augmented thought process private data
+R2434,exclude,E1,behavioral authentication
+R2435,include,I3,legal RAG failure attribution
+R2436,include,I1,iterative retrieval feedback RAG
+R2437,include,I1,BM25 multilingual visual RAG benchmark analysis
+R2438,include,I5,leakage attacks in hybrid RAG
+R2439,include,I1,sparse/dense/hybrid comparison
+R2440,include,I1,RAG review
+R2441,include,I4,small language models RAG
+R2442,include,I5,RAG attacks survey
+R2443,include,I1,multi-hop retrieval method
+R2444,unsure,,multimodal retrieval augmentation survey
+R2445,include,I2,answer verification via retrieval
+R2446,include,I3,clinical RAG chatbot evaluation
+R2447,exclude,E2,workflow construction application
+R2448,include,I1,RAG review
+R2449,include,I1,retriever benchmark
+R2450,include,I1,hybrid dataset search vs RAG
+R2451,include,I1,CRAG challenge pipeline
+R2452,include,I5,poisoning detection
+R2453,include,I1,RL RAG reasoning
+R2454,include,I1,hybrid retrieval and chunking evaluation
+R2455,include,I5,black-box RAG poisoning
+R2456,include,I1,LiveRAG system with reranking
+R2457,exclude,E1,robotics VLA
+R2458,include,I3,robustness of retrieval-grounded LLM configurations
+R2459,include,I1,conversational retrieval robustness
+R2460,exclude,E1,recommender system
+R2461,include,I4,INT4 quantization
+R2462,include,I1,text-graph hybrid RAG
+R2463,include,I1,dense retriever augmentation
+R2464,include,I4,PTQ
+R2465,include,I1,rank fusion ensemble
+R2466,exclude,E3,"rule augmentation, no retrieval"
+R2467,include,I2,explanations for retrieval-augmented LLMs
+R2468,exclude,E3,peer review generation
+R2469,include,I1,rule-guided RAG
+R2470,include,I3,"related-work generation benchmark, retrieval bottlenecks"
+R2471,include,I2,abstention and citation integrity
+R2472,exclude,E1,medical VLM visual reasoning
+R2473,include,I1,dense retrieval training data
+R2474,exclude,E2,dataset with simple RAG pipeline
+R2475,include,I1,structured RAG from noisy conversations
+R2476,exclude,E1,driving VLM
+R2477,include,I5,membership inference on RAG
+R2478,include,I5,poisoned document detection
+R2479,exclude,E3,"multilingual bias benchmark, no retrieval"
+R2480,exclude,E3,clinical LLM risk framework
+R2481,unsure,,RAG used as jailbreak defense
+R2482,include,I1,SQL-based structured retrieval
+R2483,include,I1,SQLite hybrid retrieval pipeline
+R2484,include,I5,salience attack on RAG agents
+R2485,include,I4,PTQ calibration
+R2486,include,I1,dense retriever imitating sparse
+R2487,exclude,E3,grief support framework
+R2488,include,I4,quantization for edge
+R2489,include,I1,hybrid retrieval ablations
+R2490,include,I2,hallucination risk control in RAG
+R2491,exclude,E1,e-commerce sponsored search retrieval
+R2492,include,I4,quantization scaling laws
+R2493,include,I1,RAG fusion production evaluation
+R2494,exclude,E3,sparse fine-tuning
+R2495,include,I1,long-document retrieval configurations
+R2496,include,I3,RAG compliance benchmark
+R2497,exclude,E3,schema lineage extraction
+R2498,include,I2,citation-accurate academic writing
+R2499,include,I1,hybrid RRF and LLM reranking
+R2500,include,I2,citation-aware scientific RAG

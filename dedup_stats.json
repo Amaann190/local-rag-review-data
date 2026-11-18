@@ -1,0 +1,9 @@
+{
+ "retrieved_total": 3693,
+ "retrieved_openalex": 2000,
+ "retrieved_arxiv": 1693,
+ "removed_no_title": 1,
+ "duplicates_removed": 698,
+ "unique_records": 2994,
+ "unique_without_abstract": 98
+}

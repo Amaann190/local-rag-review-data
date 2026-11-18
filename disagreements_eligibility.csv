@@ -1,0 +1,53 @@
+record_id,claude,claude_facets,claude_note,codex,codex_facets,codex_note
+R0012,yes,F1,"BM25 vs hybrid RRF on Cranfield; IR not RAG, borderline",no,,Pure IR benchmark without RAG or document QA
+R0140,yes,F1,calibrated log-odds fusion of BM25 and dense scores,no,,Pure IR fusion benchmark without RAG or document QA
+R0163,yes,F1,"BM25-supervised embedding adaptation, private data; borderline",no,,Embedding adaptation is retrieval without RAG evaluation
+R0203,yes,F3,asymmetric FP quantization for LLMs,no,,Generic LLM quantization without RAG or local setting
+R0267,yes,F3,floating-point quantization for LLM inference,no,,Generic quantization without RAG or edge deployment
+R0290,yes,F3,quantisation energy and inference time of code LLM,no,,Quantization study without RAG or local deployment
+R0291,yes,F3,1.58-bit ternary quantization fine-tuning for deployment,no,,Generic ternary LLM study without RAG
+R0292,no,,"UAV report application, hybrid retrieval not studied",yes,F2,Ablates evidence constraints and grounding in UAV RAG
+R0298,no,,"RAG system implementation, no evaluation",yes,F1,Compares hybrid retrieval with single retrieval methods
+R0311,no,,"Vedanta RAG dataset, no core facet",yes,F1;F2,Tests keyword hybrid and factual grounding
+R0313,no,,"ANN search metric, no RAG facet",yes,F6,Tests retrieval quality metric on downstream RAG
+R0317,yes,F1,BM25+embedding+reranker hybrid RAG evaluated with MRR/recall,no,F1,Domain hybrid approach lacks facet ablation
+R0319,yes,F2,Similarity-threshold abstention/fallback with wrong-confident rates,no,,Dense FAQ matching without RAG or retrieved grounding
+R0333,no,,Argumentation-based explainability; no core facet,yes,F2,Tests evidence-grounded explainable RAG
+R0397,yes,F1,Experimental analysis of hybrid search and fusion,no,,Pure IR fusion benchmark without RAG evaluation
+R0468,yes,F1,Compact encoder fused with BM25 via RRF,no,,Biomedical literature search without RAG or document QA
+R0520,no,,Domain LLM benchmark; embedding eval incidental,yes,F6,Introduces and evaluates aviation RAG benchmark
+R0528,no,,Ontology alignment; no facet,yes,F2,Tests retrieved mappings for hallucination reduction
+R0824,yes,F3,"4-bit small models via Ollama, fine-tuning vs RAG",no,,Small model studied without local deployment constraint
+R0834,no,,"small dense retriever training, no facet",yes,F5,Compares multilingual retriever performance
+R0954,yes,F1,"Hybrid BM25+dense RRF, production evaluation",no,F1,Domain deployment lacks isolated hybrid comparison
+R0959,yes,F3,Edge-device LLM compression and inference speed,no,,Edge LLM compression without RAG
+R0969,yes,F2;F6,Attribution benchmark for grounded dialogue,no,,Grounded dialogue benchmark does not specify retrieval
+R0972,no,F6,Cultural benchmark; no quantitative results stated,yes,F6,Introduces RAG evaluation framework for cultural QA
+R1031,yes,F1,"Hybrid lexical+dense RAG evaluated, 8B models",no,F1,Domain application lacks hybrid versus dense comparison
+R1081,yes,F2,Faithfulness hallucination detection,no,,General faithfulness detection not retrieved-context specific
+R1168,no,,Grammar benchmark; not multilingual retrieval,yes,F5;F6,Benchmark covers low-resource retrieval-augmented language tasks
+R1202,yes,F1,"Dense, sparse and visual hybrid retrieval",no,F1,Hybrid used without sparse versus dense ablation
+R1273,yes,F1;F2,BM25+MiniLM RRF hallucination detection,no,,General claim verification not specific to RAG
+R1505,yes,F3,"Edge deployment memory trade-offs, quantization",no,,Edge LLM compression without RAG
+R1514,no,,"Logic-augmented reasoning, no facet",yes,F2,Tests stepwise evidence grounding against hallucinations
+R1585,no,F3,Local clinical RAG demo; no quantitative evaluation stated,yes,F3,Evaluates local hospital RAG deployment
+R1706,yes,F2,Evidence verification and citation grounding,no,F2,Grounding framework has no reported evaluation
+R1727,yes,F1,Reranking and retrieval enhancements benchmarked on FinanceBench,no,,Metadata reranking outside specified facets
+R1791,yes,F1,"No abstract; title clearly retrieval fusion for RAG, evidence assumed",no,F1,Title suggests fusion but abstract absent
+R1844,yes,F3,Quantization targeting on-device NPU inference,no,,Edge quantization without RAG
+R1916,no,,Ontology RAG; hybrid retrieval not compared,yes,F2,Tests ontology context grounding and irrelevant evidence
+R2005,no,,Domain benchmark; RAG only a setting,yes,F5;F6,Korean QA benchmark tests RAG and translated versions
+R2020,no,,Agent planning dataset,yes,F6,Planning benchmark ablates RAG and retriever
+R2067,no,F3,Local RAG feasibility; no quantitative evaluation,yes,F3,Evaluates offline MacBook RAG deployment
+R2241,yes,F1,Reranking/context selection for multimodal RAG,no,,Multimodal reranking outside specified facets
+R2255,yes,F2;F5,Multilingual context-grounded reasoning with counterfactual contexts,no,,Facts supplied directly without retrieval
+R2295,yes,F1,Hybrid retrieval with reranking pipeline for long-text checks,no,,Domain application lacks isolated facet comparison
+R2314,no,F3,Constraint claimed but not studied quantitatively,yes,F3,Tests resource-constrained RAG deployment
+R2502,no,,"Multimodal claim verification benchmark, not RAG evaluation",yes,F6,Benchmarks scientific claim verification with RAG analysis
+R2621,no,,Graph retrieval; hybrid only seeding,yes,F2,Tests complete evidence recovery for multi-hop RAG
+R2644,no,,"Pipeline baseline comparison, no facet",yes,F6,Compares RAG baselines under matched token budgets
+R2700,no,,"Retrieval toolkit demo, not RAG",yes,F5,Tests multilingual document retrieval toolkit
+R2710,no,,"Retrieval benchmark audit, no facet",yes,F6,Audits multi-hop RAG benchmark deployment costs
+R2867,no,,Model-native evidence selection; not sparse-dense facet,yes,F2,Tests evidence selection across noisy RAG contexts
+R2925,yes,F1;F2,Sparse and dense retrieval with self-assessment,no,F1,Sparse dense use lacks isolated comparison
+R2993,no,,Decentralized routing; not privacy attack or local facet,yes,F4,Tests decentralized privacy-preserving RAG retrieval

@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R2501,include,I1,hybrid retrieval and reranking study for scientific RAG
+R2502,unsure,I3,multimodal claim verification benchmark with RAG analysis
+R2503,include,I2,retrieval noise robustness reduces hallucination
+R2504,include,I5,selective disclosure against prompt leaking in RAG
+R2505,exclude,E6,likely duplicate of R2504 (SD-RAG preprint version)
+R2506,include,I4,quantization for LLM inference efficiency
+R2507,include,I5,PII leakage defense in RAG
+R2508,include,I5,search leakage and privacy in retrieval-augmented LMs
+R2509,include,I1,agentic RAG retrieval training
+R2510,include,I1,hybrid search benchmarking infrastructure
+R2511,include,I2,claim-level grounding/citation/abstention evaluation protocol
+R2512,include,I5,security framework for RAG systems
+R2513,include,I1,BM25+dense RRF legal retrieval
+R2514,include,I5,RAG security threats analysis
+R2515,include,I5,poisoning detection for RAG
+R2516,include,I5,data leakage prevention in RAG
+R2517,unsure,I5,agent prompt injection/memory poisoning; retrieval unclear
+R2518,include,I5,prompt injection benchmark for RAG agents
+R2519,include,I5,review of leakage/poisoning in enterprise retrieval apps
+R2520,include,I5,prompt injection defenses for low-cost RAG chatbots
+R2521,include,I5,indirect prompt injection on local RAG
+R2522,include,I5,poisoning and injection defense for RAG
+R2523,include,I5,RAG pipeline security framework
+R2524,unsure,I5,no abstract; RAG privacy title
+R2525,include,I5,defense against hallucination and injection in RAG
+R2526,exclude,E3,LLM security survey without retrieval focus
+R2527,include,I5,RAG security and privacy survey incl on-device
+R2528,unsure,I5,no abstract; RAG security review
+R2529,include,I5,poisoning of deep research agents
+R2530,include,I5,RAG security review
+R2531,include,I2,knowledge conflict handling in RAG
+R2532,include,I3,multimodal RAG evaluation metrics incl text
+R2533,exclude,E2,assistive device application of RAG
+R2534,include,I1,hybrid legal retrieval with RRF and reranking
+R2535,exclude,E3,"retriever for KG embedding link prediction, not QA/RAG"
+R2536,include,I3,"evaluates RAG support system, hallucination reduction"
+R2537,include,I1,hybrid BM25+dense RRF medical RAG
+R2538,include,I2,Self-RAG self-reflection and citation accuracy
+R2539,unsure,I1,"hybrid retrieval for job matching, not document QA"
+R2540,include,I5,corpus poisoning and hybrid retrieval defense
+R2541,include,I1,multilingual embeddings for Arabic RAG retrieval
+R2542,include,I1,semantic-lexical fusion retrieval
+R2543,include,I2,unsupported content detection in RAG
+R2544,include,I1,graph-based multi-hop RAG retrieval
+R2545,include,I5,retrieval-time privacy governance benchmark
+R2546,exclude,E2,hybrid RAG used as feature for risk assessment
+R2547,include,I2,hallucination detection in RAG
+R2548,unsure,I4,"local-first hybrid retrieval memory, no evaluation reported"
+R2549,unsure,I1,no abstract; security log retrieval
+R2550,include,I4,mixed-precision quantization
+R2551,include,I2,context-faithful small RAG model
+R2552,unsure,I1,no abstract; structure-guided retrieval for manuals QA
+R2553,include,I1,multilingual dense retrieval bias correction
+R2554,include,I1,"compares sparse/dense/RRF/reranker configs, local LLM"
+R2555,include,I1,Boolean and multilingual retrieval for RAG
+R2556,unsure,I4,domain extraction pipeline with hybrid retrieval and local LLMs
+R2557,include,I1,hybrid retrieval and rewriting for multi-turn RAG
+R2558,include,I3,RAG challenge evaluation report
+R2559,include,I5,integrity attacks on offline edge RAG
+R2560,include,I3,fault-injection evaluation of RAG pipelines
+R2561,include,I5,knowledge extraction attack on RAG
+R2562,include,I5,data poisoning attack on RAG
+R2563,exclude,E2,blockchain healthcare infra; RAG incidental
+R2564,include,I4,quantization-aware training
+R2565,include,I1,KG-driven RAG retrieval
+R2566,include,I1,utility-oriented retrieval for RAG
+R2567,include,I1,multilingual hybrid retrieval for QA
+R2568,exclude,E3,general LLM hallucination survey
+R2569,exclude,E4,non-English (Indonesian)
+R2570,include,I1,embedding benchmark and local models for RAG
+R2571,exclude,E2,airline chatbot application
+R2572,include,I4,mixed-precision quantization
+R2573,exclude,E1,sequential recommendation
+R2574,include,I2,refusal/hallucination control in RAG
+R2575,include,I5,membership leakage auditing in RAG
+R2576,exclude,E3,instruction data selection
+R2577,exclude,E3,"prompt disambiguation, no retrieval"
+R2578,include,I4,systematic review of small local LMs
+R2579,include,I4,small language model survey
+R2580,unsure,I4,position paper on SLMs for agents
+R2581,exclude,E3,"relation extraction, no retrieval"
+R2582,include,I4,small local models evaluated for inference cost
+R2583,include,I4,SLMs with RAG and quantization evaluation
+R2584,include,I4,SLM survey
+R2585,exclude,E4,descriptive overview article
+R2586,unsure,I4,no abstract; SLMs on edge devices
+R2587,include,I4,SLM survey with on-device benchmarks
+R2588,include,I4,local small LLM RAG framework
+R2589,exclude,E4,"artifact/link listing, not a paper"
+R2590,include,I5,guardrails for injection and vector poisoning
+R2591,exclude,E3,"instruction evolution, no retrieval"
+R2592,include,I4,robustness of quantized LLMs
+R2593,exclude,E2,question paper generation app
+R2594,unsure,I1,title/abstract mismatch; abstract is RAG review
+R2595,include,I4,on-premise RAG on consumer hardware
+R2596,exclude,E2,sales agent benchmark; RAG incidental
+R2597,include,I1,ranking for conversational memory retrieval on CPU
+R2598,include,I4,post-training quantization
+R2599,include,I4,post-training quantization
+R2600,exclude,E2,on-device assistant; RAG component not evaluated
+R2601,exclude,E3,uncertainty estimation without retrieval
+R2602,include,I1,dense retrieval augmentation
+R2603,include,I4,quantization for edge devices
+R2604,exclude,E3,software testing LLM survey
+R2605,include,I1,agentic RAG systematization
+R2606,include,I5,agentic attack surface incl RAG poisoning
+R2607,exclude,E2,solar decision support application
+R2608,include,I4,quantization for diffusion LMs
+R2609,unsure,I1,multimodal VQA RAG challenge solution
+R2610,unsure,,no abstract
+R2611,include,I4,FP4 quantization
+R2612,include,I2,source attribution in RAG
+R2613,include,I1,local RAG retrieval evaluation with refusal
+R2614,include,I2,NLI citation auditing
+R2615,include,I5,poisoning multimodal RAG
+R2616,unsure,I5,no abstract; differentially private RAG
+R2617,include,I2,faithful RAG generation
+R2618,include,I1,hybrid sparse-dense RRF evaluation
+R2619,exclude,E2,walkability recommendation application
+R2620,include,I4,ultra-low-bit quantization
+R2621,include,I1,graph-augmented retrieval for multi-hop RAG
+R2622,include,I3,evaluates groundedness and retrieval of hybrid assistant
+R2623,include,I1,structure-aware retrieval with citations
+R2624,include,I1,learned sparse retrieval
+R2625,include,I5,private outsourced retrieval
+R2626,unsure,I1,no abstract; cross-lingual spoken retrieval
+R2627,include,I1,lightweight hybrid search library
+R2628,include,I1,hybrid retrieval multi-agent scientific RAG
+R2629,include,I4,ultra low-bit quantization
+R2630,include,I4,post-training quantization
+R2631,include,I4,edge-native RAG document selector
+R2632,exclude,E1,speech model quantization
+R2633,include,I1,knowledge base refinement for RAG
+R2634,unsure,I1,domain RAG system with retrieval evaluation
+R2635,exclude,E3,statistics benchmark; RAG minor
+R2636,exclude,E1,rank fusion for feature ranking
+R2637,include,I1,legal case retrieval with rank fusion
+R2638,include,I1,statutory retrieval dense-sparse fusion
+R2639,exclude,E1,recommender system poisoning
+R2640,include,I5,poisoning via reused reasoning cache retrieval
+R2641,include,I2,hallucination/abstention vs RAG
+R2642,include,I3,multi-hop retrieval evaluation dataset
+R2643,exclude,E1,image geolocalization
+R2644,include,I3,RAG baselines evaluation
+R2645,include,I1,structure-aware chunking with hybrid retrieval
+R2646,include,I1,structure-guided retrieval for factual QA
+R2647,include,I2,attribution traces in RAG
+R2648,exclude,E2,cross-domain LLM application review
+R2649,include,I1,compares embedding models for RAG retrieval
+R2650,include,I4,quantization trade-offs for deployment
+R2651,include,I1,sparse/dense/fusion scientific retrieval
+R2652,include,I1,fusion for biomedical retrieval
+R2653,include,I2,sufficiency gating and abstention
+R2654,include,I2,sufficient context and abstention in RAG
+R2655,include,I2,analysis of sufficiency predicates in selective RAG
+R2656,exclude,E2,autonomous coding agent; RAG incidental
+R2657,unsure,I4,local-first agent memory with fusion retrieval
+R2658,exclude,E3,"hallucination and prompting, no retrieval"
+R2659,exclude,E3,NLG hallucination survey
+R2660,include,I4,LLM compression survey
+R2661,include,I4,efficient LLM inference survey
+R2662,unsure,I3,short survey ASR and RAG
+R2663,include,I1,quality-aware literature retrieval in RAG
+R2664,include,I4,quantized LLMs on edge device
+R2665,exclude,E2,embodied agent application
+R2666,include,I1,hybrid retrieval in neuro-symbolic reasoning
+R2667,exclude,E2,retrieval for ICL demos in relation extraction
+R2668,include,I2,faithfulness monitoring in RAG
+R2669,include,I1,hard negatives for dense retrieval
+R2670,exclude,E3,system prompt poisoning; retrieval incidental
+R2671,include,I3,ablation evaluation of RAG pipelines
+R2672,exclude,E4,thesis
+R2673,include,I3,text-and-table RAG benchmark
+R2674,include,I4,on-prem RAG with open-source LLM
+R2675,include,I2,noise robustness in RAG
+R2676,include,I4,KV cache quantization
+R2677,include,I1,KG construction RAG
+R2678,include,I1,hierarchical KG RAG retrieval
+R2679,exclude,E3,data-to-text benchmark
+R2680,exclude,E2,VR avatar application
+R2681,include,I4,edge RAG LLMs on IoT devices
+R2682,exclude,E1,music recommendation
+R2683,exclude,E1,image-grounded VQA retrieval
+R2684,include,I4,inference-efficient SLM/LLM collaboration
+R2685,unsure,I1,no abstract; time-aware RAG in agriculture
+R2686,exclude,E3,"code abstention, no retrieval"
+R2687,include,I1,adaptive stopping for iterative retrieval
+R2688,include,I1,query/document expansion for retrieval
+R2689,include,I1,dense retriever fine-tuning
+R2690,include,I1,Greek retrieval adaptation and RAG benchmark
+R2691,exclude,E2,lesson plan generation application
+R2692,include,I1,hybrid multimodal agentic RAG retrieval
+R2693,include,I1,hybrid retrieval for telecom RAG
+R2694,unsure,I1,corpus release; no retrieval evaluated
+R2695,include,I4,small model RAG with hybrid search for edge
+R2696,include,I4,quantized LLM inference
+R2697,include,I4,weight-only quantization
+R2698,include,I4,ternary quantization for edge
+R2699,include,I1,test-time compute for dense retrieval
+R2700,include,I1,dense retrieval toolkit
+R2701,include,I1,dense retrieval toolkit
+R2702,exclude,E2,FHE code generation; RAG incidental
+R2703,include,I1,hybrid retrieval knowledge base framework
+R2704,include,I2,hallucination evaluation and mitigation incl RAG
+R2705,include,I2,mechanism of in-context retrieval augmentation
+R2706,include,I2,citation attribution under context compression
+R2707,include,I3,evidence-based RAG evaluation
+R2708,include,I4,k-bit inference scaling laws
+R2709,exclude,E4,"clinician guide, tutorial"
+R2710,include,I1,embedder benchmarking for multi-hop retrieval
+R2711,unsure,I5,no abstract; multi-agent memory poisoning
+R2712,include,I1,cross-lingual RAG retrieval bias
+R2713,unsure,I5,no abstract; LLMOps security review
+R2714,include,I1,enterprise RAG survey incl hybrid retrieval
+R2715,include,I1,graph RAG personal AI with benchmark
+R2716,include,I2,citation verifiability analysis
+R2717,include,I1,hybrid fusion failure analysis
+R2718,include,I5,privacy leakage in RAG
+R2719,exclude,E3,"summarization faithfulness, no retrieval"
+R2720,unsure,I4,no abstract; SLM-LLM hybrid
+R2721,include,I3,RAG reliability benchmarking
+R2722,include,I3,instruction following in RAG scenarios
+R2723,unsure,I5,agent prompt injection SoK; retrieval unclear
+R2724,exclude,E3,"metadata equity index, no LLM retrieval"
+R2725,include,I4,on-device local-first RAG memory
+R2726,include,I1,Amharic multilingual retrieval
+R2727,exclude,E2,finance LLM survey
+R2728,include,I1,multilingual dense retrieval thresholds
+R2729,exclude,E3,chat UI meta access
+R2730,include,I5,promptware kill chain incl retrieval poisoning
+R2731,include,I4,small language models for constrained devices
+R2732,exclude,E2,musicology benchmark using RAG
+R2733,include,I1,biomedical RAG survey
+R2734,include,I2,hallucination detection limits in RAG
+R2735,exclude,E3,arithmetic geometry in LLMs
+R2736,exclude,E4,reporting guideline
+R2737,exclude,E3,general hallucination theory
+R2738,include,I4,post-training quantization
+R2739,include,I1,sparse/LSA/RRF retrieval with source attribution
+R2740,include,I4,local open LLMs hallucination benchmark
+R2741,unsure,I1,"issue-commit retrieval, not document QA"
+R2742,include,I1,KG-guided hybrid RAG
+R2743,include,I1,efficient multi-hop RAG
+R2744,include,I1,adaptive retrieval decision
+R2745,include,I4,quantization effects on knowledge recall
+R2746,include,I5,poisoning defense in RAG
+R2747,exclude,E3,"tool-augmented finance agents, no retrieval"
+R2748,include,I4,on-device RAG guide with model benchmarking
+R2749,exclude,E3,misinformation generation
+R2750,include,I1,KG-based retrieval vs RAG

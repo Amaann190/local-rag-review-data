@@ -1,0 +1,6 @@
+# Paper build fragments (the paper itself is published separately)
+v3_body.tex
+core_bib.tex
+# Per-batch scratch scripts
+extraction/w*/
+__pycache__/

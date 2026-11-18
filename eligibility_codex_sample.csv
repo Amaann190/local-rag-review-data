@@ -1,0 +1,301 @@
+record_id,eligible,facets,evidence,note
+R0012,no,,yes,Pure IR benchmark without RAG or document QA
+R0013,yes,F5,yes,Compares Khmer RAG retrievers and generators
+R0032,yes,F1,yes,Compares keyword-first hybrid with dense RAG
+R0038,yes,F1;F6,yes,Tests RAG evaluation protocol and lexical semantic fusion
+R0051,no,F1,yes,Domain chatbot lacks hybrid retrieval comparison
+R0062,no,F1,yes,Hybrid retrieval used without facet comparison
+R0070,yes,F3,yes,Evaluates fully local CPU-only RAG architecture
+R0090,no,F1;F3;F6,no,Review lacks explicit literature-search method
+R0101,no,F4,no,Threat analysis lacks reported evaluation
+R0104,no,,no,No abstract and title does not identify RAG
+R0105,no,,no,GraphRAG survey lacks explicit literature-search method
+R0121,no,,no,Compression survey does not study RAG
+R0122,no,,no,Compression survey does not study RAG
+R0124,no,F2;F5,no,Focused survey has no literature-search method
+R0133,yes,F2,yes,PRISMA search and synthesis of RAG hallucination studies
+R0139,no,F3,no,Title suggests local RAG but no evidence abstract
+R0140,no,,yes,Pure IR fusion benchmark without RAG or document QA
+R0163,no,,yes,Embedding adaptation is retrieval without RAG evaluation
+R0191,yes,F5,yes,Compares Persian RAG retrieval and generation
+R0193,no,F4,no,Threat discussion lacks experiments or search method
+R0195,no,F4,no,Broad LLM security review lacks search method
+R0203,no,,yes,Generic LLM quantization without RAG or local setting
+R0208,no,,yes,Agent memory retrieval is not document QA or RAG
+R0224,yes,F1,yes,Compares hybrid retrieval for conversational memory QA
+R0227,no,,yes,Agent security benchmark lacks RAG-specific analysis
+R0265,no,,yes,Domain application lacks comparison of a specified facet
+R0267,no,,yes,Generic quantization without RAG or edge deployment
+R0278,no,F2,no,Title suggests answerability but abstract absent
+R0290,no,,yes,Quantization study without RAG or local deployment
+R0291,no,,yes,Generic ternary LLM study without RAG
+R0292,yes,F2,yes,Ablates evidence constraints and grounding in UAV RAG
+R0298,yes,F1,yes,Compares hybrid retrieval with single retrieval methods
+R0311,yes,F1;F2,yes,Tests keyword hybrid and factual grounding
+R0313,yes,F6,yes,Tests retrieval quality metric on downstream RAG
+R0317,no,F1,yes,Domain hybrid approach lacks facet ablation
+R0319,no,,yes,Dense FAQ matching without RAG or retrieved grounding
+R0326,yes,F2;F3,yes,Evaluates faithfulness of offline institutional RAG
+R0328,no,,yes,Graph retrieval accuracy outside specified facets
+R0333,yes,F2,yes,Tests evidence-grounded explainable RAG
+R0341,no,,yes,Domain RAG application lacks specified facet comparison
+R0347,no,,yes,Structure-aware retrieval outside specified facets
+R0365,yes,F2;F3,yes,Tests citation authenticity and faithfulness in local RAG
+R0385,yes,F2,yes,Evaluates retrieved-context hallucination detection and correction
+R0397,no,,yes,Pure IR fusion benchmark without RAG evaluation
+R0398,no,,yes,Knowledge graph method outside specified facets
+R0399,yes,F2;F5,yes,Tests Bangla guideline grounding and hallucinations
+R0434,yes,F5,yes,Evaluates multilingual retrieval and translation pathways
+R0459,yes,F6,yes,Introduces heterogeneous document QA benchmark
+R0468,no,,yes,Biomedical literature search without RAG or document QA
+R0471,yes,F6,yes,Benchmark evaluates RAG grounding and evidence attribution
+R0494,no,F5,no,Cross-lingual retrieval survey lacks explicit search method
+R0514,yes,F2,yes,Tests support-aligned citations in retrieved document QA
+R0520,yes,F6,yes,Introduces and evaluates aviation RAG benchmark
+R0528,yes,F2,yes,Tests retrieved mappings for hallucination reduction
+R0555,no,,yes,Accelerator study lacks local or edge constraint
+R0574,yes,F2;F5,yes,Chinese citation faithfulness dataset and experiments
+R0633,yes,F2,yes,Tests abstention-triggered retrieval against hallucination
+R0657,yes,F6,yes,Conversational RAG benchmark with citation labels
+R0681,yes,F5,yes,Evaluates cross-lingual evidence integration in RAG
+R0683,yes,F5,yes,Compares transfer methods for non-English retrieval
+R0708,no,,yes,Generic LLM compression without RAG or device setting
+R0709,no,,yes,Architecture comparison lacks specified facet study
+R0720,no,,yes,Cache efficiency lacks local deployment constraint
+R0740,yes,F2,yes,Tests derivation prompting for grounded answers
+R0745,no,,yes,Generic chatbot study lacks facet comparison
+R0749,yes,F1,yes,Compares dense and hybrid RAG pipelines
+R0773,yes,F3;F4,yes,Evaluates edge-cloud RAG privacy and latency
+R0779,yes,F4,yes,Tests differential privacy against GraphRAG reconstruction
+R0790,yes,F1;F3,yes,Ablates hybrid retrieval using local 7B model
+R0813,no,,yes,Structure treatments outside specified facets
+R0815,no,,no,No abstract and title does not clearly meet facet
+R0823,yes,F1;F2,yes,Compares hybrid against vector-only scientific QA
+R0824,no,,yes,Small model studied without local deployment constraint
+R0830,no,,yes,Dense retrieval training outside specified facets
+R0834,yes,F5,yes,Compares multilingual retriever performance
+R0837,yes,F2;F6,yes,Evaluates citation integrity and grounding metrics
+R0845,no,,no,No abstract and title alone does not establish RAG
+R0880,yes,F2,yes,Tests reliability gating and evidence support
+R0924,no,,yes,Generic RAG case study lacks facet comparison
+R0926,yes,F1;F5,yes,Compares dense sparse ensembles across Korean and English
+R0937,yes,F2,yes,Tests rejection of hallucination-prone RAG queries
+R0938,no,,yes,Domain RAG application lacks facet ablation
+R0940,yes,F2,yes,Tests detection of poor retrieved documents
+R0954,no,F1,yes,Domain deployment lacks isolated hybrid comparison
+R0956,yes,F1,yes,Hybrid retrieval beats dense and sparse baselines
+R0959,no,,yes,Edge LLM compression without RAG
+R0966,yes,F3,yes,Ablates on-premises RAG retrieval and latency
+R0969,no,,yes,Grounded dialogue benchmark does not specify retrieval
+R0972,yes,F6,yes,Introduces RAG evaluation framework for cultural QA
+R0975,yes,F1;F2,yes,Evaluates hybrid RAG and refusal behavior
+R0989,yes,F1,yes,Compares sparse dense and fused retrieval for RAG
+R1030,yes,F2,yes,Tests retrieved-evidence hallucination detection
+R1031,no,F1,yes,Domain application lacks hybrid versus dense comparison
+R1043,yes,F1,yes,Tests adaptive sparse dense fusion for RAG
+R1058,no,F4,no,Title identifies poisoning but abstract absent
+R1059,no,,no,Generic compression survey outside RAG
+R1068,yes,F2;F6,yes,Benchmarks grounded RAG verdict faithfulness
+R1069,yes,F4,yes,Tests RAG stance poisoning and defense
+R1080,yes,F2,yes,Tests fact-level conflict handling against retrieved context
+R1081,no,,yes,General faithfulness detection not retrieved-context specific
+R1100,yes,F4,yes,Systematic mapping follows Kitchenham search guidelines
+R1104,yes,F4,yes,Tests black-box RAG knowledge extraction
+R1113,no,,yes,Legal IR ranking without RAG or document QA
+R1130,no,,yes,Generic quantization without local RAG
+R1150,yes,F5,yes,Tests cross-lingual retrieval-augmented examples
+R1160,no,,yes,Symbolic plus dense retrieval outside sparse lexical facet
+R1166,no,,yes,GraphRAG global summarization outside specified facets
+R1168,yes,F5;F6,yes,Benchmark covers low-resource retrieval-augmented language tasks
+R1174,yes,F5,yes,Tests multilingual retrieval-augmented toxicity mitigation
+R1182,no,F2;F6,no,Conceptual review lacks literature-search method
+R1187,yes,F5,yes,Evaluates code-switched retrieval-augmented generation
+R1202,no,F1,yes,Hybrid used without sparse versus dense ablation
+R1222,yes,F4,yes,Evaluates encrypted retrieval for private RAG
+R1224,no,,yes,Generic KV compression without RAG
+R1229,yes,F6,yes,Validates modular RAG evaluation framework
+R1239,no,,no,GraphRAG survey lacks explicit literature search
+R1243,yes,F4,yes,Tests GraphRAG poisoning attack
+R1248,no,,yes,Organizational case study lacks specified facet comparison
+R1249,yes,F2,yes,Evaluates citation coverage and confidence refusal
+R1255,yes,F2;F3,yes,Tests numeric grounding verifier in offline RAG
+R1273,no,,yes,General claim verification not specific to RAG
+R1276,no,F2;F6,no,Review lacks explicit literature-search method
+R1281,yes,F2,yes,Tests document-claim grounding on RAG benchmark
+R1283,yes,F2;F5,yes,Evaluates multilingual retrieval-based hallucination verification
+R1293,yes,F2,yes,Compares evidence attribution strategies in clinical RAG
+R1295,no,F1,no,Hybrid architecture proposed without quantitative evaluation
+R1332,no,,yes,Methodology IR ranking without document QA
+R1340,no,F2,no,Title suggests attribution but abstract absent
+R1372,yes,F2,yes,Tests citation verification in literature RAG
+R1375,yes,F6,yes,Benchmarks retrievers by generation utility
+R1378,yes,F3;F5,yes,Evaluates local Indonesian RAG latency and quality
+R1380,yes,F2,yes,Ablates retrieved-evidence filtering in fact-checking RAG
+R1414,no,,yes,Indirect injection not explicitly through RAG retrieval
+R1420,no,,no,General LLM engine without RAG deployment
+R1432,no,,yes,Generic quantization without local RAG
+R1433,no,,yes,Generic compression without local RAG
+R1473,yes,F4,yes,Tests GraphRAG knowledge poisoning
+R1476,yes,F5,yes,Compares multilingual scientific retrieval models
+R1482,yes,F4,yes,Evaluates RAG poisoning and defense
+R1498,yes,F6,yes,Tests RAG failure diagnostic framework
+R1505,no,,yes,Edge LLM compression without RAG
+R1514,yes,F2,yes,Tests stepwise evidence grounding against hallucinations
+R1521,no,,yes,Knowledge update method outside specified facets
+R1530,no,,no,Broad LLM review lacks search method
+R1533,no,,no,No abstract and title lacks RAG facet
+R1558,yes,F6,yes,Cross-layer reliability benchmark evaluates agentic RAG
+R1570,no,,yes,Retriever personalization outside specified facets
+R1581,yes,F5,yes,Tests Armenian retrieval embedding adaptation
+R1585,yes,F3,yes,Evaluates local hospital RAG deployment
+R1586,yes,F3,yes,Compares RAG prompting on local offline models
+R1615,no,,no,Conceptual search discussion without empirical evidence
+R1625,no,,no,LLM inference survey outside RAG
+R1626,no,,yes,Pure financial IR ranking despite RAG title
+R1645,yes,F4,yes,Tests single-document RAG poisoning
+R1650,no,,no,Review lacks literature-search method
+R1657,yes,F5;F6,yes,Validates multilingual legal RAG evaluation tool
+R1660,no,,no,Title-only mathematical IR outside RAG
+R1661,yes,F3;F4,yes,Tests privacy-preserving on-device retrieval
+R1663,yes,F2;F6,yes,Benchmarks hallucinations against retrieved contexts
+R1672,yes,F4,yes,Tests protection against GraphRAG knowledge theft
+R1675,no,,yes,Edge quantization without RAG
+R1686,no,,yes,Multimodal IR ranking outside RAG document QA
+R1697,no,,no,Title-only legal QA lacks clear retrieved-context facet
+R1706,no,F2,no,Grounding framework has no reported evaluation
+R1714,yes,F2,yes,Tests abstention under missing private-email evidence
+R1727,no,,yes,Metadata reranking outside specified facets
+R1733,yes,F4,yes,Tests distributed RAG poisoning
+R1747,yes,F5,yes,Multilingual document retrieval benchmark with comparisons
+R1783,no,,no,Review lacks explicit literature-search method
+R1790,yes,F1,yes,Tests BM25 dense mixtures in RAG
+R1791,no,F1,no,Title suggests fusion but abstract absent
+R1794,yes,F4;F6,yes,Benchmarks RAG-mediated prompt injection
+R1807,yes,F2;F5,yes,Tests bilingual RAG and evidence abstention
+R1844,no,,yes,Edge quantization without RAG
+R1847,no,F6,no,Only scaffold validation without model-backed benchmark
+R1854,no,,yes,Visual retriever outside specified facets
+R1856,yes,F4,yes,Tests injection triggers through RAG preprocessing
+R1890,no,,yes,Document parsing benchmark outside RAG evaluation
+R1896,no,,yes,General inference and IR without local RAG
+R1898,yes,F2;F3,yes,Tests local models and citation validity
+R1906,no,,yes,Generic quantization without RAG
+R1909,no,F1;F2,yes,Domain system lacks isolated facet comparison
+R1913,no,F3,no,Local toolkit lacks quantitative evaluation
+R1916,yes,F2,yes,Tests ontology context grounding and irrelevant evidence
+R1922,no,,yes,GPU runtime without local deployment constraint
+R1947,yes,F1,yes,Tunes sparse dense reranking for policy RAG
+R1974,yes,F5,yes,Tests Polish and multilingual retrievers
+R1978,no,,yes,Generic quantization without RAG
+R1979,yes,F2,yes,Tests passage attribution under noisy retrieval
+R1987,no,,yes,Generic quantization without RAG
+R2001,no,,yes,Graph retrieval planning outside specified facets
+R2004,no,,yes,Personalization outside specified facets
+R2005,yes,F5;F6,yes,Korean QA benchmark tests RAG and translated versions
+R2020,yes,F6,yes,Planning benchmark ablates RAG and retriever
+R2031,yes,F4,yes,Tests poisoned retrieved security playbooks
+R2036,yes,F6,yes,Introduces and evaluates medical RAG benchmark
+R2043,yes,F4,yes,Tests practical RAG poisoning
+R2059,no,,yes,Privacy architecture lacks RAG-specific privacy comparison
+R2065,yes,F3;F4,yes,Tests embedding inversion defense for device-cloud RAG
+R2067,yes,F3,yes,Evaluates offline MacBook RAG deployment
+R2096,yes,F3;F5,yes,Tests foreign-language queries in self-hosted RAG
+R2108,yes,F4,yes,Tests conflict-aware RAG poisoning
+R2110,no,,yes,Collaborative inference without retrieval
+R2118,no,,yes,Chunking study outside specified facets
+R2131,yes,F4,yes,Compares RAG leakage and injection controls
+R2142,yes,F1;F5,yes,Compares Punjabi sparse dense hybrid retrieval
+R2144,no,,yes,E-commerce IR outside RAG or document QA
+R2154,no,,yes,Generic quantization without RAG
+R2208,yes,F4,yes,Tests poison filtering in RAG
+R2209,yes,F4,yes,Tests query and corpus poisoning detectors
+R2228,yes,F4;F6,yes,Tests poison defense evaluation shortcuts
+R2238,yes,F2,yes,Tests retrieval sufficiency detection for code RAG
+R2241,no,,yes,Multimodal reranking outside specified facets
+R2255,no,,yes,Facts supplied directly without retrieval
+R2280,yes,F2;F6,yes,Tests citation and fabrication metrics across RAG systems
+R2290,no,,yes,Code context filtering outside specified facets
+R2292,no,,no,Title-only generic RAG outside clear facet
+R2295,no,,yes,Domain application lacks isolated facet comparison
+R2310,yes,F2,yes,Tests evidence sufficiency under noisy retrieval
+R2312,no,,yes,Gradient knowledge updates outside specified facets
+R2314,yes,F3,yes,Tests resource-constrained RAG deployment
+R2323,no,,no,No abstract and title lacks clear facet
+R2337,no,,no,Conceptual review lacks explicit search method
+R2348,yes,F6,yes,Introduces health document RAG evaluation tools and benchmark
+R2350,no,,no,Survey lacks explicit literature-search method
+R2359,yes,F1,yes,Compares sparse dense and hybrid drug-label RAG
+R2360,yes,F3;F5,yes,Compares Ukrainian retrieval and local deployment
+R2379,yes,F3,yes,Evaluates small fully local scientific code RAG
+R2385,yes,F5,yes,Compares retrievers for Nepali legal RAG
+R2393,no,,yes,Generic RAG comparison outside specified facets
+R2400,no,F1,no,Survey lacks explicit literature-search method
+R2406,no,,yes,Generic pipeline without facet-specific study
+R2435,yes,F1;F2;F6,yes,Compares fusion and evidence-constrained legal RAG evaluation
+R2437,yes,F5;F6,yes,Tests multilingual RAG benchmark representation effects
+R2446,yes,F6,yes,Tests limited-observability RAG evaluation signals
+R2450,no,,yes,Dataset search outside RAG or document QA
+R2486,yes,F1,yes,Compares sparse-inspired dense retriever on QA tasks
+R2490,yes,F2,yes,Tests retrieved-context hallucination verification
+R2502,yes,F6,yes,Benchmarks scientific claim verification with RAG analysis
+R2504,yes,F4,yes,Tests RAG selective disclosure against leakage
+R2511,no,F6,no,Evaluation protocol lacks empirical validation
+R2514,no,F4,no,Security framework lacks empirical evaluation
+R2515,yes,F4,yes,Tests RAG poisoning defense
+R2516,no,F4,no,Policy architecture lacks quantitative evaluation
+R2522,yes,F4,yes,Compares poisoning and injection detection metrics
+R2524,no,F4,no,Title-only privacy review lacks evidence
+R2534,no,,yes,Pure legal IR without RAG or document QA
+R2538,yes,F2,yes,Tests factuality and citation accuracy in RAG
+R2540,yes,F1;F4,yes,Tests hybrid retrieval against corpus poisoning
+R2551,yes,F2;F6,yes,Evaluates context faithfulness and unanswerable queries
+R2552,no,,no,Title-only structure-guided QA lacks clear facet
+R2558,yes,F6,yes,Reports shared RAG challenge and faithfulness evaluation
+R2565,no,,yes,Graph retrieval outside specified facets
+R2574,yes,F2,yes,Tests refusal and hallucination-aware RAG routing
+R2580,no,,no,Position paper outside RAG
+R2590,no,F4,no,Guardrail artifact lacks quantitative evaluation
+R2602,no,,yes,Dense IR training outside specified facets
+R2605,no,F6,no,SoK lacks explicit literature-search method
+R2612,yes,F2,yes,Compares attribution of retrieved RAG documents
+R2621,yes,F2,yes,Tests complete evidence recovery for multi-hop RAG
+R2624,no,,yes,Pure IR benchmark without RAG or document QA
+R2640,yes,F4,yes,Tests poisoning in reasoning-trace retrieval
+R2644,yes,F6,yes,Compares RAG baselines under matched token budgets
+R2649,no,,yes,Domain chatbot lacks specified facet comparison
+R2671,yes,F2;F6,yes,Tests grounding and faithfulness evaluation validity
+R2695,yes,F3,yes,Studies small model RAG under edge constraints
+R2700,yes,F5,yes,Tests multilingual document retrieval toolkit
+R2701,no,,yes,General dense retrieval toolkit outside specified facets
+R2710,yes,F6,yes,Audits multi-hop RAG benchmark deployment costs
+R2712,yes,F5,yes,Tests Arabic-English cross-lingual RAG retrieval
+R2720,no,,no,No abstract and title lacks RAG facet
+R2723,no,,yes,Agent injection study not RAG-specific
+R2741,no,,yes,Software traceability retrieval outside RAG
+R2746,yes,F4,yes,Tests attention-aware poisoning defenses
+R2748,yes,F3;F5,yes,Benchmarks on-device bilingual museum RAG
+R2753,yes,F1,yes,Tests budgeted sparse dense fusion for RAG
+R2785,no,,yes,Code-generation method outside retrieved-context grounding
+R2795,yes,F6,yes,Introduces finance multimodal RAG benchmark
+R2797,no,F4,no,Survey lacks explicit literature-search method
+R2800,no,,yes,Generic quantization without RAG
+R2807,no,,yes,Knowledge modules outside specified facets
+R2835,yes,F2;F6,yes,Tests attribution fidelity and biomedical trust index
+R2840,no,,yes,Generic quantization without RAG
+R2858,no,F1,no,Survey lacks explicit literature-search method
+R2867,yes,F2,yes,Tests evidence selection across noisy RAG contexts
+R2875,yes,F6,yes,Benchmarks RAG uncertainty across methods
+R2884,no,,yes,Pure vector retrieval outside RAG document QA
+R2897,no,,yes,Vector index benchmark outside RAG system evaluation
+R2901,yes,F4,yes,Tests visual knowledge poisoning in RAG
+R2925,no,F1,yes,Sparse dense use lacks isolated comparison
+R2930,yes,F1;F5,yes,Compares Arabic dense lexical and hybrid retrievers
+R2935,no,,yes,Self-updating retrieval outside specified facets
+R2942,yes,F4,yes,Measures self-replicating injection in RAG memory
+R2954,no,,yes,Generic quantization without RAG
+R2964,yes,F1;F5;F6,yes,Compares Bengali retrieval across language conditions
+R2967,no,,yes,Scientific IR without RAG or document QA
+R2969,yes,F2;F6,yes,Tests abstention-aware RAG evaluation with canaries
+R2976,yes,F5,yes,Tests cross-lingual retrieval on multilingual news
+R2984,no,,yes,Sparse-only IR ranking outside RAG
+R2993,yes,F4,yes,Tests decentralized privacy-preserving RAG retrieval

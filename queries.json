@@ -1,0 +1,12 @@
+[
+ {"id":"Q1","openalex":"\"retrieval augmented generation\" AND \"hybrid retrieval\"","arxiv":"abs:\"retrieval augmented generation\" AND abs:\"hybrid retrieval\""},
+ {"id":"Q2","openalex":"BM25 AND \"dense retrieval\" AND (RAG OR fusion)","arxiv":"abs:BM25 AND abs:\"dense retrieval\" AND (abs:RAG OR abs:fusion)"},
+ {"id":"Q3","openalex":"(\"reciprocal rank fusion\" OR \"fusion function\" OR \"rank fusion\") AND retrieval","arxiv":"abs:\"rank fusion\" AND abs:retrieval"},
+ {"id":"Q4","openalex":"(\"local RAG\" OR \"offline RAG\" OR \"private RAG\" OR \"on-device\") AND (\"retrieval augmented\" OR \"retrieval-augmented\")","arxiv":"(abs:local OR abs:offline OR abs:\"on-device\" OR abs:private) AND abs:\"retrieval augmented generation\""},
+ {"id":"Q5","openalex":"(citation OR attribution) AND \"grounded generation\" AND (LLM OR \"language model\")","arxiv":"(abs:citation OR abs:attribution) AND abs:\"retrieval augmented\""},
+ {"id":"Q6","openalex":"(hallucination OR abstention OR unanswerable) AND \"retrieval augmented generation\"","arxiv":"(abs:abstention OR abs:unanswerable OR abs:hallucination) AND abs:\"retrieval augmented generation\""},
+ {"id":"Q7","openalex":"(\"RAG evaluation\" OR \"evaluating retrieval augmented\" OR faithfulness) AND \"retrieval augmented generation\" AND benchmark","arxiv":"abs:evaluation AND abs:benchmark AND abs:\"retrieval augmented generation\""},
+ {"id":"Q8","openalex":"(\"code-mixed\" OR \"code-switched\" OR Hinglish OR multilingual) AND (\"dense retrieval\" OR \"retrieval augmented\")","arxiv":"(abs:\"code-mixed\" OR abs:\"code-switched\" OR abs:Hinglish OR abs:multilingual) AND (abs:\"dense retrieval\" OR abs:\"retrieval augmented\")"},
+ {"id":"Q9","openalex":"(quantization OR \"small language model\") AND (\"large language model\" OR LLM) AND (inference OR \"on-device\")","arxiv":"abs:quantization AND abs:\"large language models\" AND abs:inference"},
+ {"id":"Q10","openalex":"(\"retrieval augmented\" OR \"retrieval-augmented\" OR \"embedding inversion\") AND (poisoning OR \"prompt injection\" OR privacy OR leakage)","arxiv":"abs:\"retrieval augmented\" AND (abs:poisoning OR abs:\"prompt injection\" OR abs:privacy OR abs:leakage)"}
+]

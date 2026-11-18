@@ -1,0 +1,27 @@
+{
+ "search_date_utc": "2026-11-17T18:33:22Z",
+ "identified_total": 3693,
+ "identified_openalex": 2000,
+ "identified_arxiv": 1693,
+ "openalex_total_hits_all_queries": 108965,
+ "arxiv_total_hits_all_queries": 5350,
+ "removed_duplicates": 699,
+ "screened_title_abstract": 2994,
+ "excluded_title_abstract": 640,
+ "excluded_ta_reasons": {
+  "E3": 219,
+  "E2": 240,
+  "E1": 121,
+  "E4": 52,
+  "E6": 8
+ },
+ "assessed_eligibility": 2354,
+ "excluded_eligibility": 1095,
+ "excluded_elig_reasons": {
+  "no evidence": 371,
+  "no core facet": 723,
+  "authors' own prior version": 1
+ },
+ "included_mapping": 1259,
+ "included_core": 108
+}

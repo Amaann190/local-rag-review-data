@@ -1,0 +1,501 @@
+record_id,decision,reason_code,note
+R0127,unsure,,Compression survey; original inference evaluation unclear.
+R0130,unsure,,No abstract; RAG methods review contribution unclear.
+R0131,unsure,,Systematic RAG review; no original system evaluation stated.
+R0133,unsure,,RAG mitigation review; original method or evaluation unclear.
+R0141,exclude,E2,Retrieval supports event extraction application.
+R0146,include,I5,Tests routing hijacking and defenses in federated RAG.
+R0148,include,I4,Evaluates quantized LLM inference acceleration.
+R0151,include,I4,Evaluates sparse context selection for faster RAG inference.
+R0167,include,I1,Proposes reflective retrieval control and document filtering.
+R0168,include,I5,Evaluates adaptive security defenses for RAG.
+R0176,include,I1,Evaluates adaptive hybrid retrieval for document QA.
+R0180,include,I4,Evaluates LLM and small model inference cost routing.
+R0184,include,I5,Tests knowledge poisoning against RAG fact checking.
+R0200,exclude,E2,Retrieval supports multimodal emotion recognition application.
+R0203,include,I4,Proposes quantization for memory-limited LLM inference.
+R0204,include,I3,Introduces and evaluates document QA RAG benchmark.
+R0205,exclude,E3,Embedding benchmark without document QA or RAG evaluation.
+R0207,exclude,E3,Retrieves agents and tools rather than documents for QA.
+R0209,include,I1,Evaluates iterative retrieval and query decomposition.
+R0211,exclude,E3,IoT agent survey without retrieval focus.
+R0215,include,I2,Tests citation grounding gate for retrieval augmented appeals.
+R0217,exclude,E1,Chemical and spectral retrieval rather than language document QA.
+R0221,unsure,,Agentic RAG discussion; original method or evaluation unclear.
+R0227,exclude,E3,General agent security benchmark; RAG incidental.
+R0229,include,I2,Detects contextual hallucinations including RAG settings.
+R0234,exclude,E2,Dataset supports downstream retrieval applications only.
+R0257,include,I5,Evaluates private data extraction attacks against RAG.
+R0261,include,I4,Evaluates low precision MoE inference alignment.
+R0263,include,I3,Clinicians evaluate retrieval augmented medical QA.
+R0268,include,I1,Ablates semantic hybrid and reranked RAG retrieval.
+R0277,exclude,E3,Text retrieval fusion without document QA or RAG.
+R0280,include,I5,Evaluates indirect injection vulnerability in RAG systems.
+R0285,include,I1,Compares retrieval designs for database question answering.
+R0313,include,I3,Evaluates retrieval quality metric in downstream RAG.
+R0322,include,I3,Compares clinical summarization with and without RAG.
+R0327,exclude,E3,General LLM knowledge graph taxonomy without RAG focus.
+R0341,include,I3,Compares clinical answers with and without RAG.
+R0346,include,I3,Evaluates adaptive financial question answering RAG.
+R0352,include,I1,Evaluates retrieval model for long documents.
+R0353,include,I2,Proposes context attribution method for RAG.
+R0357,include,I1,Evaluates ontology based evidence retrieval against baselines.
+R0358,exclude,E3,Hypothesis evaluation without retrieval augmented generation.
+R0361,include,I1,Evaluates cross lingual dense passage retrieval.
+R0371,include,I1,Evaluates embedding retrieval for multilingual evidence extraction.
+R0387,exclude,E3,Summarization faithfulness without retrieval component.
+R0405,exclude,E3,General information retrieval benchmark without document QA or RAG.
+R0412,include,I3,Benchmarks multi-hop enterprise RAG and retrieval bottlenecks.
+R0414,exclude,E3,Approximate neighbor search benchmark without QA or RAG evaluation.
+R0424,include,I1,Compares five retrieval strategies for biomedical RAG.
+R0429,include,I2,Proposes document attribution and grounding detection in RAG.
+R0431,unsure,,Broad retrieval survey; original RAG evaluation unclear.
+R0433,exclude,E2,"RAG validates legal benchmark data, not studied itself."
+R0449,include,I4,Evaluates locally deployed retrieval system for trial matching.
+R0451,include,I1,Evaluates risk-aware retrieval and abstention for RAG.
+R0455,include,I5,Analyzes privacy extraction attacks on multimodal RAG.
+R0456,include,I4,Optimizes edge LLM inference with quantization.
+R0462,exclude,E3,Synthetic pretraining data study without retrieval component.
+R0471,include,I3,Introduces benchmark for evidence-grounded RAG reasoning.
+R0475,include,I4,Evaluates low-bit LLM inference efficiency.
+R0483,include,I1,Compares retrieval paradigms across RAG corpus scales.
+R0487,include,I2,Proposes RAG evidence verification and abstention framework.
+R0503,include,I5,Evaluates membership inference side channel in RAG.
+R0504,include,I1,Evaluates chunk filtering before document retrieval.
+R0514,include,I2,Proposes supported citation generation for retrieved evidence.
+R0521,include,I5,Tests camouflaged document poisoning against RAG.
+R0522,include,I4,Evaluates inference-time improvements for small models.
+R0523,include,I2,Improves citation accuracy in legal RAG answers.
+R0525,exclude,E3,Long-context reasoning benchmark; RAG only ancillary.
+R0526,include,I3,Evaluates retrieval utilization across small model scales.
+R0527,include,I3,Compares sparse and dense RAG on legal benchmarks.
+R0537,include,I1,Ablates reranking and context size in policy RAG.
+R0538,include,I3,Proposes and compares enterprise RAG evaluation metrics.
+R0539,exclude,E3,Synthetic data generation without retrieval.
+R0552,include,I2,Evaluates hallucination adherence metric for document contexts.
+R0556,include,I1,Evaluates chapter-aware hybrid retrieval for ESG extraction.
+R0561,include,I1,Evaluates iterative hybrid retrieval in smart grid QA.
+R0566,include,I1,Evaluates hybrid memory retrieval for conversational QA.
+R0567,include,I1,Benchmarks curriculum gated hybrid educational retrieval.
+R0570,include,I2,Proposes retrieval backed citation and hallucination correction.
+R0592,include,I1,Ablates hybrid retrieval in lightweight clinical RAG.
+R0595,exclude,E2,RAG supports climate research agent without component analysis.
+R0601,include,I3,Introduces full pipeline RAG evaluation framework.
+R0602,include,I1,Evaluates fused memory retrieval for conversational QA.
+R0607,unsure,,Edge inference survey; original evaluation unclear.
+R0611,exclude,E3,Pretraining corpus study without retrieval component.
+R0613,include,I1,Evaluates compact multi-hop retrieval for QA.
+R0614,unsure,,GraphRAG survey and conceptual legal system only.
+R0630,include,I2,Routes uncertain questions to RAG to reduce hallucinations.
+R0634,include,I5,Evaluates practical document poisoning attacks on RAG.
+R0638,include,I2,Optimizes attribution to retrieved context in RAG.
+R0639,include,I1,Evaluates graph retrieval and reranking in code RAG.
+R0642,unsure,,No abstract; document QA retrieval contribution unclear.
+R0650,include,I5,Evaluates firewall for RAG security threats.
+R0656,include,I1,Proposes adaptive multilingual retrieval for cultural QA.
+R0663,include,I2,Detects token-level hallucinations in RAG.
+R0669,include,I4,Evaluates locally runnable prompt injection classifier.
+R0676,include,I3,Introduces multilingual benchmark for retrieval curation.
+R0677,include,I3,Evaluates personalized memory graph RAG agents.
+R0684,exclude,E1,Text-to-image retrieval and generation.
+R0686,include,I1,Evaluates crosslingual retrieval augmented prompting.
+R0691,include,I4,Benchmarks local RAG within laptop memory constraints.
+R0692,include,I3,Proposes per-evidence RAG evaluation framework.
+R0695,exclude,E4,Hardware sizing guide presented as publication.
+R0705,include,I1,Evaluates dynamic weighting of hybrid RAG retrieval.
+R0718,exclude,E2,Retrieval supports event extraction application.
+R0719,include,I1,Evaluates multimodal graph RAG document processing.
+R0732,include,I5,Evaluates single document RAG poisoning attack.
+R0736,unsure,,Edge deployment survey; original inference evaluation unclear.
+R0741,include,I1,Compares embeddings and retrieval contexts for educational QA.
+R0743,exclude,E2,Retrieval supports healthcare agent without component analysis.
+R0749,include,I1,Compares retrieval and chunking choices for RAG.
+R0751,include,I4,Evaluates RAG latency and cost orchestration.
+R0755,include,I2,Evaluates hallucination and coverage error detection in RAG.
+R0769,include,I3,Compares three agentic RAG workflows.
+R0771,include,I3,Compares clinical RAG and nonretrieval models.
+R0776,include,I1,Evaluates dialect aware retrieval and reranking.
+R0782,include,I1,Evaluates multilingual document retrieval embeddings.
+R0785,exclude,E2,RAG supports financial model; component not analyzed.
+R0791,include,I1,Ablates reranking and other medical RAG components.
+R0795,include,I2,Improves evidence grounding in crosslingual RAG.
+R0798,include,I4,Evaluates small model reasoning and inference efficiency.
+R0800,include,I5,Evaluates distributed poisoning attacks against RAG.
+R0809,exclude,E3,Toponym entity retrieval without document QA or RAG.
+R0813,include,I1,Ablates document structure mechanisms for RAG retrieval.
+R0815,unsure,,No abstract; controlled RAG evaluation indicated by title.
+R0817,include,I4,Evaluates quantized LLM inference on long contexts.
+R0828,include,I5,Proposes private distributed document retrieval for LLMs.
+R0832,exclude,E1,Private image generation and retrieval.
+R0835,exclude,E1,"Building energy feature ranking, not language retrieval."
+R0844,include,I4,Evaluates fast quantized LLM inference.
+R0847,include,I1,Evaluates evidence pruning for multi-document QA.
+R0854,include,I1,Evaluates sparse retrieval and reranking for QA.
+R0857,exclude,E3,Biomedical literature retrieval without QA or RAG.
+R0863,include,I4,Evaluates collaborative edge LLM inference.
+R0864,include,I2,Evaluates claim verification and grounding in educational RAG.
+R0868,unsure,,Compression review; original inference evaluation unclear.
+R0872,unsure,,Inference compression survey; original evaluation unclear.
+R0873,include,I4,Evaluates quantized LLM inference for advertising.
+R0880,include,I2,Evaluates reliability gating and grounding in RAG.
+R0894,include,I4,Tests compressed models on edge devices.
+R0895,include,I3,Evaluates local RAG across multiple benchmarks.
+R0925,include,I3,Compares fine-tuned LLM with RAG enhancement.
+R0930,include,I1,Improves document retrieval for legal QA.
+R0931,include,I3,Evaluates RAG factual accuracy on private knowledge.
+R0937,include,I2,Trains RAG systems to avoid hallucinated answers.
+R0946,exclude,E2,RAG supports software entity extraction task.
+R0947,exclude,E3,Fake news detection; retrieval not indicated.
+R0950,include,I3,Introduces private document RAG benchmark.
+R0961,unsure,,Review cites tool results; original evaluation unclear.
+R0991,include,I3,Compares nine astrophysics RAG agent configurations.
+R0996,include,I3,Compares clinical RAG models against nonretrieval counterparts.
+R1000,include,I1,Compares twelve clinical RAG retrieval variants.
+R1001,include,I3,Compares EHR retrieval against long context prompting.
+R1005,unsure,,Very short abstract; inference efficiency evaluation unclear.
+R1012,include,I1,Compares chunking strategies for Khmer RAG retrieval.
+R1014,include,I3,Evaluates RAG metrics and retrieval quality effects.
+R1015,unsure,,RAG evaluation survey; original metric evaluation unclear.
+R1018,include,I1,Evaluates Arabic semantic retrieval within RAG.
+R1022,exclude,E1,Retrieves audio events rather than text documents.
+R1023,include,I1,Evaluates event graph retrieval for grounded generation.
+R1024,exclude,E1,"Image retrieval from captions, not language QA."
+R1025,exclude,E3,General hallucination mitigation; retrieval only baseline.
+R1028,include,I2,Evaluates abstention calibration in RAG QA.
+R1037,include,I1,Evaluates hybrid retrieval for financial document questions.
+R1045,include,I1,Evaluates sparse passage retrieval with query expansion.
+R1048,include,I3,Tests local RAG systems for software QA.
+R1067,exclude,E3,Financial advisor hallucination; retrieval not indicated.
+R1068,include,I3,Benchmarks retrieval augmented fact checking pipelines.
+R1070,include,I2,Detects unsupported citations in long-form RAG.
+R1076,include,I2,Benchmarks faithfulness to context relevant to RAG.
+R1084,include,I4,Evaluates quantization for commodity GPU inference.
+R1085,include,I1,Benchmarks Persian multilingual text retrieval.
+R1087,include,I4,Evaluates two bit LLM inference speed.
+R1089,include,I4,Evaluates low latency distributed LLM inference.
+R1096,exclude,E3,Federated model training without retrieval or inference evaluation.
+R1111,include,I3,Introduces legal RAG benchmark and evaluates systems.
+R1114,exclude,E3,Domain model fine tuning without retrieval.
+R1117,include,I3,Compares RAG with fine tuning for multi-hop QA.
+R1121,exclude,E3,Knowledge graph extraction benchmark without RAG.
+R1127,include,I4,Accelerates low batch LLM inference for edge deployment.
+R1129,include,I4,Evaluates quantized LLM inference speed and memory.
+R1137,exclude,E2,RAG translates forecasting results; component not analyzed.
+R1138,include,I1,Evaluates evidence retrieval for claim checking.
+R1145,include,I4,Evaluates multiplier-free LLM inference quantization.
+R1152,exclude,E3,AI insurance analysis; RAG poisoning incidental.
+R1157,exclude,E3,Reward modeling with supplied documents; retrieval not described.
+R1162,exclude,E3,Community applications overview; RAG incidental.
+R1173,include,I5,Analyzes privacy accounting for multi-query RAG.
+R1175,exclude,E1,Image retrieval for fashion captioning.
+R1178,include,I3,Studies user criteria for evaluating astronomy RAG.
+R1182,include,I2,Proposes claim-level auditing for RAG citations and abstention.
+R1189,include,I2,Evaluates faithfulness to retrieved clinical evidence.
+R1190,include,I3,Evaluates educational RAG faithfulness and users.
+R1201,include,I4,Evaluates memory-saving MoE quantization for inference.
+R1204,include,I3,Proposes diverse synthetic benchmark generation for RAG.
+R1208,unsure,,No abstract; RAG framework contribution unclear.
+R1210,exclude,E1,Generative visualization rather than language retrieval.
+R1215,include,I1,Evaluates ontology graph retrieval for complex QA.
+R1217,include,I2,Proposes grounded nugget generation and source attribution.
+R1222,include,I5,Evaluates encrypted private document retrieval for RAG.
+R1224,include,I4,Benchmarks KV cache quantization for LLM inference.
+R1225,include,I1,Evaluates graph retrieval for institutional QA.
+R1228,exclude,E1,Retrieves process workflow graphs rather than language documents.
+R1230,include,I1,Evaluates multilingual dense and sparse retrieval embeddings.
+R1234,include,I1,Evaluates chunk granularity fusion for RAG.
+R1237,include,I1,Evaluates graph and text retrieval for customer QA.
+R1240,include,I1,Proposes hybrid graph and text RAG retrieval.
+R1242,include,I4,Benchmarks GraphRAG using local models on consumer GPU.
+R1248,unsure,,Organizational ground truth analysis; RAG evaluation unclear.
+R1253,exclude,E1,Robot policy retrieval and vision analysis.
+R1256,include,I3,Benchmarks evaluators for grounded RAG question answering.
+R1261,include,I1,Evaluates hybrid retrieval for visual documents.
+R1264,unsure,,No abstract; title suggests clinical RAG benchmark.
+R1282,include,I2,Benchmarks hallucination detection with multi-document contexts.
+R1286,exclude,E2,RAG creates benchmark references; component not studied.
+R1291,include,I3,Creates clinical QA benchmark for RAG contexts.
+R1293,include,I1,Evaluates query-dependent retrieval depth in EHR RAG.
+R1326,include,I1,Compares hybrid retrieval and routing across benchmarks.
+R1339,include,I1,Evaluates hybrid legal retrieval and inference.
+R1343,include,I3,Evaluates hybrid RAG context compaction.
+R1344,exclude,E1,Product search and recommendation retrieval.
+R1350,unsure,,Conceptual hybrid RAG framework without original evaluation.
+R1368,include,I1,Evaluates adaptive hybrid retrieval for legal QA.
+R1371,include,I1,Evaluates Chinese multilingual hybrid retrieval.
+R1378,include,I4,Evaluates locally hosted academic RAG system.
+R1382,include,I1,Compares hybrid retrieval against dense baseline for PDF QA.
+R1388,include,I5,Tests poisoned code manuals in retrieval augmented generation.
+R1390,include,I3,Compares RAG prompting with alternatives for tutoring assessment.
+R1397,unsure,,No abstract; hybrid RAG evaluation unclear.
+R1399,include,I2,Resolves conflicting multilingual retrieved evidence.
+R1404,unsure,,Systematic review; original retrieval evaluation unclear.
+R1405,include,I3,Compares RAG and other hallucination mitigation strategies.
+R1417,exclude,E3,Private LLM prompting; RAG only inspiration.
+R1425,include,I1,Evaluates query-conditioned EHR context selection against retrieval.
+R1432,include,I4,Evaluates faster quantized LLM inference.
+R1436,unsure,,RAG survey; original method or evaluation unclear.
+R1443,exclude,E3,Scientific literature exploration without document QA or RAG.
+R1456,exclude,E3,Training data leakage detector; RAG incidental integration.
+R1470,include,I3,Introduces multi-turn RAG hallucination benchmark.
+R1483,include,I1,Evaluates multilingual retrieve and rerank for concepts.
+R1488,include,I1,Evaluates graph retrieval for elevator fault QA.
+R1489,include,I1,Evaluates graph retrieval for multi-hop QA.
+R1490,include,I1,Evaluates graph guided chunk expansion for RAG.
+R1497,unsure,,Conceptual RAG review; original evaluation unclear.
+R1502,include,I4,Proposes fully offline hybrid enterprise RAG.
+R1508,include,I4,Evaluates mixed precision KV cache inference.
+R1516,include,I1,Evaluates language aware multilingual reranking.
+R1518,include,I1,Improves multilingual dense retrieval coverage.
+R1520,include,I3,Analyzes and mitigates multilingual RAG language drift.
+R1521,include,I3,Evaluates editable RAG knowledge base on QA.
+R1530,exclude,E3,Broad LLM review; RAG one component.
+R1531,exclude,E3,Prompt optimization without retrieval component.
+R1533,unsure,,No abstract; small model deployment evaluation unclear.
+R1536,unsure,,IR survey; original retrieval evaluation unclear.
+R1538,unsure,,Industrial LLM review; inference evaluation unclear.
+R1546,exclude,E3,Bio-ontology review without RAG focus.
+R1552,exclude,E3,Citation bias studied without search or retrieval.
+R1553,include,I1,Proposes contextual chunk embeddings for document retrieval.
+R1561,exclude,E1,Equity factor forecasting using numeric macro analogs.
+R1567,exclude,E2,Retrieval supports named entity recognition.
+R1568,include,I5,Evaluates private knowledge erasure in RAG documents.
+R1570,include,I1,Optimizes retrieval rankings for multiple RAG agents.
+R1577,include,I3,Introduces legal RAG retrieval benchmark.
+R1584,unsure,,Conceptual software RAG framework without original evaluation.
+R1605,include,I1,Ablates learned tri-modal fusion in RAG.
+R1607,include,I1,Evaluates evidence page retrieval for visual documents.
+R1611,include,I1,Evaluates structured document retrieval and reranking.
+R1622,exclude,E3,Multimodal fake news detection without retrieval.
+R1625,include,I4,Models inference bottlenecks on deployment hardware.
+R1638,include,I4,Evaluates edge inference and adaptive RAG complexity.
+R1639,exclude,E3,Network intent translation without retrieval or inference deployment.
+R1642,include,I4,Presents fully local hybrid document QA.
+R1657,include,I3,Validates legal RAG evaluation tool across components.
+R1658,include,I2,Detects hallucinations in RAG generations.
+R1663,include,I2,Benchmarks unsupported claims against retrieved context.
+R1678,unsure,,RAG taxonomy survey; original evaluation unclear.
+R1706,include,I2,Proposes citation verification and insufficiency handling.
+R1709,include,I2,Evaluates evidence refinement to reduce RAG hallucinations.
+R1726,include,I3,Ablates retrieval augmented claim verification module.
+R1730,include,I1,Evaluates hybrid retrieval and query reformulation.
+R1731,include,I1,Evaluates multilingual source retrieval and reranking.
+R1741,include,I1,Evaluates compact visual document retrieval embeddings.
+R1748,include,I3,Introduces multilingual arena benchmark for RAG.
+R1750,include,I5,Red teams multimodal agentic RAG attack surfaces.
+R1751,include,I5,Mitigates cumulative privacy leakage in multi-turn RAG.
+R1759,include,I5,Evaluates synthetic retrieval data to reduce privacy leakage.
+R1762,include,I1,Proposes metrics for multilingual retrieval usefulness.
+R1764,include,I5,Evaluates poisoning attacks on multimodal RAG.
+R1783,unsure,,Web development RAG review; original evaluation unclear.
+R1785,exclude,E1,Motion signal retrieval for activity recognition.
+R1793,include,I4,Evaluates unified four bit LLM inference.
+R1798,include,I3,Introduces multilingual medical RAG benchmark.
+R1802,exclude,E3,Cultural LLM QA benchmark; retrieval ancillary.
+R1806,include,I3,Synthesizes conversational retrieval benchmark for RAG.
+R1810,include,I1,Evaluates hybrid retrieval for circuit literature QA.
+R1813,include,I1,Evaluates field-aware hybrid retrieval for reports.
+R1817,include,I3,Evaluates RAG debiasing on multilingual medical QA.
+R1832,exclude,E3,Multimodal claim extraction without retrieval.
+R1833,include,I1,Evaluates multimodal hybrid retrieval for scientific documents.
+R1836,include,I1,Evaluates graph and dense retrieval for multimodal QA.
+R1840,exclude,E2,RAG supports depression chatbot without component analysis.
+R1842,exclude,E2,RAG supports NoSQL translation task.
+R1844,include,I4,Evaluates low precision on-device LLM inference.
+R1845,exclude,E3,General healthcare NLP review without retrieval focus.
+R1848,exclude,E3,Conceptual answer exploration without retrieval.
+R1854,include,I1,Evaluates visual document retrieval models for RAG.
+R1862,include,I5,Evaluates neuron-guided RAG knowledge poisoning.
+R1864,exclude,E4,Position paper proposing legal AI framework.
+R1868,include,I3,Benchmarks enhanced RAG on QA datasets.
+R1871,include,I2,Improves evidence-preserving compression of retrieved documents.
+R1874,include,I3,Benchmarks multilingual retrieval augmented language models.
+R1889,include,I4,Evaluates low bit LLM quantization.
+R1892,include,I4,Evaluates quantization inference speed and memory.
+R1895,include,I4,Benchmarks on-device reranking latency and memory.
+R1900,include,I4,Studies quantized LLM inference on memory-constrained devices.
+R1905,exclude,E3,General LLM privacy attacks; RAG incidental.
+R1907,include,I1,Evaluates hybrid multilingual document retrieval embeddings.
+R1914,exclude,E1,Motion sensor activity recognition retrieval.
+R1915,include,I1,Compares graph retrieval for grounded QA.
+R1921,exclude,E1,Surgical video retrieval pretraining.
+R1923,include,I1,Compares sparse dense and hybrid RAG retrieval.
+R1926,include,I1,Compares six retrieval methods within clinical RAG.
+R1930,include,I1,Evaluates hybrid retrieval and reranking for PDF QA.
+R1935,include,I4,Proposes edge LLM deployment optimization with empirical data.
+R1936,include,I4,Evaluates quantization and local inference energy use.
+R1940,include,I1,Compares Arabic RAG chunking embeddings and reranking.
+R1941,include,I4,Evaluates locally deployed automotive PDF RAG.
+R1945,include,I4,Evaluates fully local small model RAG.
+R1947,include,I1,Optimizes hybrid retrieval for campus policy QA.
+R1950,unsure,,No abstract; multimodal RAG method unclear.
+R1951,include,I2,Proposes claim-evidence grounding and coverage-guided retrieval.
+R1957,include,I2,Evaluates lightweight RAG hallucination detector.
+R1968,unsure,,No abstract; connector privacy relation to RAG unclear.
+R1971,include,I4,Benchmarks compressed LLMs on mobile hardware.
+R1979,include,I2,Evaluates passage attribution under noisy RAG retrieval.
+R1984,exclude,E3,Synthetic graph retrieval without natural-language QA or RAG.
+R1985,exclude,E2,RAG supports oncology visit preparation application.
+R1989,exclude,E4,Non-English abstract.
+R1991,exclude,E3,AI brand visibility; retrieval incidental.
+R1993,include,I4,Evaluates small RAG models for local clinical deployment.
+R1996,unsure,,No abstract; clinical RAG evaluation suggested by title.
+R1997,include,I5,Analyzes information flow leakage from retrieved LLM inputs.
+R2008,include,I3,Evaluates RAG context depth and proposes metrics.
+R2009,exclude,E1,Photo browsing and visual question answering.
+R2016,exclude,E3,General agent prompt injection without RAG focus.
+R2019,include,I1,Evaluates screenshot retrieval for text question answering.
+R2021,include,I3,Compares graph RAG against vanilla RAG.
+R2022,exclude,E1,Educational course recommendation system.
+R2029,include,I5,Evaluates indirect jailbreak via poisoned RAG knowledge base.
+R2032,include,I5,Tests knowledge corruption attacks against RAG.
+R2036,include,I2,Addresses conflicting and outdated retrieved medical evidence.
+R2037,include,I2,Trains RAG model to use evidence and abstain.
+R2044,include,I3,Proposes RAG retrieval metric and production benchmark.
+R2062,exclude,E3,Graph database privacy; RAG merely a possible use.
+R2068,include,I5,Evaluates differentially private RAG generation.
+R2069,exclude,E2,RAG explains Android app privacy findings.
+R2077,exclude,E2,Hybrid RAG supports automated compliance audits.
+R2079,unsure,,No abstract; production RAG evaluation suggested by title.
+R2081,exclude,E3,Software vulnerability survey without retrieval focus.
+R2082,exclude,E3,Emotional agents evaluated; RAG ancillary prototype.
+R2089,exclude,E3,Agent prompt injection; retrieval not indicated.
+R2094,exclude,E3,General prompt injection; RAG not indicated.
+R2095,exclude,E3,General prompt injection defense without retrieval.
+R2097,exclude,E3,Agent prompt injection defense without RAG focus.
+R2099,include,I5,Surveys RAG defenses and tests private fact leakage.
+R2100,exclude,E2,RAG verifies biomedical associations as a tool.
+R2103,include,I5,Proposes formally secure encrypted RAG framework.
+R2115,include,I1,Improves document embeddings for QA retrieval.
+R2125,exclude,E1,Visual quality understanding rather than text retrieval.
+R2132,include,I1,Ablates hybrid retrieval for budgeted RAG search.
+R2133,include,I1,Evaluates dense retrieval architecture for RAG.
+R2135,include,I4,Evaluates quantized reasoning model inference.
+R2136,include,I4,Tests memory-efficient quantization of language models.
+R2141,exclude,E1,Quantized recommendation system inference.
+R2150,include,I3,Evaluates RAG over microarchitecture documents.
+R2156,include,I1,Evaluates relevance assessment for RAG document retrieval.
+R2157,include,I4,Evaluates flexible post-training LLM quantization.
+R2159,include,I4,Evaluates binarized LLM inference speed.
+R2161,include,I4,Evaluates local-first nuclear document RAG.
+R2168,include,I5,Defends RAG against private information extraction.
+R2169,include,I3,Compares educational RAG with unaugmented model.
+R2171,include,I1,Evaluates multi-query retrieval and rank fusion.
+R2179,exclude,E2,RAG supports tourism application without component analysis.
+R2182,include,I5,Formalizes RAG security and privacy threat model.
+R2187,include,I1,Updates retrieval index from query feedback for RAG.
+R2195,include,I3,Introduces benchmark for agentic RAG capabilities.
+R2222,include,I3,Benchmarks RAG architecture search algorithms.
+R2227,include,I1,Evaluates rationale-guided RAG evidence selection.
+R2232,exclude,E4,Non-English abstract.
+R2234,exclude,E3,General text retriever without document QA or RAG.
+R2245,include,I3,Introduces multimodal document retrieval benchmark for RAG.
+R2258,exclude,E4,Non-English title and abstract.
+R2262,include,I5,Evaluates source content recovery from retrieval embeddings.
+R2268,include,I2,Evaluates retrieval confidence and answer verification.
+R2269,include,I2,Evaluates RAG mitigation of structured output hallucination.
+R2276,exclude,E1,Conversational recommender system.
+R2277,include,I4,Proposes local RAG deployment framework for libraries.
+R2281,include,I5,Stress tests poisoned documents entering RAG retrieval.
+R2290,include,I1,Evaluates context filtering in code RAG.
+R2295,include,I1,Evaluates hybrid retrieval for long document verification.
+R2297,exclude,E1,Video-language hallucination and visual QA.
+R2300,include,I4,Evaluates efficient layer-wise LLM quantization.
+R2306,include,I4,Evaluates quantized vision-language model inference.
+R2309,include,I4,Analyzes outlier mitigation for edge model quantization.
+R2317,exclude,E2,Retrieval supports confidential document classification.
+R2320,exclude,E1,Multimodal hateful meme detection.
+R2327,unsure,,RAG architecture survey; original evaluation unclear.
+R2336,include,I3,Benchmarks RAG variants on QA and summarization.
+R2339,include,I1,Compares retrieval configurations for pathology QA.
+R2348,include,I3,Provides RAG evaluation tools and health benchmark.
+R2365,include,I3,Evaluates regulatory question answering RAG and failure modes.
+R2380,include,I2,Proposes citation verification and factual grounding framework.
+R2384,include,I4,Proposes private self-hosted Urdu legal RAG architecture.
+R2385,include,I1,Evaluates multilingual retrieval for legal QA.
+R2397,unsure,,RAG enterprise review; synthetic evaluation details unclear.
+R2403,unsure,,Healthcare RAG systematic review; original evaluation unclear.
+R2412,unsure,,No abstract; railway RAG analysis unclear.
+R2418,include,I3,Evaluates clinical note RAG question answering.
+R2428,exclude,E1,Image and caption generation using visual retrieval.
+R2440,unsure,,Advanced RAG review; original evaluation unclear.
+R2442,include,I5,Analyzes RAG attacks and defenses by pipeline stage.
+R2444,unsure,,Multimodal retrieval survey; original evaluation unclear.
+R2460,exclude,E1,LLM-based recommender system.
+R2461,include,I4,Evaluates efficient INT4 LLM inference.
+R2464,include,I4,Evaluates memory-saving activation quantization.
+R2474,exclude,E2,RAG demonstrates character attribute benchmark.
+R2475,include,I3,Evaluates structure induction for noisy conversational RAG.
+R2479,exclude,E3,Multilingual LLM safety benchmark without retrieval.
+R2480,exclude,E3,General clinical LLM safety framework without RAG focus.
+R2482,include,I1,Evaluates SQL-linked document retrieval for multi-hop QA.
+R2489,include,I1,Ablates hybrid retrieval for educational QA.
+R2512,include,I5,Proposes security framework focused on RAG systems.
+R2518,include,I5,Benchmarks prompt injection defenses in RAG agents.
+R2525,include,I5,Proposes layered RAG prompt injection defense.
+R2553,include,I1,Evaluates multilingual retrieval language bias correction.
+R2556,include,I4,Evaluates local models in hybrid scientific RAG.
+R2560,include,I3,Fault injects RAG systems to evaluate quality gates.
+R2574,include,I3,Evaluates cost-aware RAG retrieval policies.
+R2585,unsure,,Small model overview; original inference evaluation unclear.
+R2587,include,I4,Benchmarks on-device small model latency and memory.
+R2598,include,I4,Evaluates quantized LLM inference speed and memory.
+R2613,include,I1,Compares source-page retrieval in local safety RAG.
+R2614,include,I2,Audits and repairs citations in retrieved evidence articles.
+R2618,include,I1,Evaluates sparse-dense fusion for clinical QA.
+R2636,exclude,E1,Feature ranking unrelated to language retrieval.
+R2638,include,I1,Evaluates Arabic legal statute retrieval methods.
+R2642,include,I3,Introduces multi-hop RAG retrieval benchmark.
+R2650,include,I4,Evaluates quantized language model inference for translation.
+R2652,exclude,E3,Biomedical IR fusion without document QA or RAG.
+R2673,include,I3,Introduces text-and-table RAG benchmark.
+R2678,include,I1,Evaluates tag-guided graph retrieval in RAG.
+R2681,include,I4,Tests edge-deployed RAG models for IoT control.
+R2688,exclude,E3,General information retrieval expansion without RAG evaluation.
+R2704,include,I3,Compares RAG as hallucination mitigation across models.
+R2715,include,I1,Evaluates personal knowledge graph retrieval for QA.
+R2722,include,I3,Evaluates LLM instruction following in enterprise RAG.
+R2726,include,I1,Evaluates Amharic multilingual passage retrieval.
+R2750,exclude,E3,Personal memory retrieval without document QA or RAG.
+R2766,include,I2,Detects unfaithful RAG output with sparse autoencoders.
+R2768,exclude,E3,General information retrieval theory without RAG evaluation.
+R2776,exclude,E2,Retrieval supports machine translation application.
+R2783,include,I3,Proposes lightweight RAG faithfulness evaluation metric.
+R2786,include,I1,Evaluates multimodal retrieval for medical visual QA.
+R2801,include,I2,Attributes tokens to retrieved context for hallucination detection.
+R2808,include,I1,Evaluates multilingual text embeddings for RAG retrieval.
+R2828,exclude,E1,Maintenance scheduling rather than language retrieval.
+R2829,include,I2,Corrects hallucinations using RAG knowledge triplets.
+R2836,include,I1,Benchmarks multilingual hybrid retrieval in local RAG.
+R2838,include,I4,Accelerates RAG inference with cached document states.
+R2848,exclude,E3,General multimodal uncertainty survey; retrieval incidental.
+R2853,include,I5,Studies reconstruction attacks on retrieval embeddings.
+R2859,include,I4,Evaluates deployment-friendly LLM quantization.
+R2863,include,I3,Compares RAG against unlearning for factual QA.
+R2892,exclude,E2,Retrieval supports ontology knowledge expansion.
+R2895,include,I1,Evaluates multilingual temporal hybrid RAG retrieval.
+R2899,include,I1,Improves Vietnamese legal hybrid retrieval and reranking.
+R2901,include,I5,Evaluates visual poisoning of multimodal RAG.
+R2910,exclude,E1,Visual retrieval for robotic action prediction.
+R2911,include,I3,Benchmarks passage use in multilingual visual RAG.
+R2928,exclude,E3,General persistent agent injection without RAG focus.
+R2929,unsure,,Small model survey; original inference evaluation unclear.
+R2931,exclude,E3,Research ideation benchmark without retrieval.
+R2932,include,I1,Compares multimodal and hybrid slide retrieval for RAG.
+R2935,include,I1,Evaluates self-updating retrieval feedback loops.
+R2940,include,I2,Mitigates misleading retrieved context in RAG.
+R2943,include,I1,Evaluates graph expansion in personal corpus retrieval.
+R2946,include,I1,Evaluates mixed-language dense retrieval.
+R2950,include,I1,Evaluates cost-aware hybrid retrieval policy.
+R2953,include,I1,Tests Arabic normalization effects on RAG retrieval.
+R2956,include,I4,Evaluates confidence changes under LLM quantization.
+R2957,include,I3,Compares RAG strategies and analyzes degraded performance.
+R2968,include,I2,Studies citation provenance across GraphRAG traversal.
+R2969,include,I3,Proposes penalty-aware RAG abstention evaluation.
+R2974,exclude,E1,Image patch retrieval for vehicle perception.
+R2978,exclude,E4,Non-English title and abstract.
+R2985,include,I1,Evaluates knowledge retrieval for grounded dialogue.
+R2988,include,I3,Introduces pathology RAG benchmarks and framework.
+R2989,exclude,E4,Preregistration record rather than research paper.
+R2991,exclude,E1,Visual object retrieval for robot manipulation.
+R2993,include,I1,Evaluates decentralized document retrieval routing for RAG.

@@ -1,0 +1,23 @@
+theme,paper,finding,value,condition,source_location
+retrieval,BEIR (Thakur et al. 2021),DPR zero-shot nDCG@10 relative to BM25,-47.7%,"18 BEIR datasets, average relative to BM25",Table 2
+retrieval,BEIR (Thakur et al. 2021),ANCE zero-shot nDCG@10 relative to BM25,-7.4%,"BEIR average",Table 2
+retrieval,BEIR (Thakur et al. 2021),TAS-B zero-shot nDCG@10 relative to BM25,-2.8%,"BEIR average",Table 2
+retrieval,BEIR (Thakur et al. 2021),BM25+cross-encoder reranking relative to BM25,+11%,"BEIR average",Table 2
+retrieval,BEIR (Thakur et al. 2021),BM25 in-domain gap to neural models,7-18 points lower,"MS MARCO in-domain",Sec. 5 finding 1
+retrieval,Local Hybrid QA (Astrino 2025),Hybrid vs dense Recall@10,0.974 vs 0.959,"SQuAD v1.1; BGE-base + BM25; 30% sparse weight",Table 2
+retrieval,Local Hybrid QA (Astrino 2025),Hybrid vs dense Recall@10,0.620 vs 0.605,"MS MARCO v2.1",Table 2
+retrieval,Local Hybrid QA (Astrino 2025),Hybrid vs dense MRR,0.250 vs 0.315 (hybrid lower),"MS MARCO v2.1",Table 2
+retrieval,BM25 Wins at Scale (Wang et al. 2026),BM25 vs File-System Agent vs DenseRAG combined score,50.5 vs 30.7 vs 29.9,"511,959 docs (600.8M tokens); Qwen3.6-27B reader",Table 1
+retrieval,BM25 Wins at Scale (Wang et al. 2026),Crossover corpus size where BM25 leads,~10M tokens,"same setup; rounded regime marker",Abstract/Sec. 4.2
+grounding,RGB (Chen et al. 2024),Negative rejection rate (English),24.67% (ChatGPT); 5.67-31.00% across 6 models,"All retrieved documents are noise",Table 3
+grounding,RGB (Chen et al. 2024),Accuracy at noise ratio 0 vs 0.8,96.33% vs 76.00%,"ChatGPT (gpt-3.5-turbo), English",Table 1
+grounding,UAEval4RAG (Peng et al. 2025),Answerable correctness vs unanswerable acceptable ratio,88.4% vs 49.0%,"TriviaQA; OpenAI embeddings; vector retrieval; no reranker",Table 2
+grounding,UAEval4RAG (Peng et al. 2025),Best configuration,None consistently best,"27 configurations, 4 datasets",Abstract
+grounding,ALCE (Gao et al. 2023),Outputs lacking complete citation support,~50%,"ELI5; best models",Abstract
+efficiency,Lost in the Middle (Liu et al. 2024),Closed-book accuracy (below which mid-context accuracy falls),56.1%,"GPT-3.5-Turbo; 20 documents; answer in middle position",Sec. 1/Table 1
+efficiency,GPTQ (Frantar et al. 2023),WikiText2 perplexity FP16 / 4-bit GPTQ / 3-bit GPTQ,10.86 / 11.39 / 14.86,"OPT-6.7B",Table 3
+efficiency,GPTQ (Frantar et al. 2023),WikiText2 perplexity 4-bit RTN vs GPTQ,12.10 vs 11.39,"OPT-6.7B",Table 3
+security,Vec2Text (Morris et al. 2023),Exact recovery of embedded text,92% exact; BLEU 97.3,"32-token inputs",Abstract/Sec. 1
+security,Vec2Text (Morris et al. 2023),Full names recovered from clinical-note embeddings,89%,"MIMIC clinical notes",Sec. 1
+security,PoisonedRAG (Zou et al. 2025),Attack success rate,97% NQ; 99% HotpotQA; 91% MS-MARCO,"5 malicious texts per target question; millions of texts in DB",Sec. 5
+security,Zeng et al. 2024,Verbatim or near-verbatim retrieval records output,near 50%,"Llama2-7b-Chat and GPT-3.5-turbo; HealthCare data; targeted prompts",Sec. 1

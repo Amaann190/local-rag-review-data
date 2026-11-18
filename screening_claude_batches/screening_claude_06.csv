@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R1251,include,I3,SLR on RAG groundedness; proposes metric
+R1252,include,I1,hybrid retrieval with intent routing for Arabic RAG
+R1253,exclude,E1,"robot policy data retrieval, not text"
+R1254,unsure,,VQA RAG with de-hallucination; image-centric
+R1255,include,I4,offline RAG with numeric verification
+R1256,include,I3,meta-evaluation benchmark for RAG judges
+R1257,include,I2,constrained decoding for faithful extraction in RAG
+R1258,include,I1,BM25 plus hybrid reranking with citations
+R1259,include,I5,post-retrieval poisoning defense
+R1260,include,I2,guided decoding and hallucination in RAG
+R1261,include,I1,hybrid retrieval for visual documents
+R1262,include,I4,LLM quantization for inference
+R1263,include,I1,semantic steering of retrieval
+R1264,unsure,,no abstract; compares RAG configurations in oncology
+R1265,include,I4,low-bit quantization for constrained devices
+R1266,include,I1,hierarchical routing alternative to RAG; efficiency
+R1267,include,I4,KV cache quantization for inference
+R1268,include,I1,lightweight retrieval benchmark incl. hybrid and quantization
+R1269,exclude,E4,"technical note, not research"
+R1270,unsure,,conceptual hallucination framework with retrieval and abstention
+R1271,include,I2,hallucination-aware multi-agent RAG
+R1272,exclude,E3,post-generation detector without retrieval
+R1273,include,I1,BM25+dense RRF for claim verification
+R1274,include,I2,survey of hallucination detection incl. RAG
+R1275,exclude,E3,general hallucination review
+R1276,include,I2,review of hallucination in RAG
+R1277,exclude,E3,"theory of hallucination, no retrieval"
+R1278,unsure,,no abstract; RAG hallucination risk model
+R1279,unsure,,fact-checking review; RAG partly covered
+R1280,exclude,E4,key-messages viewpoint
+R1281,include,I2,small model hallucination detector for RAG
+R1282,include,I2,hallucination detection benchmark for RAG contexts
+R1283,include,I2,retrieval-based hallucination detection
+R1284,exclude,E3,"general hallucination benchmark, no retrieval"
+R1285,include,I2,RAG hallucination detection with abstention
+R1286,exclude,E3,general LLM hallucination benchmark
+R1287,exclude,E2,education RAG chatbot application
+R1288,include,I2,faithfulness RL evaluated on RAG benchmarks
+R1289,exclude,E2,disease prediction application
+R1290,include,I3,evaluates RAG models multilingual health
+R1291,unsure,,medical QA benchmark; partly structured RAG
+R1292,include,I1,dense/sparse/hybrid comparison for public health QA
+R1293,include,I1,query-dependent k retrieval and attribution
+R1294,include,I4,on-device agentic RAG on mobile SoC
+R1295,include,I1,fusion across heterogeneous stores
+R1296,include,I1,rank fusion across sources and rankers
+R1297,include,I2,citation-quality weighting in retrieval-augmented ICL
+R1298,include,I3,chunking benchmark and method
+R1299,include,I5,indirect prompt injection benchmark for RAG
+R1300,include,I5,metadata poisoning of multimodal RAG
+R1301,include,I1,tree-RAG with hybrid retriever
+R1302,unsure,,e-commerce agentic RAG with RRF; no evaluation
+R1303,include,I1,hybrid RRF for long-tail entities
+R1304,include,I4,locally deployable deep research RAG
+R1305,include,I1,document refinement for long-context RAG
+R1306,exclude,E1,"e-commerce product retrieval, not QA/RAG"
+R1307,include,I1,hierarchical chunk voting with RRF
+R1308,include,I1,local and web deep search
+R1309,include,I1,code-mixed retrieval-augmented fact-checking
+R1310,include,I1,hierarchical filtering RAG with citations
+R1311,include,I1,enterprise hybrid retrieval RRF and CRAG
+R1312,exclude,E2,research idea evaluation; RAG as tool
+R1313,include,I1,agentic RAG search efficiency
+R1314,include,I1,multi-route retriever and MDQA benchmark
+R1315,include,I4,on-prem hybrid retrieval cascade with local LLM
+R1316,include,I1,hierarchical hybrid retrieval with small-LLM reranking
+R1317,exclude,E2,subject tagging application
+R1318,exclude,E3,smart home LLM benchmark
+R1319,include,I3,multilingual RAG translation strategies
+R1320,unsure,,answer engine hallucination and source analysis
+R1321,exclude,E1,recommender systems survey
+R1322,include,I2,mechanistic study of RAG citations
+R1323,include,I4,quantization effects on multilingual LLMs
+R1324,include,I1,hybrid retrieval evaluation with reranking
+R1325,exclude,E3,"general LLM survey, no abstract"
+R1326,include,I1,query routing for hybrid retrieval
+R1327,include,I2,hallucination analysis of legal RAG
+R1328,exclude,E4,poster
+R1329,include,I3,ideological transfer in RAG
+R1330,include,I5,retrieval poisoning attack
+R1331,include,I1,hybrid textual-relational retrieval
+R1332,unsure,,methodology paper retrieval; not clearly RAG/QA
+R1333,include,I1,BM25+dense hybrid biomedical RAG
+R1334,include,I1,local hybrid ensemble RAG; also I4
+R1335,unsure,,conceptual SLM/LLM hybrid enterprise; vague
+R1336,include,I1,multi-signal fusion cross-lingual legal retrieval
+R1337,exclude,E2,marketing personalization application
+R1338,include,I1,sparse/dense/fused retrieval for Khmer
+R1339,include,I1,hybrid legal retrieval COLIEE
+R1340,include,I2,attribution faithfulness verification; no abstract/year
+R1341,unsure,,"hybrid retrieval for concept linking, not QA"
+R1342,include,I1,BM25+MedCPT RRF with compact model
+R1343,include,I1,hybrid dense+sparse with session memory
+R1344,exclude,E1,"e-commerce product search infrastructure, not QA/RAG"
+R1345,include,I1,FAISS+BM25 hybrid QA
+R1346,exclude,E2,IoMT data management with contracts
+R1347,include,I1,Kazakh hybrid retrieval benchmark
+R1348,include,I1,hybrid retrieval for hallucination mitigation
+R1349,exclude,E2,traffic forecasting application
+R1350,include,I1,conceptual analysis of hybrid RAG
+R1351,include,I1,Telugu hybrid RAG; no abstract
+R1352,include,I1,"compares HyDE, graph and fusion retrieval"
+R1353,include,I1,hybrid RAG with vector DB
+R1354,include,I2,hybrid RAG with abstention and groundedness verifier
+R1355,include,I1,offline hybrid KG+RRF retrieval
+R1356,include,I1,rank vs projection fusion
+R1357,include,I1,hybrid retrieval and hallucination rates
+R1358,include,I1,hybrid retrieval for RAG; no abstract
+R1359,include,I1,hybrid retrieval German documents
+R1360,include,I3,evaluation protocol; synthetic values only
+R1361,include,I1,FAISS+BM25 RRF with routing
+R1362,unsure,,hybrid retrieval for tool selection
+R1363,include,I1,SPLADE/DPR hybrid in RAG
+R1364,include,I1,vector+graph retrieval; no abstract
+R1365,include,I1,hypergraph evidence retrieval
+R1366,include,I5,federated privacy-preserving RAG with edge
+R1367,exclude,E2,KG hypothesis discovery
+R1368,include,I1,adaptive hybrid retrieval
+R1369,include,I1,hyperbolic graph RAG retrieval
+R1370,include,I1,hyperbolic dense retrieval
+R1371,include,I1,hybrid retriever for Chinese
+R1372,include,I1,hybrid retrieval with citation verification
+R1373,include,I2,certainty-aware RAG
+R1374,include,I4,integer-only quantization
+R1375,include,I1,retriever/reranker benchmark for ICL
+R1376,include,I5,poisoned passages in RAG contexts
+R1377,unsure,,medical QA benchmark with RAG experiments
+R1378,include,I4,local-first hybrid RAG
+R1379,exclude,E4,"non-English, no abstract"
+R1380,include,I3,"compares RAG vs CRAG; Indonesian title, check language"
+R1381,exclude,E2,marketing SLR
+R1382,include,I1,hybrid search vs baseline with RAGAS
+R1383,include,I3,metrics and evaluation of answer engines
+R1384,include,I1,dense/BM25/hybrid comparison with rejection
+R1385,include,I1,hybrid retrieval configuration comparison
+R1386,include,I3,RAG vs non-RAG with ablations
+R1387,exclude,E2,misinformation moderation application
+R1388,include,I5,poisoning in retrieval-augmented code generation
+R1389,include,I1,hybrid retrieval and compression
+R1390,exclude,E2,tutoring assessment application
+R1391,include,I4,4-bit quantization
+R1392,include,I1,KG plus vector hybrid
+R1393,exclude,E2,dietary supplement KG RAG application
+R1394,include,I2,citation validation; local models
+R1395,include,I2,abstention and faithfulness
+R1396,include,I3,finds RAG introduces hallucinations
+R1397,unsure,,no abstract; hybrid RAG in building engineering
+R1398,unsure,,RAFT for EDA with leakage assessment
+R1399,include,I1,multilingual RAG argumentation
+R1400,exclude,E4,thesis
+R1401,include,I1,multi-retriever RRF
+R1402,exclude,E3,"self-verification, no retrieval"
+R1403,unsure,,retrieval-augmented code assertion generation
+R1404,include,I1,SLR of retrieval enhancement
+R1405,include,I2,CoT+RAG hallucination reduction
+R1406,include,I1,interpretable dense retrieval
+R1407,include,I5,poisoning robustness with small quantized model
+R1408,exclude,E6,duplicate of R1407
+R1409,include,I1,structured legal retrieval
+R1410,include,I2,nugget-based citation grounding
+R1411,unsure,,incremental RAG decision support with abstention
+R1412,include,I1,index-time bridging facts
+R1413,include,I3,Indian language RAG benchmark
+R1414,include,I5,indirect prompt injection via documents
+R1415,exclude,E2,archive research platform
+R1416,exclude,E3,industrial LLM applications overview
+R1417,exclude,E3,"privacy-preserving inference, no retrieval"
+R1418,include,I5,inference cost poisoning attack
+R1419,include,I4,review of inference optimization
+R1420,include,I4,inference engine with quantization
+R1421,include,I4,KV cache management for offloading inference
+R1422,include,I4,small models for edge
+R1423,include,I5,factors in RAG poisoning
+R1424,include,I4,small-model retrieval-rerank cascade
+R1425,include,I1,context selection vs BM25/dense/reranker
+R1426,include,I3,RAG evaluation platform
+R1427,include,I2,review of RAG grounding in institutional chatbots
+R1428,exclude,E3,instruction tuning survey
+R1429,include,I4,INT8 attention quantization
+R1430,include,I4,LLM quantization
+R1431,include,I4,low-bit quantization
+R1432,include,I4,fine-grained quantization speedup
+R1433,include,I4,compression for constrained deployment
+R1434,exclude,E2,teaching experience report
+R1435,include,I1,KG + hybrid ranking legal RAG with citations
+R1436,include,I1,RAG survey
+R1437,exclude,E4,product/platform description
+R1438,unsure,,no abstract; RAG and constitutional AI
+R1439,exclude,E2,nephrology showcase
+R1440,exclude,E2,workflow automation framework
+R1441,exclude,E2,ADE extraction application
+R1442,exclude,E3,"personalized learning, no retrieval"
+R1443,include,I1,BM25+embedding RRF literature search
+R1444,include,I1,hybrid search with reranking and QA
+R1445,include,I1,budget-matched reranking in hybrid retrieval
+R1446,include,I2,RAG hallucination detection
+R1447,include,I1,multilingual RAG language preference
+R1448,include,I3,evaluates 13 open LLMs incl. small in RAG
+R1449,include,I2,watermarking-induced hallucination in RAG
+R1450,include,I5,differential privacy for private references
+R1451,include,I1,hybrid text-visual document retrieval
+R1452,include,I1,retrieval pipeline optimization
+R1453,unsure,,entity benchmark evaluating dense retrieval and RAG
+R1454,include,I1,embedding benchmark for RAG
+R1455,include,I5,privacy leakage protection in RAG
+R1456,exclude,E3,training data leakage detection
+R1457,unsure,,domain survey incl. RAG and hallucination
+R1458,include,I1,graph RAG noise control
+R1459,include,I1,Italian late-interaction retriever
+R1460,exclude,E3,item difficulty modeling
+R1461,include,I1,"query expansion, RRF and MMR retrieval"
+R1462,include,I1,iterative keyword sparse retrieval
+R1463,include,I1,multilingual late-interaction retriever
+R1464,include,I4,4-bit quantized RAG on consumer GPU
+R1465,include,I5,gradient-based poisoning attack
+R1466,include,I4,SLM/LLM edge collaborative inference
+R1467,include,I1,joint sparse-dense biomedical retrieval
+R1468,unsure,,legal generation benchmark with RAG baseline
+R1469,include,I4,4-bit activation quantization
+R1470,include,I2,hallucination detection benchmark multi-turn RAG
+R1471,include,I1,embedding model for retrieval
+R1472,exclude,E2,government finance application
+R1473,include,I5,GraphRAG poisoning
+R1474,unsure,,memory retrieval with privacy enforcement for agents
+R1475,include,I1,keyword-constrained retrieval and generation
+R1476,include,I1,multilingual dense retrieval and reranking
+R1477,include,I5,agentic RAG poisoning
+R1478,exclude,E2,agriculture IoT chatbot
+R1479,include,I4,KV cache 2-bit quantization
+R1480,exclude,E2,legal awareness chatbot application
+R1481,include,I2,relevance assessment and hallucination in multilingual RAG
+R1482,include,I5,knowledge base poisoning and defense
+R1483,unsure,,"retrieve-then-rerank concept normalization, not QA"
+R1484,include,I1,KG-anchored RAG with retrieval and faithfulness eval
+R1485,unsure,,discussion of KG-LLM co-learning
+R1486,include,I1,Graph-RAG vs RAG comparison
+R1487,include,I1,hybrid KG retrieval with reranking
+R1488,exclude,E2,elevator fault diagnosis application
+R1489,include,I1,KG-extended RAG
+R1490,include,I1,KG-guided chunk expansion
+R1491,include,I1,hybrid retrieval with validation vs CRAG
+R1492,exclude,E2,threat scenario generation application
+R1493,include,I2,KG-integrated hallucination reduction vs RAG
+R1494,unsure,,perspectives paper on agentic RAG
+R1495,include,I5,medical multimodal RAG poisoning
+R1496,include,I4,local RAG with dense retrieval and reranker
+R1497,include,I2,review of enterprise RAG reliability
+R1498,include,I3,diagnostic analysis of RAG errors
+R1499,include,I1,hierarchical retrieval with abstention-aware voting
+R1500,exclude,E3,"KG scaffold for note generation, no retrieval"

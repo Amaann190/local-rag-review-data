@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R0251,include,I3,agentic vs traditional RAG evaluated
+R0252,include,I2,scientific QA with attribution
+R0253,include,I1,query reformulation + RRF sparse retrieval
+R0254,include,I1,time-aware retrieval control
+R0255,unsure,,NotebookLM RAG condition in humanities discourse study
+R0256,include,I2,KG-RAG with anti-hallucination agents
+R0257,include,I5,private data extraction attack on RAG
+R0258,exclude,E3,alignment survey
+R0259,include,I2,"generative search grounding, noisy retrieval"
+R0260,unsure,,multilingual alignment fine-tuning; RAG context minor
+R0261,exclude,E3,FP4 RL training
+R0262,include,I1,multilingual reranking bias
+R0263,include,I3,clinical RAG evaluated by clinicians
+R0264,include,I2,local fine-tuning improves citation accuracy
+R0265,include,I1,multimodal RAG with fusion method
+R0266,exclude,E3,
+R0267,include,I4,quantization for inference
+R0268,include,I1,hybrid vs semantic retrieval ablation
+R0269,include,I4,hybrid retrieval with local LLM
+R0270,include,I1,hybrid BM25+vector RRF reranking pipeline evaluated
+R0271,include,I2,fact verification in biomedical RAG
+R0272,exclude,E2,
+R0273,exclude,E2,
+R0274,exclude,E2,
+R0275,exclude,E4,dissertation
+R0276,include,I2,faithfulness decoding with retrieval
+R0277,include,I1,fusion functions hybrid retrieval
+R0278,unsure,I2,no abstract; title answerability-aware RAG
+R0279,include,I4,small language model RAG
+R0280,include,I5,indirect prompt injection in RAG
+R0281,exclude,E3,prompt injection detection without retrieval
+R0282,include,I5,indirect injection via external content
+R0283,include,I1,retrieval-augmented code generation study
+R0284,include,I3,RAG reliability under noise/drift
+R0285,include,I1,retrieval design choices
+R0286,exclude,E3,
+R0287,include,I4,local Ukrainian RAG hybrid search
+R0288,include,I1,BM25 + semantic retrieval scheme
+R0289,include,I1,dense retrieval with reranking for summarization
+R0290,include,I4,quantisation energy/inference
+R0291,include,I4,ternary quantization
+R0292,include,I1,improved hybrid retrieval RAG
+R0293,include,I1,semantic + BM25 reranking chatbot evaluated
+R0294,exclude,E2,
+R0295,exclude,E2,
+R0296,include,I1,GraphRAG memory retrieval
+R0297,include,I2,memory conflict hallucination control
+R0298,include,I1,hybrid retrieval + reranking compared
+R0299,include,I1,hybrid retrieval chatbot benchmarked
+R0300,include,I2,threshold-based refusal
+R0301,include,I1,multi-view RAG fusion
+R0302,include,I1,"chunking, embedding, reranker optimization"
+R0303,include,I1,dense retrieval evaluated
+R0304,exclude,E4,non-English paper
+R0305,exclude,E4,non-English
+R0306,exclude,E4,non-English paper
+R0307,include,I1,dense retrieval threshold
+R0308,exclude,E2,
+R0309,include,I4,quality-latency-resource tradeoffs small models
+R0310,include,I1,indexing techniques
+R0311,include,I3,RAG benchmark vs non-RAG
+R0312,exclude,E1,drug screening
+R0313,include,I1,ANN retrieval evaluation
+R0314,include,I1,surrogate retrieval with RRF
+R0315,include,I1,dense/hybrid toolkit
+R0316,include,I1,dense retrieval with small LMs
+R0317,include,I1,chunk selection approach
+R0318,exclude,E2,domain scoping review
+R0319,include,I1,dense retrieval FAQ with threshold
+R0320,exclude,E2,
+R0321,exclude,E2,domain scoping review
+R0322,include,I3,RAG vs prompting on EHR evaluated
+R0323,include,I4,edge quantization
+R0324,exclude,E1,diffusion image models
+R0325,unsure,,"privacy-aware RAG tool, no evaluation stated"
+R0326,include,I2,faithfulness open-weight RAG
+R0327,exclude,E3,
+R0328,include,I1,graph-based RAG
+R0329,exclude,E3,"MCP tool poisoning, no retrieval"
+R0330,exclude,E3,
+R0331,include,I3,benchmark includes RAG evaluation
+R0332,exclude,E3,
+R0333,include,I2,explainable RAG
+R0334,exclude,E3,
+R0335,include,I5,injection in agent evidence
+R0336,include,I4,local-first IR
+R0337,include,I1,hybrid RAG with de-hallucination
+R0338,include,I1,retrieval for summarization with citations
+R0339,include,I4,small model consumer deployment
+R0340,include,I5,indirect injection via external data
+R0341,include,I3,GPT-4 with vs without RAG
+R0342,include,I4,compact Gemma RAG/HyDE
+R0343,include,I1,
+R0344,include,I3,multilingual RAG evaluated
+R0345,include,I1,PageRank-based retrieval
+R0346,include,I1,hybrid retrieval
+R0347,include,I1,structure-aware retrieval
+R0348,include,I1,
+R0349,unsure,I5,no abstract; RAG security review
+R0350,include,I1,dense retrieval calibration
+R0351,exclude,E1,tabular models
+R0352,include,I1,
+R0353,include,I2,context attribution
+R0354,include,I2,attribution survey
+R0355,exclude,E1,audio-centric benchmark
+R0356,exclude,E3,"phishing detector, not RAG"
+R0357,include,I2,auditable retrieval provenance
+R0358,exclude,E3,
+R0359,include,I2,abstention/hallucination with evidence conditions
+R0360,include,I3,evaluation library incl RAG grounding metrics
+R0361,include,I1,cross-lingual dense retrieval
+R0362,include,I1,topology-aware retrieval
+R0363,exclude,E2,
+R0364,include,I1,hybrid RRF RAG compared
+R0365,include,I4,locally deployed 8B RAG evaluation
+R0366,include,I3,
+R0367,include,I3,
+R0368,include,I1,adaptive retrieval routing
+R0369,include,I1,RAG vs fine-tuning on private repos
+R0370,include,I3,
+R0371,include,I1,multilingual embedding/parsing comparison
+R0372,include,I4,hybrid RAG local LLMs
+R0373,include,I1,concept retrieval
+R0374,exclude,E2,
+R0375,include,I1,retrieval sources for small LMs
+R0376,include,I4,local SLM with dense retrieval
+R0377,include,I1,retrieval-augmented config debugging
+R0378,include,I3,retrieval-augmented reasoning benchmark
+R0379,exclude,E2,
+R0380,exclude,E2,
+R0381,include,I3,RAG eval dataset incl unanswerable
+R0382,exclude,E2,
+R0383,exclude,E2,
+R0384,include,I1,hybrid fusion RRF/weighted
+R0385,include,I2,hallucination detection
+R0386,exclude,E2,
+R0387,exclude,E3,"summarization faithfulness, no retrieval"
+R0388,unsure,I1,no abstract
+R0389,exclude,E2,
+R0390,include,I1,
+R0391,include,I5,backdoor dense retrieval
+R0392,include,I5,
+R0393,include,I5,
+R0394,include,I1,
+R0395,exclude,E3,intent classification
+R0396,include,I4,hardware-constrained offline RAG
+R0397,include,I1,hybrid search tradeoffs
+R0398,include,I1,KG retrieval
+R0399,include,I2,"hallucination with RAG, local models"
+R0400,include,I3,RAG strategies benchmark Bangla
+R0401,include,I1,code-switched RAG chatbot
+R0402,exclude,E4,non-English
+R0403,include,I1,graph embedding retrieval with local LLM
+R0404,exclude,E2,
+R0405,include,I1,
+R0406,include,I1,compact multilingual embeddings
+R0407,exclude,E3,
+R0408,include,I3,
+R0409,exclude,E3,customer service dialogue RL
+R0410,exclude,E2,RAG used for translation only
+R0411,exclude,E3,
+R0412,include,I3,
+R0413,include,I1,
+R0414,include,I1,filtered ANN benchmark
+R0415,include,I5,
+R0416,include,I3,
+R0417,include,I2,
+R0418,include,I3,chart-based multimodal RAG benchmark
+R0419,include,I3,multimodal RAG benchmark
+R0420,include,I1,code-switched RAG
+R0421,include,I5,
+R0422,include,I3,
+R0423,include,I3,
+R0424,include,I1,
+R0425,include,I1,
+R0426,unsure,I1,no abstract
+R0427,unsure,I1,no abstract
+R0428,unsure,,PDF parsing VLM benchmark for RAG ingestion
+R0429,include,I1,
+R0430,include,I3,
+R0431,include,I1,IR survey incl RAG
+R0432,exclude,E2,
+R0433,exclude,E2,RAG used only for dataset validation
+R0434,include,I1,multilingual mRAG
+R0435,include,I1,
+R0436,exclude,E4,short non-research piece
+R0437,include,I1,
+R0438,exclude,E2,
+R0439,include,I2,abstention/hallucination ablation
+R0440,include,I2,
+R0441,include,I2,
+R0442,include,I2,
+R0443,include,I4,edge efficient multimodal inference review
+R0444,include,I1,cross-lingual retrievers
+R0445,include,I1,vision-based document retrieval
+R0446,include,I1,
+R0447,include,I3,
+R0448,exclude,E3,hallucination detection without retrieval
+R0449,include,I4,locally deployable RAG
+R0450,include,I1,
+R0451,include,I1,
+R0452,include,I1,
+R0453,include,I1,
+R0454,include,I1,
+R0455,include,I5,
+R0456,include,I4,
+R0457,include,I1,
+R0458,include,I1,survey
+R0459,include,I1,
+R0460,include,I1,
+R0461,include,I1,
+R0462,exclude,E3,
+R0463,include,I2,
+R0464,exclude,E3,
+R0465,include,I3,bilingual RAG technical evaluation
+R0466,include,I2,citation evaluation
+R0467,include,I1,reranker routing evaluated
+R0468,include,I1,compact retriever
+R0469,include,I3,RAG vs baselines evaluated
+R0470,include,I1,
+R0471,include,I3,
+R0472,include,I1,query expansion with citations
+R0473,include,I5,
+R0474,include,I4,
+R0475,include,I4,
+R0476,include,I4,
+R0477,include,I1,
+R0478,exclude,E2,
+R0479,include,I1,
+R0480,exclude,E3,
+R0481,include,I1,hybrid retrieval method
+R0482,include,I1,
+R0483,include,I1,
+R0484,include,I1,
+R0485,include,I1,
+R0486,include,I5,
+R0487,include,I2,
+R0488,include,I4,
+R0489,include,I3,
+R0490,include,I1,fine-tuned ColBERT retrieval
+R0491,include,I1,
+R0492,include,I2,
+R0493,include,I1,SLR on RAG/vector DBs
+R0494,include,I1,
+R0495,include,I1,
+R0496,include,I1,
+R0497,include,I1,
+R0498,exclude,E6,likely version of R0500
+R0499,exclude,E2,
+R0500,include,I1,multilingual RAG embeddings

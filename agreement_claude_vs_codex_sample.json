@@ -1,0 +1,26 @@
+{
+ "screener_a": "claude",
+ "screener_b": "codex_sample",
+ "n_compared": 500,
+ "n_missing_in_one": 2494,
+ "three_way": {
+  "agreement": 0.82,
+  "kappa": 0.6098
+ },
+ "binary_advance": {
+  "agreement": 0.884,
+  "kappa": 0.6604
+ },
+ "counts_a": {
+  "include": 356,
+  "unsure": 44,
+  "exclude": 100
+ },
+ "counts_b": {
+  "unsure": 42,
+  "exclude": 118,
+  "include": 340
+ },
+ "both_advance": 362,
+ "disagree_binary": 58
+}

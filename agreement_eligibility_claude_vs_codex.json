@@ -1,0 +1,20 @@
+{
+ "n": 300,
+ "agreement": 0.8267,
+ "kappa": 0.653,
+ "claude_yes": 157,
+ "codex_yes": 153,
+ "claude_yes_codex_no": 28,
+ "claude_no_codex_yes": 24,
+ "both_yes": 129,
+ "both_yes_shared_facet": 127,
+ "both_yes_identical_facets": 96,
+ "facet_kappa": {
+  "F1": 0.513,
+  "F2": 0.717,
+  "F3": 0.608,
+  "F4": 0.964,
+  "F5": 0.911,
+  "F6": 0.678
+ }
+}

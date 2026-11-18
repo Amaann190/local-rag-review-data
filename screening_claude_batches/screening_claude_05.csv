@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R1001,include,I3,RAG vs long-context evaluation on EHR tasks
+R1002,unsure,I1,Ad hoc IR fusion runs; not clearly QA/RAG
+R1003,include,I3,Evaluation methodology for KV cache reuse in RAG
+R1004,include,I1,Sparse vs dense retrievers in coding RAG
+R1005,unsure,I4,Abstract too short; small LMs in smart homes
+R1006,include,I3,"Compares RAG variants, hallucination rates"
+R1007,include,I3,Retriever evaluation in RAG QA
+R1008,include,I3,Retrieval robustness benchmark
+R1009,include,I3,Compares LLM backbones in RAG on faithfulness
+R1010,include,I1,Hybrid BM25+dense RAG with RAGAS evaluation
+R1011,include,I2,Attribution bias in RAG
+R1012,include,I1,Chunking strategies for low-resource dense retrieval
+R1013,include,I3,Game-theoretic RAG evaluation metric
+R1014,include,I3,RAG metrics in telecom QA
+R1015,include,I3,Survey of RAG evaluation
+R1016,include,I3,RAG analysis on QUEST-LOFT
+R1017,include,I1,Lexical vs semantic vs hybrid retrieval in RAG
+R1018,include,I1,Arabic semantic search benchmark in RAG
+R1019,include,I3,Benchmarking RAG configurations
+R1020,include,I4,Sparse quantized LLMs for neuromorphic edge
+R1021,unsure,I1,Dense web search retrieval; not QA/RAG
+R1022,include,I1,Structured retrieval for long-audio QA via text events
+R1023,include,I1,Event-logic graph retrieval for RAG
+R1024,exclude,E1,Image retrieval
+R1025,include,I2,Hallucination rectification incl. retrieval-based settings
+R1026,include,I2,RAG hallucination detection
+R1027,include,I2,Abstention in low-resource RAG
+R1028,include,I2,Unanswerable QA abstention with hybrid RAG
+R1029,include,I2,Contradictory evidence benchmark and mitigation
+R1030,include,I2,Hallucination detection in RAG
+R1031,include,I1,Hybrid retrieval with 8B models
+R1032,exclude,E2,Domain multi-agent RAG application
+R1033,include,I2,"Evidence-grounded RAG, citation and hallucination"
+R1034,include,I1,Hybrid retrieval evaluation
+R1035,include,I1,Hybrid dense+KG retriever
+R1036,exclude,E4,Commentary/editorial
+R1037,include,I1,Sparse-dense fusion
+R1038,include,I2,Citation traceability in RAG
+R1039,include,I2,Conflict-aware abstention RAG
+R1040,include,I1,Sparse/dense/hybrid retrieval with reranking in RAG
+R1041,exclude,E1,Recommender system
+R1042,include,I3,Benchmark evaluating RAG on evolving knowledge
+R1043,include,I1,Exact adaptive hybrid retrieval fusion
+R1044,include,I4,Quantization for inference
+R1045,include,I1,Rank fusion for sparse retrieval
+R1046,include,I2,RAG reduces hallucination; privacy-conscious open LLMs
+R1047,include,I3,Legal QA dataset evaluating RAG
+R1048,include,I4,Local LLM RAG for closed-source software
+R1049,exclude,E3,"Explainability survey, no retrieval"
+R1050,exclude,E3,XAI position paper; RAG only mentioned
+R1051,include,I2,Citation-constrained evidence grounding
+R1052,unsure,,Vague XAI framework mentioning RAG attribution
+R1053,include,I1,Hybrid BM25+XLM-R low-resource retrieval
+R1054,include,I5,Privacy-preserving evidence retrieval
+R1055,unsure,I1,"Rank fusion in classic IR, not QA/RAG"
+R1056,include,I5,Indirect prompt injection via retrieval tools
+R1057,include,I5,PII leakage in RAG
+R1058,include,I5,Knowledge poisoning in RAG (title only)
+R1059,include,I4,Compression survey for resource-constrained inference
+R1060,unsure,I4,PEFT vs RAG for code; quantization memory
+R1061,include,I4,Small LMs for resource-constrained deployment
+R1062,include,I5,Knowledge base poisoning in RACG
+R1063,include,I5,Graph RAG privacy leakage
+R1064,include,I5,Prompt injection threat model for RAG
+R1065,include,I5,RAG poisoning attack
+R1066,include,I4,Edge quantization accelerator
+R1067,unsure,,"No abstract; hallucination in finance, retrieval unclear"
+R1068,include,I3,Benchmarking RAG fact-checking pipelines
+R1069,include,I5,Stance poisoning in RAG
+R1070,include,I2,Citation hallucination detection
+R1071,exclude,E3,"Math failure modes, no retrieval system"
+R1072,exclude,E3,Fairness of XAI narratives
+R1073,include,I3,Fairness testing of RAG with SLMs
+R1074,include,I4,Low-bit quantization
+R1075,include,I2,Faithfulness hallucination detection benchmark
+R1076,include,I2,Context faithfulness benchmark
+R1077,include,I2,Citation in RAG via decomposition
+R1078,include,I1,Query rewriting with BM25/SPLADE fusion
+R1079,include,I2,Hallucination detection in RAG
+R1080,include,I2,Context-faithful RAG
+R1081,include,I2,Faithfulness hallucination detector
+R1082,unsure,,No abstract; video RAG
+R1083,include,I2,Citation grounding verification
+R1084,include,I4,Mixed-precision quantization
+R1085,include,I1,Persian embedding retrieval benchmark
+R1086,include,I2,Citation-grounded QA
+R1087,include,I4,2-bit quantized inference
+R1088,include,I4,Small/large model collaborative decoding
+R1089,exclude,E3,Datacenter serving system
+R1090,include,I4,LUT quantization kernels
+R1091,include,I4,KV cache quantization
+R1092,include,I4,On-device Ollama RAG
+R1093,include,I4,SLMs on edge devices
+R1094,include,I3,Multimodal RAG benchmark
+R1095,include,I4,Federated edge RAG
+R1096,exclude,E3,"Federated knowledge transfer, no retrieval"
+R1097,include,I1,Federated privacy-preserving graph retrieval
+R1098,include,I3,RAG with federated learning evaluation
+R1099,exclude,E1,Recommender system
+R1100,include,I5,Mapping study of federated RAG
+R1101,include,I4,FedRAG edge scoping review
+R1102,include,I4,On-device fine-tuning with quantization
+R1103,exclude,E3,"Federated LLM-SLM transfer, no retrieval"
+R1104,include,I5,Knowledge base extraction attack
+R1105,include,I5,Prompt injection defense in RAG
+R1106,unsure,,"Retrieval-based relation classification, not RAG"
+R1107,include,I2,RAG mitigating VQA hallucination
+R1108,exclude,E3,"Financial reasoning LLM, no retrieval"
+R1109,include,I2,Abstention in RAG
+R1110,include,I3,Benchmark evaluating RAG systems
+R1111,include,I3,Legal RAG benchmark
+R1112,include,I5,Privacy extraction from RAG
+R1113,unsure,I1,Hybrid BM25+SBERT legal search; not QA/RAG
+R1114,exclude,E3,Fine-tuning and merging
+R1115,exclude,E3,Hate speech fine-tuning
+R1116,include,I3,FT vs RAG vs hybrid comparison
+R1117,include,I3,FT vs RAG multi-hop QA
+R1118,exclude,E3,Datacenter serving for quantized models
+R1119,include,I1,Recency-aware RAG (title only)
+R1120,include,I3,Multimodal RAG citation benchmark
+R1121,exclude,E3,"KG extraction benchmark, no retrieval"
+R1122,include,I3,Financial RAG benchmark
+R1123,include,I2,Source attribution and uncertainty flags
+R1124,include,I4,Quantization for inference
+R1125,include,I5,Membership inference on RAG
+R1126,exclude,E1,Visual query preprocessing
+R1127,include,I4,Low-batch edge inference kernels
+R1128,include,I5,Red-teaming prompt injection/knowledge corruption
+R1129,include,I4,Quantization
+R1130,include,I4,INT6 quantization
+R1131,include,I4,Dynamic precision quantization
+R1132,include,I4,Edge SLM inference
+R1133,include,I3,RAG text-to-SQL benchmark
+R1134,exclude,E3,"LLM explanation faithfulness, no retrieval"
+R1135,include,I4,Review of hallucination in on-device SLMs
+R1136,include,I5,Datastore extraction from RAG
+R1137,exclude,E2,RAG as tool for AMR policy
+R1138,unsure,,Forecasting focus; evidence retrieval via RRF evaluated
+R1139,exclude,E3,"Agent memory management, not RAG"
+R1140,unsure,I5,TEE security for FM/RAG deployments
+R1141,include,I1,RAG with reranking and guardrails evaluated
+R1142,exclude,E4,Book
+R1143,include,I4,FP6 quantization single GPU
+R1144,include,I4,Quantization
+R1145,include,I4,Quantization
+R1146,include,I2,Hallucination detection with hybrid retrieval
+R1147,include,I2,Grounding taxonomy
+R1148,include,I4,Hardware-aware quantization agent
+R1149,include,I1,Benchmarking retrieval strategies
+R1150,include,I1,Cross-lingual retrieval-augmented ICL
+R1151,include,I4,Edge RAG with SLMs
+R1152,exclude,E3,"Insurance framework, no retrieval method"
+R1153,exclude,E3,Neurosymbolic CCG lifting
+R1154,exclude,E2,RAG tool for intrusion mitigation
+R1155,unsure,,Broad review of embeddings and RAG
+R1156,include,I1,EBM GraphRAG with reranking
+R1157,include,I2,Faithfulness-aware reward model
+R1158,exclude,E4,Key messages commentary
+R1159,unsure,I2,General hallucination mitigation survey
+R1160,include,I1,Hybrid KG+vector RAG comparison
+R1161,include,I3,RAG survey incl. evaluation and security
+R1162,exclude,E2,Hackathon applications summary
+R1163,exclude,E2,Review of RAG in education
+R1164,include,I4,"RAG for SLMs, local privacy"
+R1165,exclude,E3,"LLM spec generation, no retrieval"
+R1166,include,I1,GraphRAG
+R1167,include,I1,Multilingual BM25 vs dense vs RAG
+R1168,include,I3,RAG benchmark on grammars
+R1169,include,I1,Hybrid to agentic retrieval pipeline
+R1170,exclude,E3,Text-to-SQL review; RAG peripheral
+R1171,exclude,E2,GraphRAG for impact prediction
+R1172,exclude,E1,Time-series forecasting
+R1173,include,I5,DP privacy accounting in RAG
+R1174,unsure,,"Retrieval-augmented toxicity mitigation, not QA"
+R1175,exclude,E1,Image-based retrieval for captioning
+R1176,unsure,I5,Agent threat survey; RAG-specific unclear
+R1177,include,I4,Quantized speculative decoding hardware
+R1178,include,I3,"User evaluation of RAG bot, benchmark"
+R1179,include,I1,Retrieval with reranking and citations
+R1180,include,I2,Hallucination and abstention benchmark
+R1181,include,I1,Evidence reranking (title only)
+R1182,include,I2,Claim-level provenance review
+R1183,include,I4,Edge RAG compression
+R1184,include,I1,Hybrid lexical-dense RRF
+R1185,include,I1,Survey of search/retrieval decisions in LLMs
+R1186,include,I1,"Retrieval strategies, BM25 vs dense"
+R1187,include,I1,Retrieval for code-switched generation
+R1188,exclude,E3,STI analytics framework
+R1189,include,I2,Faithfulness of grounded summaries
+R1190,exclude,E2,RAG tutoring demo
+R1191,include,I1,Hybrid BM25+vector RRF with ACL filtering
+R1192,exclude,E3,Conceptual legal LLM paper
+R1193,exclude,E3,Datacenter energy management
+R1194,include,I1,RAG architectures review (title only)
+R1195,exclude,E3,API cost cascade
+R1196,include,I1,Fine-grained table retrieval
+R1197,exclude,E1,Recommender system
+R1198,include,I4,Quantization on single GPU
+R1199,exclude,E1,Image metasearch
+R1200,include,I1,Graph-enhanced retrieval
+R1201,include,I4,MoE quantization
+R1202,include,I1,Graph-grounded hybrid retrieval
+R1203,exclude,E1,Graph foundation models
+R1204,include,I3,RAG benchmark generation
+R1205,include,I3,Leakage-free RAG benchmarks
+R1206,unsure,,Latent knowledge injection vs RAG baselines
+R1207,include,I2,Citation paradigm evaluation
+R1208,unsure,,No abstract; cloud RAG framework
+R1209,exclude,E3,General GenAI review
+R1210,exclude,E3,GenAI for visualization
+R1211,exclude,E3,General cybersecurity LLM review
+R1212,exclude,E3,Clinical GenAI review
+R1213,exclude,E1,Educational recommender
+R1214,include,I1,Cross-lingual query expansion
+R1215,include,I1,Graph retrieval vs regular RAG
+R1216,unsure,I5,Privacy in LLM memory incl. RAG
+R1217,include,I2,Nugget-based grounded generation
+R1218,exclude,E3,Foundation model release
+R1219,exclude,E2,Data catalog tagging application
+R1220,exclude,E1,Glucose time-series forecasting
+R1221,include,I1,Hybrid retrieval architecture proposal
+R1222,include,I5,Encrypted retrieval for private RAG
+R1223,include,I4,Quantization
+R1224,include,I4,KV cache quantization
+R1225,include,I1,Graph-augmented retrieval for lightweight models
+R1226,unsure,I1,Generative retrieval for literature exploration
+R1227,include,I1,Graph RAG retrieval
+R1228,unsure,I1,Graph RAG for process mining logs
+R1229,include,I3,RAG evaluation framework
+R1230,include,I1,Dense/sparse embedding models
+R1231,include,I1,Multilingual embedding models
+R1232,include,I1,Embedding and reranker models
+R1233,include,I2,RAG groundedness risk detection
+R1234,include,I1,Granularity RRF
+R1235,include,I1,Graph-aware hybrid retrieval
+R1236,include,I1,Graph RAG survey
+R1237,include,I1,KG + text retrieval QA
+R1238,include,I1,Structured KV encoding for RAG
+R1239,include,I1,GraphRAG survey
+R1240,unsure,I1,Hybrid retrieval for idea generation
+R1241,include,I3,GraphRAG benchmark
+R1242,include,I4,Local GraphRAG on consumer GPU
+R1243,include,I5,GraphRAG poisoning
+R1244,exclude,E2,Demo platform
+R1245,include,I1,Greek statutory retrieval benchmark
+R1246,exclude,E1,Aircraft trajectory prediction
+R1247,include,I2,Sentence-level citations
+R1248,unsure,,Organizational study of RAG ground truth
+R1249,include,I2,Citation-constrained drafting with refusal
+R1250,include,I2,Citation fidelity via grounded retrieval

@@ -1,0 +1,241 @@
+record_id,eligible,facets,evidence,note
+R0001,yes,F2,yes,hallucination elimination on RAGTruth
+R0002,no,F3,no,"local LLM RAG demo, no quantitative evaluation"
+R0003,yes,F1;F2,yes,"dense retrieval plus LLM reranking, faithfulness control"
+R0004,no,F4;F6,no,"benchmark proposal, no results reported"
+R0005,no,,no,no abstract available
+R0006,yes,F4,yes,"anonymization placement in RAG pipeline, privacy"
+R0007,yes,F2;F6,yes,citation-grounded benchmark for grounded analysis
+R0008,no,,no,"multi-agent RAG, no core facet"
+R0009,yes,F2;F6,yes,citation faithfulness metrics vs humans
+R0010,yes,F1;F2,yes,"dense, sparse, hybrid comparison for RAG reliability"
+R0011,yes,F1;F5,yes,Greek BM25/dense/hybrid retrieval benchmark
+R0012,yes,F1,yes,"BM25 vs hybrid RRF on Cranfield; IR not RAG, borderline"
+R0013,yes,F5,yes,Khmer RAG embedding and LM comparison
+R0014,no,,yes,"LLM dense retrievers, no facet"
+R0015,yes,F3;F2,yes,"local Llama3 Ollama RAG, hallucination rate; borderline"
+R0017,no,,yes,"temporal forecasting, no facet"
+R0018,yes,F3,yes,quantization evaluation of LLMs
+R0019,yes,F1,yes,hybrid dense+lexical+rerank multi-hop retrieval
+R0021,no,F2,no,GraphRAG review without search method
+R0022,no,F3,no,"quantization survey, no explicit search method"
+R0024,no,,no,"general RAG survey, no facet or search method"
+R0025,no,F3,no,"SLM survey, no explicit search method"
+R0027,no,,no,no abstract available
+R0029,yes,F1;F3;F2,yes,"BM25+dense RRF with small LMs, faithfulness"
+R0030,yes,F1;F6,yes,dense/sparse/KG fusion RAG with evaluation
+R0032,yes,F1,yes,"keyword store hybrid vs BM25/dense, small feasibility study"
+R0033,yes,F3,yes,"SLM vs LLM under edge, privacy, latency constraints"
+R0034,no,,yes,"multimodal RAG application, no core facet"
+R0035,yes,F1;F2,yes,"dense+sparse fusion rerank, hallucination rate reduced"
+R0036,no,,yes,"contract extraction SLM, not RAG-focused"
+R0037,yes,F4,yes,knowledge poisoning attacks on GraphRAG
+R0038,yes,F6,yes,LLM-judge evaluation standard for RAG
+R0040,no,F3,no,"local quantized RAG bot, no quantitative evaluation"
+R0041,no,,yes,"graph RAG application, no core facet"
+R0042,yes,F1,yes,"hybrid RRF RAG central; application, borderline"
+R0043,yes,F1;F2,yes,"hybrid retrieval, reranking, claim-level grounding"
+R0044,yes,F2,yes,attribution and groundedness verification in RAG
+R0045,yes,F1,yes,BM25+dense RRF beats single baselines
+R0046,no,F1,no,"conceptual chapter, no quantitative evaluation"
+R0047,no,F1;F2;F5,no,"Uzbek hybrid RAG proposed, no results reported"
+R0048,yes,F1;F3,yes,BM25+dense RRF with small open models
+R0049,no,,yes,"TF-IDF plus KG, not sparse-dense; application"
+R0050,yes,F6,yes,RAG-Eval evaluation framework
+R0051,no,,yes,"urban regulation chatbot application, no ablation"
+R0052,no,,yes,"report generation application, citations secondary"
+R0053,yes,F4,yes,layered defence against indirect prompt injection
+R0054,yes,F1;F2;F5,yes,"Turkish hybrid RAG, abstention, citation accuracy"
+R0055,yes,F1;F2,yes,"hybrid RRF rerank with ablation, faithfulness"
+R0056,no,F3,no,"minimal offline RAG description, no evaluation"
+R0058,no,,yes,"chatbot application, no core facet"
+R0059,no,F1;F4,no,"qualitative comparison only, no experiments"
+R0060,no,,yes,"multimodal document retrieval, hybrid minor"
+R0061,no,F4,no,"security framework, no results in abstract"
+R0062,no,,yes,"multimodal RAG system, hybrid is component only"
+R0064,no,,yes,"financial advisory application, no core facet"
+R0065,no,F3;F5,no,"offline multilingual RAG system, no quantitative evaluation"
+R0066,yes,F2,yes,"metadata-aware hybrid queries improve faithfulness, small LLMs"
+R0067,yes,F2,yes,"k-NN gating theory of hallucination, numerical validation"
+R0069,yes,F1;F2;F3,yes,"BM25+SBERT RRF with local Qwen3-4B, hallucination cut"
+R0070,yes,F3,yes,"fully local RAG on CPU-only hardware, latency tests"
+R0071,no,,no,"chatbot risk metric, not RAG-specific"
+R0072,yes,F1;F5,yes,hybrid retrieval optimisation and multilingual queries
+R0073,yes,F6;F5,yes,ChronoQA Chinese temporal RAG benchmark
+R0074,yes,F1;F2,yes,"hybrid RRF rerank with citation-level evaluation, ablation"
+R0076,no,F1,no,"reference architecture, evaluation only defined"
+R0077,no,F2;F3,no,"conceptual artifact, not empirically validated"
+R0079,yes,F1;F2;F6,yes,sparse/dense/hybrid benchmark with abstention tests
+R0081,no,,no,dense-only conversational framework
+R0082,yes,F3,yes,"quantized Llama3 on constrained hardware, privacy-aware RAG"
+R0083,no,,yes,"supply chain application, no core facet"
+R0084,no,,yes,"dense medical RAG application, no core facet"
+R0085,no,,yes,"legal RAG application, hybrid not studied"
+R0086,no,,yes,"multilingual chatbot application, no studied facet"
+R0087,no,F2,no,"faithfulness review, no search method, not RAG-specific"
+R0088,no,,no,"knowledge base review, no facet or search method"
+R0089,no,,no,"CQA review, no search method, no facet"
+R0090,no,,no,RAG review without explicit search method
+R0091,no,,yes,"stomatology scoping review, no facet studied"
+R0093,yes,F6;F2,yes,"paired RAG vs no-RAG benchmark, hallucination, citations; borderline"
+R0094,no,,yes,"graph RAG clinical application, no core facet"
+R0096,no,F4,no,"access-control architecture proposal, no evaluation"
+R0097,no,,yes,"healthcare copilot application, no core facet"
+R0099,yes,F3,yes,hardware-aware W4A8 quantization with speed experiments
+R0100,no,,yes,"parametric graph memory, no core facet"
+R0101,no,F4,no,threat analysis without evaluation or search method
+R0103,no,,yes,"employee search-time survey, no core facet"
+R0104,no,,no,no abstract available
+R0105,no,,no,"GraphRAG survey, no search method, no facet"
+R0107,no,,no,"multimodal RAG survey, no facet or search method"
+R0108,no,F3,no,"SLM survey, no explicit search method"
+R0109,no,F3,no,"LLM-SLM collaboration survey, no search method"
+R0110,yes,F3,yes,efficient LLM inference survey with comparative experiments; borderline
+R0112,no,F2,no,"hallucination survey, no search method, not RAG-specific"
+R0113,no,F2,no,"hallucination survey, no search method"
+R0118,no,,no,"medical multimodal RAG survey, no facet"
+R0121,no,F3,no,"model compression survey, no search method"
+R0122,no,F3,no,"compression survey, no search method"
+R0123,no,,no,no abstract available
+R0124,no,,no,"legal AI survey of four studies, no facet"
+R0125,no,F3,no,"local multi-PDF RAG, no quantitative evaluation"
+R0126,no,,no,RAG survey without search method
+R0127,no,,no,"transformer compression survey, no search method"
+R0128,no,,yes,"chunking study, not a core facet"
+R0130,no,,no,no abstract available
+R0131,yes,F6,yes,PRISMA systematic review covering RAG evaluation practices
+R0132,no,,no,review without explicit search method
+R0133,yes,F2,yes,PRISMA review of RAG hallucination mitigation
+R0134,yes,F1;F3,yes,"retrieval/rerank configurations on consumer GPU, cost tradeoff"
+R0135,no,,yes,"small proxy models for knowledge mining, not RAG"
+R0136,no,F3,no,"theoretical analysis of local RAG, no empirical evaluation"
+R0137,no,F6,no,"evaluation framework proposed, no experiments reported"
+R0138,yes,F2;F6,yes,citation/faithfulness robustness of RAG architectures
+R0139,no,,no,no abstract available
+R0140,yes,F1,yes,calibrated log-odds fusion of BM25 and dense scores
+R0141,no,,yes,"event argument extraction, not RAG"
+R0142,yes,F3,yes,"on-device RAG compression, matches reader at 1/10 context"
+R0143,no,,yes,"GraphRAG platform application, no core facet"
+R0144,no,,no,"LLMOps architecture, no core facet"
+R0146,yes,F4,yes,routing hijacking attack on federated RAG
+R0147,no,F1,yes,"case-law retrieval shared task, not RAG; hybrid minor"
+R0148,yes,F3,yes,arbitrary-bit quantized LLM inference acceleration
+R0149,yes,F2,yes,abstention-aware RAG with refusal benchmark
+R0150,yes,F2;F6,yes,abstention vs hallucination citation attribution benchmark
+R0151,no,,yes,"sparse context efficiency, not local deployment"
+R0153,no,,yes,"clinical NER application, hybrid not studied"
+R0154,yes,F3,yes,KV cache quantization for deployable LLM inference
+R0155,yes,F3,yes,quantized LoRA finetuning for resource-constrained LLMs
+R0156,no,,yes,"RAG QA framework, no core facet"
+R0157,no,,yes,"sparse activation in SLMs, no studied local constraint"
+R0159,no,,yes,"cross-language code retrieval, not natural-language F5"
+R0160,no,,yes,"active retrieval method, no core facet"
+R0161,no,,yes,"biographical MLLM benchmark, RAG secondary"
+R0162,yes,F4,yes,data extraction attack on agent memory and RAG
+R0163,yes,F1,yes,"BM25-supervised embedding adaptation, private data; borderline"
+R0164,no,,yes,"cybersecurity RAG application, no core facet"
+R0165,yes,F5,yes,Turkish embedding model evaluated on TR-MTEB
+R0166,yes,F4,yes,enterprise data leakage defence in RAG
+R0167,no,,no,"reflective tag RAG, no core facet"
+R0168,yes,F4,yes,"adaptive defences against membership inference, poisoning, leakage"
+R0169,no,,no,no abstract available
+R0170,yes,F1;F5,yes,adaptive BM25+dense fusion for Uzbek regulations
+R0173,yes,F1;F2,yes,"BM25+dense RRF, CRAG hallucination audit"
+R0174,no,,yes,"personalized conversational retrieval, no facet"
+R0175,no,,yes,"query performance prediction, retrieval paradigms incidental"
+R0176,no,,yes,"vector vs tree reasoning, no sparse-dense"
+R0177,yes,F2;F1,yes,BM25 reranking with abstention and source attribution
+R0178,no,,yes,"insurance version-aware RAG, hybrid not studied"
+R0179,yes,F1;F5,yes,"dense vs BM25 vs hybrid RRF, Japanese and English"
+R0180,no,,yes,"LLM-SLM log analysis, not RAG"
+R0181,no,,yes,"GraphRAG Alzheimer application, no core facet"
+R0183,yes,F2,yes,"hallucination mitigation and detection metric, Italian context"
+R0184,yes,F4,yes,few-shot knowledge poisoning of RAG fact checking
+R0185,yes,F3,yes,"local open models vs GPT-4o in RAG, privacy and time; borderline"
+R0186,no,,no,"RAG review without search method, no facet"
+R0191,yes,F5;F6,yes,Persian RAG models and benchmarks
+R0192,yes,F1,yes,"BM25+dense hybrid with rerank, measured gains"
+R0193,no,F4,no,"threat analysis and control list, no evaluation"
+R0194,yes,F4,yes,systematic survey plus RedSOC empirical benchmark of RAG poisoning
+R0195,no,F4,no,"review without search method, framework unvalidated"
+R0196,yes,F4,yes,single-document retrieval poisoning attack
+R0197,yes,F4,yes,certified defence against RAG poisoning and injection
+R0198,yes,F3,yes,"deployment-constrained efficiency technique selection, experiments"
+R0199,yes,F1,yes,BM25 vs dense hybrid retrieval over regulations
+R0202,yes,F3,yes,post-training quantization for LLMs
+R0203,yes,F3,yes,asymmetric FP quantization for LLMs
+R0204,yes,F6,yes,AfriEconQA benchmark with hybrid RAG conditions
+R0205,yes,F5,yes,African-language embedding benchmark
+R0206,no,,yes,"graph embedding for GraphRAG, no core facet"
+R0207,no,,yes,"agent/tool retrieval graph, no core facet"
+R0208,no,,yes,"agent experience memory, not RAG facet"
+R0209,no,,yes,"agentic adaptive RAG, citation accuracy incidental"
+R0215,no,,yes,"appeal generation application, no core facet"
+R0216,yes,F1;F6,yes,hybrid sparse-dense RAG with benchmark
+R0220,no,,no,"agentic RAG survey, no search method"
+R0221,no,,no,"agentic RAG overview, no facet"
+R0222,yes,F1;F2,yes,semantic+lexical RRF with nine-configuration ablation
+R0224,yes,F1,yes,BM25/dense/RRF fusion cascade for conversational memory retrieval
+R0225,no,F4,no,"privacy survey of agents, no search method"
+R0226,yes,F4;F6,yes,agent security benchmark incl. retrieval confidentiality; borderline
+R0227,no,,yes,"agent security benchmark, retrieval poisoning incidental"
+R0228,no,,yes,"aggregation query benchmark, no core facet"
+R0229,yes,F2,yes,contextual hallucination detection via attention scores
+R0230,yes,F3,yes,activation quantization for edge LLM inference
+R0231,no,,yes,"graph RAG method, no core facet"
+R0232,no,,yes,"multi-vector ranking, no core facet"
+R0233,yes,F1;F2;F5,yes,"keyword/semantic/hybrid RAG, cross-lingual, unanswerable questions"
+R0235,no,F3,no,"constrained-resource RAG framework, no quantitative evaluation"
+R0239,yes,F1,yes,"BM25 vs dense vs hybrid in product search; not RAG, borderline"
+R0241,no,,yes,"legal RAG application, cost comparison only"
+R0243,yes,F4,yes,prompt injection firewall for RAG with classifier results
+R0244,no,,yes,"RCT of legal AI productivity, hallucination secondary"
+R0248,no,,no,"AI security overview, not RAG-specific"
+R0251,no,,yes,"vaccination RAG application, no core facet"
+R0252,no,,yes,"literature QA system, attribution not studied"
+R0253,yes,F1;F2,yes,"sparse retriever RRF with grounded generation, SemEval rank 1"
+R0254,no,,yes,"time-correct RAG, no core facet"
+R0255,no,,yes,"LLM persona comparison, no core facet"
+R0256,no,,yes,"biography generation system, no core facet"
+R0257,yes,F4,yes,private data extraction attack on RAG
+R0259,no,,yes,"generative search alignment, no core facet"
+R0260,no,,yes,"multilingual fine-tuning alignment, not retrieval-focused"
+R0262,yes,F5;F1,yes,language bias in multilingual RAG reranking
+R0263,no,,yes,"clinical RAG evaluation, no core facet"
+R0264,yes,F2;F5,yes,RAG fine-tuning improves citation accuracy across 26 languages
+R0265,no,,yes,multimodal clinical RAG application
+R0267,yes,F3,yes,floating-point quantization for LLM inference
+R0268,yes,F1,yes,"semantic vs hybrid vs MMR retrieval ablation, grounding"
+R0269,yes,F1;F3;F5,yes,"hybrid RRF retriever with local LLM, Spanish"
+R0270,no,,yes,"chatbot system, hybrid retrieval incidental"
+R0271,yes,F2;F3,yes,"offline biomedical RAG with fact verification, faithfulness"
+R0276,yes,F2,yes,decoding methods for faithfulness to retrieved information
+R0277,yes,F1,yes,convex combination vs RRF fusion analysis
+R0278,no,,no,no abstract available
+R0279,no,F3,no,"SLM RAG proposal, evaluation only planned"
+R0280,no,,yes,"general prompt injection benchmark, not RAG-specific"
+R0282,yes,F4,yes,indirect prompt injection privacy leakage via external content; borderline
+R0283,no,,yes,"code generation retrieval study, no core facet"
+R0284,yes,F2;F6,yes,RAG faithfulness under retrieval noise and drift
+R0285,yes,F1,yes,sparse vs dense retrieval design for RAG QA
+R0287,yes,F3;F5;F1,yes,"Ukrainian local RAG, hybrid search, compressed model"
+R0288,yes,F1;F2,yes,"BM25 plus semantic retrieval with ablation, reduced hallucination"
+R0289,no,,yes,"educational summarization, no core facet"
+R0290,yes,F3,yes,quantisation energy and inference time of code LLM
+R0291,yes,F3,yes,1.58-bit ternary quantization fine-tuning for deployment
+R0292,no,,yes,"UAV report application, hybrid retrieval not studied"
+R0293,yes,F1;F5,yes,"Indonesian RAG, FAISS+BM25 hybrid reranker compared"
+R0296,no,,no,"GraphRAG memory tool, no core facet"
+R0297,yes,F2,yes,abstention and hallucination control under conflicting memories
+R0298,no,,no,"RAG system implementation, no evaluation"
+R0299,yes,F1;F2,yes,"hybrid vs lexical-only vs semantic-only, faithfulness"
+R0300,yes,F2,yes,threshold-based refusal for insufficient evidence
+R0301,yes,F1,yes,"RAG-fusion compared against BM25, dense, hybrid baselines"
+R0302,yes,F1;F5,yes,Indonesian RAG reranker and multilingual embedding evaluation
+R0303,no,,no,"FAISS retriever system, no core facet"
+R0307,no,,yes,"dense similarity threshold study, no core facet"
+R0309,yes,F3,yes,"quality-latency-resource tradeoffs with 3B/8B models, hybrid retrieval"
+R0310,yes,F1;F2,yes,"BM25 vs DPR vs hybrid indexing, faithfulness"
+R0311,no,,yes,"Vedanta RAG dataset, no core facet"
+R0313,no,,yes,"ANN search metric, no RAG facet"
+R0314,yes,F1;F5,yes,Polish statutory lexical/dense/fused retrieval comparison

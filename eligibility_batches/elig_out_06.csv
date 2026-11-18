@@ -1,0 +1,241 @@
+record_id,eligible,facets,evidence,note
+R1554,no,,yes,"Sparse features from dense retriever; pure IR, not RAG"
+R1555,yes,F2,yes,"RAG faithfulness/hallucination monitor, AUROC across models"
+R1556,no,,yes,Latent agentic RAG latency; no facet
+R1558,yes,F6;F2,yes,Reliability benchmark for agentic RAG; groundedness evaluated
+R1559,no,,yes,Generic LLM binarization
+R1560,no,,yes,"Generic quantization, no edge setting"
+R1562,yes,F4,yes,RAG leakage attack benchmark across LLMs
+R1563,yes,F4,yes,Defence against prompt injection and RAG leakage
+R1564,no,,yes,Generic quantization
+R1565,yes,F5,yes,"Cross-lingual dense retrieval, XOR-TyDi"
+R1566,no,,yes,Generic quantization
+R1567,no,,yes,NER with retrieval augmentation; not RAG QA
+R1568,yes,F4,yes,Privacy erasure for retrieved documents
+R1569,yes,F2,yes,Context filtering to reduce hallucination from retrieved passages
+R1570,no,,yes,Search engine optimisation for RAG agents; no facet
+R1571,no,,yes,RL embedding training; no facet
+R1572,no,,yes,Dense retriever label noise; pure IR
+R1573,no,,yes,"Long-context benchmark, not RAG evaluation"
+R1574,yes,F2,yes,"Evidence ledger, conflict governance; BM25 and dense baselines"
+R1575,yes,F1,yes,"BM25 vs dense, rerankers for legal citation"
+R1576,yes,F6,yes,Chinese legal RAG benchmark
+R1577,yes,F6,yes,Legal RAG retrieval benchmark
+R1578,no,,yes,Statute retrieval IR with LLM reranking; not RAG QA
+R1579,no,F6,no,Contradiction benchmark framework; no quantitative results reported
+R1580,no,F1,no,Graph dataset pipeline; no evaluation
+R1581,yes,F5,yes,"Armenian low-resource embeddings, retrieval evaluation"
+R1582,yes,F2,yes,Citation and refusal grounding via RL
+R1583,yes,F1,yes,"Sparse, dense, web searchers hybrid RAG"
+R1585,no,F3,no,Local clinical RAG demo; no quantitative evaluation stated
+R1586,yes,F3,yes,Offline on-device local LLM RAG evaluated on consumer hardware
+R1587,yes,F5,yes,"Multilingual dense retrieval synthetic data, 33 languages"
+R1590,yes,F1,yes,BM25 vs dense in Indonesian legal RAG
+R1592,no,,yes,Lexical ranking with neighbours; pure IR
+R1594,no,,yes,Multimodal layout RAG; no facet
+R1596,no,,yes,Domain application; no facet compared
+R1597,no,F1,yes,Retrieval benchmark baselines; pure IR not RAG
+R1598,yes,F3;F2,yes,Mobile RAG chunk selection by evidence sufficiency
+R1601,yes,F1,yes,Keyword vs semantic vs hybrid retrieval compared
+R1602,yes,F1,yes,"BM25, dense, hybrid for personal memory RAG"
+R1603,no,,yes,GraphRAG construction; no facet
+R1604,yes,F5;F2,yes,Multilingual RAG citation language bias
+R1605,yes,F1,yes,BM25 plus dense fusion retriever with ablations
+R1606,yes,F6;F2,yes,RAG generator benchmark including abstention
+R1607,no,,yes,Multi-query expansion for visual retrieval; no facet
+R1608,yes,F3,yes,Small LMs in on-device CPU RAG
+R1609,yes,F6,yes,RAG evaluation benchmark
+R1610,yes,F6;F5,yes,Romanian RAG evaluation with LLM judges
+R1611,yes,F1,yes,Vector search plus fine-tuned reranker for technical QA
+R1615,no,,no,Conceptual review; no explicit search method
+R1618,yes,F2,yes,Uncertainty constraints suppress false content in RAG
+R1619,no,,yes,Generic quantization; no edge setting
+R1620,yes,F3,yes,"Compression of LLMs for edge devices, latency evaluated"
+R1621,yes,F1,yes,"No abstract; title clearly RAG reranking, evidence assumed"
+R1623,no,F4,no,Output firewall viability only; no quantitative evaluation
+R1624,no,,yes,Adaptive retrieval gating; no facet
+R1625,no,,no,Inference survey without explicit search method
+R1626,no,,yes,Pure IR on FiQA; not RAG
+R1627,no,,yes,Generic quantization
+R1630,no,,yes,Domain application; hybrid retrieval not ablated
+R1631,no,,yes,Generic quantization
+R1632,yes,F4,yes,Misinformation and prompt injection via RAG context
+R1633,yes,F3,yes,"On-device LLM inference engine, speedups measured"
+R1634,no,,yes,Mostly multi-GPU quantization system; edge incidental
+R1636,yes,F3,yes,Quantized LLMs on Raspberry Pi
+R1638,yes,F3,yes,Edge LLM deployment with adaptive RAG on Jetson
+R1641,no,,yes,Generic quantization
+R1642,yes,F3;F1,yes,Local offline hybrid semantic plus keyword document QA
+R1644,no,,yes,Generic quantization
+R1645,yes,F4,yes,Single-document RAG poisoning attack
+R1646,yes,F4,yes,GraphRAG poisoning attack
+R1647,no,,yes,Patent drafting RAG; no facet
+R1649,yes,F6,yes,Long-form RAG benchmark and key point recall metric
+R1650,no,,no,Narrative review without search method
+R1652,yes,F6;F2,yes,Long document benchmark with unanswerable QA and RAG retrievers
+R1653,yes,F6,yes,Memory benchmark with abstention and retrieval design experiments
+R1654,no,,yes,Dense long-document retrieval; pure IR
+R1655,no,,no,Survey without explicit search method
+R1657,yes,F6;F5,yes,"RAG evaluation tool, multilingual legal benchmarks"
+R1658,yes,F2,yes,RAG hallucination detection via relevance propagation
+R1659,no,,yes,Generic quantization
+R1660,no,,no,No abstract; math expression retrieval
+R1661,yes,F3,yes,On-device SLM cloud collaboration with private retrieval
+R1662,yes,F2,yes,RAG hallucination detection via context-knowledge signals
+R1663,yes,F2;F6,yes,Hallucination detector and benchmark for RAG
+R1665,yes,F5;F1,yes,"Multilingual dense, sparse, multi-vector retrieval model"
+R1666,yes,F5;F6,yes,Multilingual multimodal RAG benchmark
+R1667,yes,F3;F5;F1,yes,"Offline local multilingual RAG, keyword vs semantic retrieval"
+R1669,no,,yes,Generic quantization
+R1670,no,,yes,Schema matching; not RAG
+R1671,no,,yes,Medical multimodal causal RAG; no facet
+R1672,yes,F4,yes,GraphRAG knowledge graph theft protection
+R1673,yes,F3;F2,yes,"Offline on-device RAG with citations, evaluated"
+R1674,no,,yes,Clinical robustness benchmark; domain application
+R1675,no,,yes,Generic quantization of Mamba
+R1677,no,,yes,Bibliometric review of RAG-KG; no core facet
+R1678,no,,no,RAG survey without explicit search method
+R1679,yes,F4,yes,RAG data extraction attack
+R1680,yes,F1,yes,FAQ retriever compared with dense and hybrid retrieval
+R1681,yes,F2,yes,Claim-level hallucination checking against retrieved evidence
+R1682,no,,yes,GPU quantization kernels
+R1684,yes,F5,yes,Multilingual search agents for RAG evidence
+R1685,no,,yes,Domain application; local deployment not studied
+R1686,no,,yes,Multimodal reasoning retrieval; pure IR
+R1688,yes,F6;F5,yes,Multilingual math benchmark including retrieval-augmented solving
+R1690,no,,yes,Gradient-based retrieval; no facet
+R1691,yes,F2,yes,Context attribution for generative search
+R1693,yes,F2,yes,Citation-enhanced multimodal RAG
+R1694,yes,F3,yes,On-premise edge RAG with compressed models
+R1695,yes,F2;F6,yes,"Trust-Score metric, grounded attribution and refusal"
+R1696,no,,yes,LLM energy profiling; not edge or RAG
+R1697,no,,no,No abstract; not clearly RAG
+R1698,no,F2,no,Factuality classifier; no quantitative results stated
+R1700,yes,F4,yes,Citation manipulation attacks and defences in generative engines
+R1701,yes,F5;F6,yes,Multilingual medical QA benchmark with RAG
+R1703,no,,yes,Fine-tuning vs RAG; no facet
+R1704,yes,F1,yes,"Dense, rerank, RRF retrieval pipelines compared"
+R1705,yes,F4;F6,yes,Privacy leakage benchmark for medical RAG
+R1706,yes,F2,yes,Evidence verification and citation grounding
+R1708,yes,F2,yes,Structural abstention in multi-hop QA
+R1709,yes,F1;F2,yes,"BM25 plus dense retrieval, reranker, hallucination reduction"
+R1710,yes,F1;F2,yes,RRF and cross-encoder reranking with source attribution
+R1711,no,,yes,Agent memory governance; no core facet
+R1712,yes,F6;F5,yes,Multilingual RAG meta-evaluation benchmark
+R1713,yes,F3,yes,"On-device RAG acceleration, speedups measured"
+R1714,yes,F3;F2,yes,Quantized private QA with abstention supervision
+R1715,no,,yes,Generic quantized fine-tuning
+R1717,no,,yes,Agent memory cost trade-off; no facet
+R1718,yes,F4,yes,Poisoning of agent RAG memory
+R1719,yes,F1;F2;F3,yes,Local-first vector plus keyword RRF with rejection rule
+R1721,no,,yes,BM25 query expansion; pure IR
+R1722,no,,yes,Generic quantization
+R1723,no,,yes,"Offline retrieval system, thin evaluation; not RAG"
+R1725,no,,yes,ANN index deletion; no facet
+R1727,yes,F1,yes,Reranking and retrieval enhancements benchmarked on FinanceBench
+R1728,yes,F2,yes,Hallucination detection against retrieved context
+R1730,yes,F1,yes,Hybrid lexical-semantic RRF with cross-encoder reranking
+R1731,yes,F5;F1,yes,Multilingual dense retrieval and reranking pipeline
+R1732,yes,F1;F5,yes,Dense-sparse hybrid cross-lingual QA
+R1733,yes,F4,yes,Distributed RAG poisoning attack
+R1734,no,,yes,On-device vector search engine; not RAG study
+R1735,no,,yes,GPU KV cache quantization
+R1737,yes,F4,yes,Privacy defence audit for RAG
+R1739,no,,no,No abstract; title not clearly a facet
+R1741,no,,yes,Visual document retrieval; pure IR
+R1743,yes,F5,yes,Multilingual and code-switching retrieval benchmark
+R1744,yes,F6,yes,Multi-hop QA benchmark including RAG evaluation
+R1746,yes,F4;F5,yes,Multilingual indirect prompt injection defence
+R1747,yes,F5,yes,Multilingual visual document retrieval benchmark
+R1748,yes,F6;F5,yes,Multilingual RAG arena benchmark
+R1749,yes,F4,yes,Black-box RAG corpus poisoning
+R1750,yes,F4,yes,Red-teaming agentic RAG attack surfaces
+R1751,yes,F4,yes,Differential privacy for multi-turn RAG leakage
+R1752,yes,F4,yes,Defence against RAG database leakage
+R1753,no,,no,Survey without explicit search method
+R1754,yes,F2,yes,Mitigating hallucination from flawed retrieval via voting
+R1755,yes,F2,yes,PRISMA systematic review on RAG hallucination mitigation
+R1757,yes,F4,yes,"No abstract; title clearly RAG privacy defence, evidence assumed"
+R1758,no,,yes,Generic quantization
+R1759,yes,F4,yes,Synthetic retrieval data reduces RAG privacy leakage
+R1760,no,,yes,Quantization hardware design
+R1762,yes,F5;F6,yes,"Multilingual retrieval evaluation protocol, 31 retrievers"
+R1763,yes,F5;F1,yes,Multilingual dense retrieval vs BM25
+R1764,yes,F4,yes,Multimodal RAG poisoning attacks
+R1765,yes,F5,yes,"Multilingual passage ranking dataset, 13 languages"
+R1766,yes,F6;F2,yes,Citation-grounded deep research benchmark
+R1767,yes,F5;F6,yes,Multilingual medical retrieval benchmark for RAG
+R1768,no,,yes,Multimodal graph RAG; no facet
+R1771,yes,F6,yes,Modular RAG benchmark
+R1772,yes,F3,yes,On-device LLM inference engine on mobile
+R1773,no,,no,Edge LLM survey without explicit search method
+R1775,yes,F3,yes,Fully on-device RAG with memory and power measured
+R1776,no,,yes,Generic quantization
+R1777,yes,F2;F6,yes,Multimodal RAG hallucination mitigation and evaluation
+R1778,no,,no,Compression survey without search method
+R1780,no,,yes,Generic compression robustness
+R1781,yes,F2,yes,"Answer attribution for RAG, multilingual QA evaluated"
+R1782,yes,F5,yes,Cross-lingual dense retrieval pretraining
+R1783,no,,no,Review without explicit search method
+R1786,no,,yes,Generic quantized finetuning
+R1787,no,,yes,Local agentic RAG; routing not sparse-dense or studied constraint
+R1789,no,,yes,Generic KV quantization
+R1790,yes,F1,yes,Mixture of BM25 and dense retrievers for RAG
+R1791,yes,F1,yes,"No abstract; title clearly retrieval fusion for RAG, evidence assumed"
+R1792,no,,yes,Generic KV compression
+R1793,no,,yes,Generic quantization
+R1794,yes,F4;F6,yes,Prompt injection benchmark including RAG-mediated attacks
+R1795,yes,F2,yes,Citation-grounded generation against hallucination
+R1796,no,,yes,Generic MLLM quantization
+R1797,yes,F6,yes,Multimodal RAG benchmark
+R1798,yes,F6;F5,yes,Bilingual medical RAG benchmark
+R1799,yes,F6;F2,yes,"Visual RAG diagnostic evaluation, hallucination"
+R1800,yes,F5,yes,Multilingual low-resource RAG with BM25
+R1801,yes,F6,yes,Multimodal RAG benchmark
+R1802,no,,yes,Cultural QA benchmark; RAG incidental
+R1803,yes,F6;F1,yes,Multi-source RAG benchmark with sparse and dense retrievers
+R1804,yes,F1,yes,Hybrid sparse-dense RRF with fine-tuned reranker
+R1805,yes,F6;F2,yes,Multi-turn RAG benchmark including unanswerable questions
+R1806,yes,F6,yes,Conversational retrieval benchmark for RAG
+R1807,yes,F5;F2;F1,yes,Multilingual RAG with abstention and RRF fusion ablation
+R1809,yes,F6;F2,yes,Multi-turn RAG benchmark with unanswerable questions
+R1810,no,,yes,Domain agent; hybrid RAG not compared
+R1811,yes,F6,yes,Multi-intent RAG benchmark with RRF retrieval
+R1812,yes,F1;F2;F3,yes,Offline BM25 plus dense fusion with attribution verification
+R1813,yes,F1,yes,Sparse-dense RRF fusion compared to baselines
+R1815,no,,no,Theoretical architecture; no quantitative evaluation
+R1817,yes,F5,yes,Multilingual medical QA benchmark with RAG debiasing
+R1818,no,,yes,Conversational IR query rewriting; not RAG
+R1821,yes,F6,yes,Multi-hop RAG benchmark
+R1823,yes,F5,yes,Multilingual graph RAG evaluated on multilingual QA
+R1824,yes,F5,yes,Multilingual dense retrieval and reranking baselines
+R1826,yes,F5;F1,yes,Adaptive sparse-dense indexing for under-represented languages
+R1827,yes,F5;F6;F2,yes,Multilingual RAG benchmark with citation analysis
+R1828,yes,F5,yes,Multilingual RAG strategies compared
+R1833,yes,F1;F3,yes,Hybrid RRF retrieval with small open-source models
+R1836,no,,yes,Dense plus graph hybrid; no facet
+R1837,yes,F5;F1,yes,"Portuguese RAG, retrieval fusion modes compared"
+R1839,no,,no,No abstract; domain application title
+R1841,yes,F2,yes,Hallucination mitigation from conflicting retrieved sources
+R1844,yes,F3,yes,Quantization targeting on-device NPU inference
+R1846,no,,yes,Domain application; no facet ablated
+R1847,no,F6,no,"Benchmark results are scaffold-level, not empirical"
+R1849,no,,yes,Conversation competence benchmark; not RAG evaluation
+R1850,no,,yes,Domain chatbot; hybrid retrieval not compared
+R1852,yes,F1;F2,yes,BM25 vs dense for contradiction-aware grounded QA
+R1853,no,,no,Dense IR negative sampling survey; not RAG
+R1854,no,,yes,Visual document retrieval embedding model; pure IR
+R1855,no,,yes,Generic quantization
+R1856,yes,F4,yes,Prompt injection triggers surviving RAG pipelines
+R1858,yes,F4,yes,Security scanners for RAG poisoning and leakage
+R1860,no,,yes,Ontology QA vs dense retrieval; no facet
+R1861,no,,yes,Domain application; hybrid retrieval not ablated
+R1862,yes,F4,yes,RAG knowledge poisoning attack
+R1863,no,,yes,Neuromorphic hardware LLM; not RAG or edge setting
+R1864,no,,no,Position paper without evaluation
+R1866,no,,yes,Text-to-SQL table retrieval; not RAG QA
+R1867,no,,yes,Competition system; no facet ablated
+R1868,yes,F2,yes,Citations and hallucination mitigation in RAG benchmarked
+R1869,no,,yes,Zero-shot retrieval scaling; pure IR
+R1870,yes,F3;F2,yes,"Small local models, factual integrity ablations"
+R1871,no,,yes,Context compression robustness; no facet

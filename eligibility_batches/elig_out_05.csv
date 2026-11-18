@@ -1,0 +1,241 @@
+record_id,eligible,facets,evidence,note
+R1243,yes,F4,yes,"GraphRAG poisoning attack, evaluated"
+R1245,yes,F1;F5;F6,yes,Greek BM25 vs dense benchmark
+R1247,yes,F2,yes,Sentence-level citation attribution
+R1248,no,,no,"Qualitative organizational study, no facet"
+R1249,yes,F2,yes,Citation coverage and refusal; recall results
+R1250,yes,F2,yes,"Citation fidelity grounded retrieval, oncology"
+R1251,yes,F2;F6,yes,PRISMA SLR on groundedness
+R1252,yes,F5;F1,yes,"Hybrid retrieval Arabic RAG, experiments"
+R1254,yes,F2,yes,Hallucination rate reduction in VQA RAG
+R1255,yes,F3;F2,yes,Offline RAG with numeric verification
+R1256,yes,F6;F2,yes,Meta-evaluation benchmark for grounded QA
+R1257,yes,F2,yes,Faithful verbatim evidence extraction constraint
+R1258,yes,F1,yes,"BM25, hybrid reranking comparison"
+R1259,yes,F4,yes,Poisoning defense for RAG
+R1260,no,,yes,"Guided decoding format focus, not grounding"
+R1261,yes,F1,yes,Hybrid dense text plus visual retrieval fusion
+R1262,yes,F3,yes,General LLM quantization; no RAG
+R1263,no,,yes,"Retrieval steering, no listed facet"
+R1264,no,,no,Empty abstract; domain application
+R1265,yes,F3,yes,Low-bit quantization for constrained devices
+R1266,no,,yes,"Long-context memory, no facet studied"
+R1267,no,,yes,"Datacenter KV cache, not local"
+R1268,yes,F1;F5;F6,yes,"Retrieval benchmark BM25/dense/rerank, 43 languages"
+R1270,no,,no,"Position paper, no evaluation"
+R1271,yes,F2,yes,Hallucination-aware multi-agent RAG
+R1273,yes,F1;F2,yes,BM25+MiniLM RRF hallucination detection
+R1274,no,,no,"General hallucination survey, no search method"
+R1276,no,,no,"RAG hallucination review, no search method stated"
+R1278,no,,no,"Empty abstract; probabilistic hallucination model, no evidence seen"
+R1279,no,,yes,"General LLM fact-checking review, not retrieval-specific"
+R1281,yes,F2;F3,yes,4B small model for RAG hallucination detection
+R1282,yes,F2,yes,Grounded hallucination detection benchmark
+R1283,yes,F2;F5,yes,Multilingual retrieval-based hallucination detection
+R1285,yes,F2,yes,RAG hallucination detection with abstention
+R1288,yes,F2,yes,Faithfulness RL on RAG benchmarks
+R1290,yes,F5;F6,yes,"Multilingual Indic RAG evaluation, code-mixed"
+R1291,no,,yes,"Medical reasoning dataset, RAG only incidental"
+R1292,yes,F1;F6,yes,"Dense, sparse, hybrid compared on PubHealthBench"
+R1293,yes,F2,yes,"Attribution to clinical evidence, query-dependent k"
+R1294,yes,F3,yes,On-device agentic RAG on mobile SoC
+R1295,no,F1,no,"Technical report, no quantitative evaluation"
+R1296,yes,F1,yes,Rank fusion across rankers and sources
+R1297,yes,F2,yes,Citation recall/precision for factuality
+R1298,yes,F6,yes,Chunking benchmark for RAG evaluation
+R1299,yes,F4;F1;F6,yes,Prompt injection benchmark with sparse/dense retrievers
+R1300,yes,F4,yes,Multimodal RAG poisoning attack
+R1301,no,,yes,"Tree-RAG indexing, no facet"
+R1302,no,,no,"E-commerce agentic RAG, no facet"
+R1303,yes,F1,yes,Hybrid retrieval RRF for long-tail entities
+R1304,no,,yes,Local deployment not studied factor
+R1305,no,,yes,"Context refinement efficiency, not local"
+R1307,no,,no,"Chunk voting RAG, no evaluation"
+R1308,no,,no,"Enterprise deep search, no facet"
+R1309,yes,F5;F6,yes,Hinglish code-mixed claim verification benchmark
+R1310,no,,yes,Competition pipeline; citation attribution minor
+R1311,yes,F1;F2,yes,"RRF dense+sparse, CRAG, experiments"
+R1313,no,,yes,"RL search efficiency for agentic RAG, no facet"
+R1314,yes,F1;F6,yes,"Multi-route lexical+semantic retrieval, MasQA benchmark"
+R1315,yes,F1;F3,yes,On-prem BM25+dense fusion with local LLM verifier
+R1316,yes,F1,yes,Hybrid retrieval plus small-LLM reranking
+R1319,yes,F5,yes,Cross-lingual prompt translation in multilingual RAG
+R1320,yes,F2,yes,Hallucination in answer engines vs retrievable record
+R1322,yes,F2,yes,Mechanistic study of RAG citation faithfulness
+R1323,yes,F3;F5,yes,Quantization effects across languages
+R1324,yes,F1;F6,yes,Hybrid retrieval and evidence-aware RAG evaluation
+R1326,yes,F1,yes,"Query routing over hybrid retrieval, BEIR"
+R1327,yes,F2,yes,Hallucination analysis of legal RAG systems
+R1329,no,,yes,"Ideological bias in RAG, no facet"
+R1330,yes,F4,yes,Retrieval poisoning attack
+R1331,no,,yes,"Text plus graph retrieval, not sparse-dense"
+R1332,no,,no,"Hyperbolic scientific retrieval, no facet"
+R1333,yes,F1,yes,BM25 vs dense vs hybrid biomedical QA
+R1334,yes,F3;F1;F5,yes,"Local offline hybrid RAG, Indonesian, retrieval comparison"
+R1335,no,,no,"Enterprise SLM/LLM routing overview, no evaluation"
+R1336,yes,F1;F5,yes,"Cross-lingual BM25+dense+graph fusion, ablations"
+R1338,yes,F1;F5,yes,"Sparse, dense, fused Khmer retrieval comparison"
+R1339,yes,F1,yes,"Hybrid lexical-dense legal retrieval, competition"
+R1340,no,,no,"Empty abstract; title suggests attribution, no evidence visible"
+R1341,yes,F1;F5,yes,Lexical-semantic RRF with ablations; Spanish; not RAG
+R1342,yes,F1;F2;F3,yes,"BM25+MedCPT RRF, fallback, compact Phi-2"
+R1343,yes,F1,yes,Dense+BM25 hybrid RAG with token savings
+R1345,yes,F1,yes,"FAISS+BM25 hybrid QA, small evaluation"
+R1347,yes,F1;F5,yes,Kazakh BM25 and dense RRF benchmark
+R1348,yes,F1;F2,yes,"Hybrid RAG hallucination mitigation, benchmark"
+R1350,no,F1,no,"Conceptual synthesis, no explicit search method or experiments"
+R1351,no,,no,"Empty abstract; title suggests F1/F5, evidence unverifiable"
+R1352,yes,F1,yes,"Hybrid RRF vs HyDE vs graph retrieval, Spanish corpus"
+R1353,yes,F1,yes,Hybrid dense plus keyword retrieval with results
+R1354,yes,F1;F2,yes,BM25+dense RRF with hallucination mitigation
+R1355,yes,F1;F2;F3,yes,"Offline BM25+vector RRF, grounding rate vs dense"
+R1356,yes,F1,yes,"SPLADE, dense, RRF fusion on TREC-COVID"
+R1357,yes,F1;F2,yes,"BM25, dense, hybrid effect on hallucination"
+R1358,no,,no,"Empty abstract; title suggests F1, evidence unverifiable"
+R1359,yes,F1;F5,yes,Hybrid retrieval German technical documents
+R1360,no,F1,no,"Proposed protocol, no results; vector-graph not sparse-dense"
+R1361,yes,F1,yes,FAISS+BM25 RRF with LLM routing
+R1362,no,,yes,"Tool retrieval for MCP, not document RAG"
+R1363,yes,F1,yes,SPLADE vs BM25 vs DPR in RAG
+R1364,no,,no,"Empty abstract; title suggests vector-graph, no evidence"
+R1365,no,,yes,"Hypergraph multi-hop RAG, no facet"
+R1366,yes,F3;F4,yes,Edge-cloud federated RAG with anonymization
+R1368,yes,F1;F6,yes,"Dense, sparse, graph hybrid; evaluation framework"
+R1369,no,,yes,"Hyperbolic graph RAG, no facet"
+R1370,no,,yes,"Hyperbolic dense retrieval, not hybrid or facet"
+R1371,yes,F1;F5,yes,Dense-lexical hybrid retriever for Chinese
+R1372,yes,F2,yes,Citation verification accuracy in literature synthesis RAG
+R1373,yes,F2,yes,"Certainty-aware RAG, abstention-like uncertainty"
+R1374,yes,F3,yes,Integer-only quantized LLM inference for edge
+R1375,yes,F6;F1,yes,Embedding and reranker benchmark for RAG ICL
+R1376,yes,F4,yes,Repeated poisoned passages in RAG contexts
+R1377,yes,F5;F6,yes,Italian medical QA benchmark with RAG experiments
+R1378,yes,F3;F1;F5,yes,Local-first hybrid IndoBERT+BM25 RAG
+R1380,yes,F2,yes,RAG vs corrective RAG evidence filtering for fact-checking
+R1382,yes,F1;F5,yes,"FastText+BM25 hybrid, Indonesian, RAGAS"
+R1383,yes,F6,yes,RAG evaluation metrics survey with user study
+R1384,yes,F1;F2;F3,yes,"Dense/BM25/hybrid, rejection of out-of-context, 7B open model"
+R1385,yes,F1,yes,Hybrid retrieval RRF with reranking configurations
+R1386,no,,yes,"RAG vs non-RAG only, no facet"
+R1388,yes,F4,yes,Poisoned documentation attack on code RAG
+R1389,yes,F1,yes,"Hybrid retrieval and reranking, RAGAS gains"
+R1391,yes,F3,yes,4-bit quantization for memory efficiency; no RAG
+R1392,no,,no,"Graph-dense hybrid, not sparse-dense"
+R1394,yes,F2;F1;F3,yes,"Claim evidence and citation validation, local Ollama"
+R1395,yes,F2,yes,Hallucination defined on unanswerable questions
+R1396,no,,yes,"Radiology summarization RAG, no facet"
+R1397,no,,no,"Empty abstract; title suggests hybrid RAG, unverifiable"
+R1398,no,,yes,"RAFT fine-tuning EDA, no facet"
+R1399,yes,F5,yes,Multilingual retrieval conflicting evidence reasoning
+R1401,yes,F1,yes,Multi-retriever RRF integration
+R1403,no,,yes,"Code assertion generation, no facet"
+R1404,yes,F1,yes,"SLR of retrieval enhancement, six databases"
+R1405,no,,yes,"CoT/self-verification general hallucination, not retrieval-specific"
+R1406,no,,yes,"Interpretable dense retrieval, no facet"
+R1407,yes,F4;F3,yes,Document poisoning on quantized 8B model
+R1409,no,,no,"Preliminary testing only, no facet"
+R1410,yes,F2,yes,Citation provenance and grounding in nugget RAG
+R1411,yes,F2,yes,Abstention with evidence-grounded contestation
+R1412,no,,yes,"Multi-hop indexing, no facet"
+R1413,yes,F5;F6,yes,Indian language RAG benchmark
+R1414,no,,no,"Prompt injection in LLMs generally, not retrieval"
+R1418,yes,F4,yes,Poisoning-based inference cost attack on RAG
+R1419,no,,no,"General compression review, no search method"
+R1420,no,,no,"Inference engine, not local deployment focus"
+R1421,no,,yes,Datacenter KV cache management
+R1422,yes,F3,yes,Small models for edge deployment
+R1423,yes,F4,yes,Factorial study of RAG poisoning factors
+R1424,yes,F3;F1;F5,yes,"Small open-weight retrieve-rerank cascade, Thai"
+R1425,no,,yes,"Long-context EHR, no facet"
+R1426,no,F6,no,"Evaluation platform, no quantitative evaluation"
+R1427,yes,F2,yes,"Narrative review of grounding and citation, searches described"
+R1429,yes,F3,yes,"INT8 attention quantization; generic, no RAG"
+R1430,yes,F3,yes,LLM quantization for deployment; generic
+R1431,yes,F3,yes,Low-bit quantization formats; generic
+R1432,yes,F3,yes,Quantization speedup; generic
+R1433,yes,F3,yes,Compression pipeline; generic
+R1435,yes,F2;F5,yes,"Vietnamese legal RAG with citations, hybrid ranking"
+R1436,no,,no,"Narrative RAG survey, no search method"
+R1438,no,,no,Empty abstract
+R1443,yes,F1,yes,BM25+embedding RRF literature search system
+R1444,yes,F1,yes,"BM25, dense, cross-encoder biomedical retrieval"
+R1445,yes,F1,yes,Hybrid retrieval and cross-encoder reranking on BEIR
+R1446,yes,F2,yes,Hallucination detection in RAG via mechanistic signals
+R1447,yes,F5,yes,Language preference in multilingual RAG
+R1448,yes,F3;F5,yes,13 open LLMs by size on Quranic RAG
+R1449,yes,F2,yes,Watermark-induced hallucination with context evidence
+R1450,yes,F4,yes,Differential privacy for RAG reference text
+R1451,yes,F6,yes,Retrieval benchmark for homogeneous documents
+R1452,no,,yes,"Retrieval pipeline optimization, no facet"
+R1453,no,,yes,"Entity recognition benchmark, not RAG"
+R1454,yes,F5;F6,yes,Multilingual RAG embedding benchmark
+R1455,yes,F4,yes,Dynamic differential privacy for RAG leakage
+R1457,no,,no,"Islamic LLM survey, no search method"
+R1458,no,,yes,"Graph RAG pruning, no facet"
+R1459,yes,F5,yes,"Italian late-interaction retriever, benchmarks"
+R1461,no,,yes,"Query-variant fusion, CFD application, no facet"
+R1462,yes,F1,yes,BM25-based RAG vs dense comparison
+R1463,yes,F5,yes,Multilingual late-interaction retriever
+R1464,yes,F3;F5,yes,4-bit quantized multilingual RAG on consumer GPU
+R1465,yes,F4,yes,Gradient-based RAG poisoning attack
+R1466,yes,F3,yes,Edge LLM-SLM collaborative inference
+R1467,yes,F1,yes,Joint sparse-dense retrieval for PubMed
+R1468,no,,yes,"Generation benchmark, RAG only baseline"
+R1469,yes,F3,yes,4-bit activation quantization; generic
+R1470,yes,F2;F5;F6,yes,"Korean multi-turn RAG hallucination benchmark, abstention"
+R1471,yes,F5,yes,Multilingual embedding model for retrieval
+R1473,yes,F4,yes,GraphRAG knowledge poisoning attack
+R1474,no,,yes,"Agent memory personalization, no facet"
+R1475,no,,yes,"Keyword-constrained decoding, no facet"
+R1476,yes,F5;F1,yes,Multilingual dense retrieval with reranking
+R1477,yes,F4,yes,Black-box poisoning of agentic RAG
+R1479,no,,yes,Datacenter KV cache quantization serving
+R1481,yes,F2;F5;F6,yes,"Multilingual relevance dataset, hallucination when answer absent"
+R1482,yes,F4,yes,Knowledge base poisoning attack and defense
+R1483,yes,F5,yes,Multilingual concept retrieval-rerank benchmark
+R1484,no,,yes,"KG-anchored domain RAG, no facet"
+R1485,no,,no,"KG-LLM co-learning, no evaluation or facet"
+R1486,no,,yes,"Graph-RAG vs RAG cultural QA, no facet"
+R1487,no,,yes,"KG-RAG schema matching, no facet"
+R1489,no,,no,"KG-RAG QA, no facet"
+R1490,no,,yes,"KG-guided chunk expansion, no facet"
+R1491,yes,F1;F2,yes,"Hybrid retrieval with validation, hallucination rate 4.1%"
+R1493,no,,no,"KG-integrated generation, no facet"
+R1494,no,,no,"Perspective paper, no evaluation"
+R1495,yes,F4,yes,Poisoning attack on medical multimodal RAG
+R1496,no,,yes,"Dense+reranker QA, no facet"
+R1497,no,F2,no,"Review of 25 sources, no search method stated"
+R1498,yes,F6,yes,LLM-judge diagnostic evaluation of RAG errors
+R1499,yes,F2,yes,Citations with abstention-aware voting
+R1502,no,F3,no,"Offline architecture, no quantitative evaluation in abstract"
+R1503,yes,F1;F5,yes,BM25 vs dense vs hybrid for Khmer
+R1504,no,,no,"KV cache review, no search method, not local"
+R1505,yes,F3,yes,"Edge deployment memory trade-offs, quantization"
+R1506,no,,yes,"KV cache quantization serving, not local"
+R1507,yes,F3,yes,KV quantization for resource-constrained platforms
+R1508,no,,yes,"KV cache quantization serving, not local"
+R1510,yes,F3,yes,Quantization-aware PEFT memory efficiency; generic
+R1512,no,,yes,"Radiology report RAG, no facet"
+R1513,no,,no,Empty abstract
+R1514,no,,yes,"Logic-augmented reasoning, no facet"
+R1515,yes,F6,yes,Benchmark for grounded QA with evidence pointers
+R1516,yes,F5;F1,yes,Multilingual reranker for RAG
+R1518,yes,F5,yes,Multilingual dense retrieval language-identity removal
+R1519,yes,F5,yes,Multilingual RAG reinforcement learning
+R1520,yes,F5,yes,Language drift in multilingual RAG
+R1521,no,,yes,"Editable knowledge base updating, no facet"
+R1522,yes,F5,yes,"Multilingual financial QA RAG, language-routed"
+R1523,yes,F2,yes,Fine-grained attribution for grounded generation
+R1528,no,,yes,"Clinical codelist RAG, no facet"
+R1529,no,,no,"SLM overview, no search method"
+R1530,no,,no,"General LLM review, no search method"
+R1533,no,,no,Empty abstract
+R1534,no,,yes,"Poetry translation RAG, no facet"
+R1536,no,,no,IR survey without search method
+R1537,no,,no,"Narrative review, no search method visible"
+R1541,no,,no,"RAG hallucination review, no search method"
+R1542,no,,no,Empty abstract
+R1543,yes,F2,yes,Citation-supported RAG physician study
+R1549,yes,F6,yes,Comparison of RAG evaluation frameworks
+R1550,no,,no,"Misinformation survey, no search method"
+R1553,no,,yes,"Chunk embeddings, no facet"

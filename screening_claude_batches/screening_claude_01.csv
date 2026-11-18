@@ -1,0 +1,251 @@
+record_id,decision,reason_code,note
+R0001,include,I2,hallucination elimination on RAGTruth
+R0002,include,I4,local quantized LLM with RAG
+R0003,include,I1,dense retrieval plus LLM reranking
+R0004,include,I5,prompt injection benchmark for RAG
+R0005,unsure,I1,no abstract; hybrid retrieval
+R0006,include,I5,anonymization along RAG pipeline
+R0007,include,I2,"citation-grounded benchmark, insufficient evidence"
+R0008,include,I1,multi-agent RAG over heterogeneous sources
+R0009,include,I2,faithfulness metrics for citations
+R0010,include,I1,dense sparse hybrid comparison
+R0011,include,I1,sparse dense hybrid retrieval benchmark
+R0012,include,I1,BM25 vs hybrid retrieval
+R0013,include,I3,Khmer RAG evaluation
+R0014,include,I1,LLMs as dense retrievers
+R0015,include,I3,local Llama3 RAG evaluation
+R0016,exclude,E3,
+R0017,unsure,I3,RAG modules in event forecasting
+R0018,include,I4,quantization evaluation
+R0019,include,I1,hybrid retrieval multi-hop QA
+R0020,exclude,E3,general LLM survey
+R0021,include,I1,GraphRAG hybrid retrieval with citations
+R0022,include,I4,quantization survey
+R0023,exclude,E3,loss functions survey
+R0024,include,I1,RAG survey
+R0025,include,I4,small language models survey
+R0026,exclude,E3,summarization survey
+R0027,unsure,I3,no abstract; cache-augmented RAG survey
+R0028,exclude,E3,"hallucination taxonomy, no retrieval focus"
+R0029,include,I1,hybrid RRF with small LLMs
+R0030,include,I1,hybrid fusion RAG with evaluation
+R0031,exclude,E3,agentic AI survey
+R0032,include,I1,keyword store plus RAG hybrid
+R0033,include,I4,SLM vs LLM edge feasibility
+R0034,include,I1,hybrid retrieval with RRF MMR
+R0035,include,I1,domain hybrid retrieval and reranking
+R0036,include,I4,self-hosted small model inference cost
+R0037,include,I5,knowledge poisoning GraphRAG
+R0038,include,I3,LLM-as-judge standard for RAG
+R0039,exclude,E3,"summarization hallucination, no retrieval"
+R0040,include,I4,quantized Mistral on consumer GPU
+R0041,include,I3,graph RAG evaluated with RAGAs
+R0042,include,I1,hybrid RAG extraction
+R0043,include,I1,hybrid retrieval reranking grounding
+R0044,include,I2,verification and attribution in hybrid RAG
+R0045,include,I1,BM25 plus BioBERT RRF
+R0046,unsure,I1,"architecture description, unclear evaluation"
+R0047,include,I2,abstention and citation in hybrid RAG
+R0048,include,I1,hybrid retrieval with small LLMs
+R0049,include,I1,TF-IDF plus KG hybrid RAG
+R0050,include,I3,RAG evaluation framework
+R0051,include,I1,BM25 dense RRF evaluated
+R0052,include,I2,citation-linked RAG evaluation
+R0053,include,I5,prompt injection defense RAG
+R0054,include,I2,"citation-constrained hybrid RAG, abstention"
+R0055,include,I1,hybrid search with ablation
+R0056,include,I4,offline local RAG
+R0057,exclude,E2,AR heritage application
+R0058,exclude,E2,chatbot application
+R0059,include,I1,multi-database routing and fusion
+R0060,include,I1,multi-granularity document retrieval
+R0061,include,I5,security framework for agentic RAG
+R0062,include,I1,hybrid retrieval RRF reranking
+R0063,exclude,E1,math expression image retrieval
+R0064,unsure,I3,RAG ablation in financial advisory
+R0065,include,I4,offline local multilingual RAG
+R0066,include,I1,metadata-aware hybrid retrieval
+R0067,include,I2,gating and hallucination analysis
+R0068,exclude,E2,RAG for causal discovery
+R0069,include,I1,hybrid RAG with local Qwen
+R0070,include,I4,fully local private RAG
+R0071,include,I5,risk metric incl prompt injection for RAG
+R0072,include,I1,hybrid retrieval archive search
+R0073,include,I3,temporal RAG benchmark
+R0074,include,I1,hybrid retrieval with citation evaluation
+R0075,exclude,E3,summarization review
+R0076,include,I1,agentic hybrid retrieval
+R0077,include,I2,refusal and grounding in RAG
+R0078,exclude,E3,no abstract; code merge
+R0079,include,I1,hybrid retrieval benchmark with abstention
+R0080,exclude,E2,literature pipeline application
+R0081,unsure,I3,"generic RAG framework, vague evaluation"
+R0082,include,I3,RAGAS eval quantized Llama
+R0083,exclude,E2,domain application
+R0084,exclude,E2,medical chatbot application
+R0085,include,I1,hybrid BM25 FAISS legal RAG
+R0086,exclude,E2,college chatbot
+R0087,unsure,I2,"faithfulness metrics review, RAG minor"
+R0088,exclude,E2,domain KB review
+R0089,include,I1,CQA review incl retrieval and grounding
+R0090,include,I1,RAG review incl hybrid retrieval
+R0091,exclude,E2,domain scoping review
+R0092,exclude,E3,vendor due diligence framework
+R0093,include,I3,clinical RAG benchmark
+R0094,include,I1,agentic graph RAG
+R0095,exclude,E1,recommender system
+R0096,include,I5,access control against leakage in RAG
+R0097,unsure,I1,demo copilot
+R0098,exclude,E3,no retrieval component
+R0099,include,I4,deployable quantization
+R0100,include,I1,parametric vs graph retrieval
+R0101,include,I5,RAG security threat analysis
+R0102,exclude,E4,non-English (Korean)
+R0103,exclude,E2,employee time survey
+R0104,include,I4,no abstract; edge-cloud LLMs survey
+R0105,include,I1,GraphRAG survey
+R0106,exclude,E3,general LLM survey
+R0107,include,I1,multimodal RAG survey
+R0108,include,I4,SLM survey
+R0109,include,I4,LLM-SLM collaboration edge
+R0110,include,I4,efficient inference survey
+R0111,exclude,E3,LLM evaluation survey
+R0112,unsure,I2,"general hallucination survey, RAG mitigation"
+R0113,include,I2,hallucination survey incl retrieval-augmented LLMs
+R0114,exclude,E3,knowledge distillation survey
+R0115,exclude,E3,code generation survey
+R0116,exclude,E1,recommendation survey
+R0117,exclude,E3,multilingual LLM survey
+R0118,unsure,I1,medical multimodal RAG survey
+R0119,exclude,E3,MoE survey
+R0120,exclude,E3,document understanding survey
+R0121,include,I4,model compression survey
+R0122,include,I4,model compression survey
+R0123,include,I4,no abstract; quantization survey
+R0124,unsure,I1,narrow legal RAG survey
+R0125,include,I4,local multi-PDF RAG consumer hardware
+R0126,include,I1,RAG survey
+R0127,include,I4,compression for devices
+R0128,include,I1,chunking for dense retrieval
+R0129,exclude,E3,data visualization review
+R0130,unsure,,no abstract; domain RAG SLR
+R0131,include,I3,RAG SLR incl metrics
+R0132,include,I1,RAG systematic review
+R0133,include,I2,RAG hallucination mitigation review
+R0134,include,I1,retrieval pipeline design consumer GPU
+R0135,include,I4,small proxy models reduce inference cost
+R0136,include,I4,local RAG with small models
+R0137,include,I3,RAG evaluation framework
+R0138,include,I3,robustness of RAG evaluation
+R0139,include,I4,no abstract; on-device RAG
+R0140,include,I1,hybrid search calibration fusion
+R0141,unsure,I1,retrieval-aware prompting for IE
+R0142,include,I4,on-device RAG compression
+R0143,include,I1,GraphRAG evaluated
+R0144,unsure,I2,"conceptual LLMOps, no empirical"
+R0145,exclude,E3,
+R0146,include,I5,routing hijacking federated RAG
+R0147,include,I1,case law retrieval
+R0148,include,I4,quantized inference
+R0149,include,I2,abstention-aware RAG
+R0150,include,I2,abstention vs hallucination benchmark
+R0151,include,I1,efficient RAG context selection
+R0152,exclude,E3,"conceptual, no retrieval"
+R0153,include,I1,dense vs BM25 retrieval for normalization
+R0154,include,I4,KV cache quantization
+R0155,include,I4,quantization for constrained hardware
+R0156,include,I1,framework for RAG QA
+R0157,include,I4,sparse activation in SLMs
+R0158,exclude,E3,RL training stability
+R0159,unsure,I1,retrieval-augmented code generation
+R0160,include,I1,FLARE active retrieval
+R0161,include,I2,"RAG for hallucination, benchmark"
+R0162,include,I5,privacy extraction attack on memory/RAG
+R0163,include,I1,BM25-supervised embedding adaptation
+R0164,include,I1,hybrid retrieval cybersecurity
+R0165,include,I1,Turkish embedding model for retrieval
+R0166,include,I5,enterprise privacy leakage in RAG
+R0167,include,I1,adaptive retrieval control
+R0168,include,I5,RAG defense orchestration
+R0169,include,I4,no abstract; edge-cloud LLM orchestration
+R0170,include,I1,adaptive hybrid retrieval
+R0171,exclude,E1,image classification
+R0172,exclude,E2,GUI workflow agents
+R0173,include,I1,hybrid RAG with corrective loop
+R0174,include,I1,conversational IR fusion
+R0175,include,I1,query performance prediction for RAG
+R0176,include,I1,adaptive hybrid retrieval routing
+R0177,include,I2,calibrated abstention and attribution
+R0178,include,I1,version-aware hybrid retrieval
+R0179,include,I1,retrieval strategies compared
+R0180,unsure,I4,LLM-SLM log analysis
+R0181,include,I3,GraphRAG evaluation
+R0182,exclude,E3,"red-teaming, no retrieval"
+R0183,include,I2,hallucination detection with RAG
+R0184,include,I5,knowledge poisoning attack
+R0185,include,I4,local LLMs for RAG compared
+R0186,include,I1,RAG review
+R0187,exclude,E2,incident response application
+R0188,exclude,E2,chatbot application
+R0189,exclude,E2,forensics application
+R0190,exclude,E2,medication chatbot application
+R0191,include,I1,Persian embeddings and RAG benchmark
+R0192,include,I1,hybrid retrieval enterprise
+R0193,include,I5,RAG threat vectors
+R0194,include,I5,RAG poisoning in SOC
+R0195,include,I5,adversarial review incl RAG
+R0196,include,I5,single-document poisoning
+R0197,include,I5,certified robustness for RAG
+R0198,include,I4,efficiency optimization
+R0199,include,I1,hybrid retrieval aviation
+R0200,exclude,E1,multimodal emotion recognition
+R0201,exclude,E2,gene annotation pipeline
+R0202,include,I4,quantization
+R0203,include,I4,quantization
+R0204,include,I3,document QA benchmark with RAG
+R0205,include,I1,multilingual embedding benchmark
+R0206,include,I1,graph embedding for GraphRAG
+R0207,include,I1,tool retrieval with RRF
+R0208,unsure,I1,agent memory hybrid retrieval
+R0209,include,I1,adaptive agentic RAG comparison
+R0210,exclude,E2,analytics agent
+R0211,exclude,E3,IoT security survey
+R0212,exclude,E2,claim denial application
+R0213,exclude,E1,remote sensing agents
+R0214,exclude,E2,survey generation application
+R0215,unsure,I2,citation-grounding gate in healthcare
+R0216,include,I1,agentic hybrid RAG with benchmark
+R0217,exclude,E2,chemistry application
+R0218,exclude,E2,advertising application
+R0219,exclude,E2,conceptual publishing
+R0220,include,I1,agentic RAG survey
+R0221,include,I1,agentic RAG overview
+R0222,include,I3,RAG evaluation audit
+R0223,exclude,E2,economic research workflow
+R0224,include,I1,cascade fusion retrieval
+R0225,include,I5,privacy in LLM agents incl RAG
+R0226,include,I5,retrieval-confidentiality benchmark
+R0227,include,I5,agent security incl retrieval poisoning
+R0228,include,I3,aggregation benchmark vs RAG
+R0229,include,I2,contextual hallucination detection
+R0230,include,I4,edge quantization
+R0231,include,I1,graph-based RAG
+R0232,include,I1,multi-vector ranking and citation
+R0233,include,I1,RAG vs long-context hybrid
+R0234,exclude,E3,translation dataset
+R0235,include,I4,1B models constrained RAG
+R0236,exclude,E3,agents review
+R0237,exclude,E2,space assistant concept
+R0238,exclude,E2,PDF chat application
+R0239,include,I1,hybrid lexical-semantic retrieval
+R0240,exclude,E2,water network application
+R0241,include,I4,local Mistral vs GPT for RAG
+R0242,exclude,E2,no abstract; governance application
+R0243,include,I5,prompt injection defense RAG
+R0244,unsure,I3,RCT of RAG legal tool
+R0245,exclude,E2,blueprint application
+R0246,exclude,E2,threat intel application
+R0247,exclude,E3,no retrieval
+R0248,include,I5,AI security incl RAG poisoning
+R0249,exclude,E2,military intelligence application
+R0250,exclude,E4,concept notes collection
