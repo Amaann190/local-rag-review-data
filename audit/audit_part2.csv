@@ -1,0 +1,55 @@
+record_id,rag_pipeline,generator_location,judge_location,hybrid,reranker,hardware_specified,public_benchmark,attack_test,numeric_inconsistency,inconsistency_detail
+R1315,yes,local,metrics_only,yes,no,yes,yes,no,no,
+R1323,no,n.a.,cloud_llm,no,no,no,yes,no,no,
+R1334,yes,local,n.a.,yes,no,no,no,no,not_assessable,
+R1342,yes,local,metrics_only,yes,no,no,yes,no,not_assessable,
+R1355,yes,local,metrics_only,yes,yes,no,no,no,no,
+R1366,yes,local,cloud_llm,yes,yes,yes,yes,no,yes,Text states MRR gain of +1.87% while Table 1 shows 11.87 points (39.63 vs 27.76).
+R1378,yes,local,metrics_only,yes,no,no,no,no,not_assessable,
+R1384,yes,local,metrics_only,yes,yes,no,no,no,not_assessable,
+R1394,yes,local,n.a.,yes,no,no,no,no,not_assessable,
+R1407,yes,local,metrics_only,no,no,no,yes,yes,not_assessable,
+R1424,no,local,metrics_only,no,yes,yes,no,no,yes,"Table 7 test-set n varies (259, 250, 244, 254) for the same set; abstract 'halves' tokens vs Table 10 about 47% reduction."
+R1448,yes,n.a.,human,no,no,no,no,no,not_assessable,
+R1464,no,local,n.a.,no,no,yes,no,no,not_assessable,
+R1598,yes,local,metrics_only,no,yes,yes,yes,no,no,
+R1642,yes,local,cloud_llm,yes,no,yes,yes,no,yes,"Table 5 MS MARCO success 96.8% but 1 minus 6.2% equals 93.8%; hybrid MRR 0.250 below dense 0.315 despite claim; 1,500 vs 1,000 pairs."
+R1667,yes,local,local_llm,yes,no,no,no,no,no,
+R1673,yes,local,n.a.,no,no,no,no,no,not_assessable,
+R1714,yes,local,metrics_only,no,no,no,yes,no,not_assessable,
+R1719,no,n.a.,metrics_only,yes,yes,no,yes,no,yes,Abstract says search under 90 ms but Table 8 P95 is 134 ms; Miss-Strict-Rate at tau=0.50 is 87.5% (Table 4) vs 83.3% (Table 9).
+R1812,yes,local,metrics_only,yes,yes,no,no,no,yes,Text claims +12.9 EM for per-chunk loop plus verifier but table gap is 4.8; stage latencies sum to about 1.7 s vs reported 2.15 s.
+R1833,yes,local,cloud_llm,yes,yes,yes,yes,no,yes,EmbeddingGemma-300m described as 22.7M parameters; text says Multilingual-E5-Large-Instruct but Table 2 says E5-Large-Instruct.
+R1870,yes,local,metrics_only,no,no,no,no,no,yes,F9 states 32 runs but two N=5 batteries of four paraphrases equal 40; absent-entity refusals 4/4 in Sec 5 vs 15/15 in Table 2.
+R1895,yes,local,metrics_only,no,yes,yes,yes,no,yes,Latency reduction 88% in Sec 6.2 vs 89.2% in Table 3; pruning alone 49.0% latency cut vs full system 48.5%.
+R1898,yes,local,n.a.,no,no,yes,no,no,no,
+R1925,yes,local,n.a.,no,no,no,yes,no,not_assessable,
+R2025,yes,local,metrics_only,yes,no,yes,yes,no,no,
+R2247,no,n.a.,metrics_only,yes,no,yes,yes,no,yes,Chunking 300-word with 60 overlap in Sec 3.4 vs 500-word with 90 overlap in Sec 4.1.
+R2264,yes,local,metrics_only,no,no,no,no,yes,not_assessable,
+R2269,yes,local,metrics_only,no,no,yes,no,no,yes,Text says as high as 21% hallucination but Table 4 steps max is 16.0%; OOD4 hallucination 5% vs 9% in Appendix B contradicts text.
+R2298,yes,local,n.a.,no,no,no,yes,no,not_assessable,
+R2318,yes,both,metrics_only,yes,yes,no,yes,no,yes,Gray Macro-F1 0.77 in text vs 0.71 in Table 5; GPT 5.2 few-shot Illegal 0.547 in text vs 0.44 in Table 5.
+R2346,yes,both,n.a.,no,no,no,no,no,not_assessable,
+R2360,yes,both,metrics_only,no,no,no,no,no,not_assessable,
+R2363,no,n.a.,none,no,no,no,no,no,not_assessable,
+R2377,yes,local,human,yes,no,no,no,no,not_assessable,
+R2440,no,n.a.,none,no,no,no,no,no,not_assessable,
+R2441,yes,local,human,no,no,no,no,no,yes,Text says completeness-strict agreement 98% but Table 5 shows 84%/70%; readability agreement 78%-68% in text vs 2% in table.
+R2521,yes,local,metrics_only,no,no,no,no,yes,not_assessable,
+R2559,yes,local,metrics_only,no,yes,yes,yes,yes,yes,"INT8 exposure 98.4% in Table 2 vs 98.7-100% in Sec 5.1; SQuAD query counts 3,648/3,301 (Table 2) vs 3,646/3,148 (Fig 1)."
+R2567,yes,local,metrics_only,yes,no,no,yes,no,no,
+R2570,no,n.a.,metrics_only,no,no,yes,yes,no,yes,VT+FT gains described as additive (0.31+0.21=0.52) but observed gain is 0.45.
+R2595,yes,both,metrics_only,no,no,no,no,no,not_assessable,
+R2613,no,n.a.,metrics_only,yes,no,no,no,no,not_assessable,
+R2695,yes,local,metrics_only,yes,no,no,no,no,not_assessable,
+R2748,yes,local,n.a.,no,no,yes,no,no,yes,RAG latency about 10 s in abstract and Fig 4 vs about 5.9 s average in Sec V-F; seven candidate models vs six in Table IV.
+R2760,yes,local,metrics_only,no,yes,yes,yes,no,yes,Agentic run final metric 0.7437 does not match stated formula (about 0.7911); best-retrieval p_i 0.8111 in Table 1 vs 0.8142 in Table 4.
+R2783,yes,n.a.,local_llm,no,no,yes,yes,no,no,
+R2813,yes,cloud,n.a.,yes,yes,no,no,no,no,
+R2819,no,n.a.,metrics_only,yes,no,no,no,no,not_assessable,
+R2825,yes,local,metrics_only,no,no,yes,yes,yes,yes,Pack verification median 4.4 ms (Sec 5.4) vs 4.53 ms (Table 6); out-of-corpus abstention 91-99% in text vs 0.91-1.00 in table.
+R2836,yes,both,n.a.,yes,yes,no,no,yes,yes,"Round-2 totals (21 odd, 2 fail of 259) disagree with companion log (40 odd, 3 fail for 56 problematic cases)."
+R2861,yes,n.a.,n.a.,yes,no,no,no,no,not_assessable,
+R2915,no,n.a.,local_llm,yes,no,no,yes,no,yes,BGE-small SciFact baseline 0.7263 in abstract/Table 3 vs 0.6464 in Tables 4 and 6; SciFact 295 vs 300 queries.
+R2949,no,local,metrics_only,no,no,yes,no,no,no,

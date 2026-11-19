@@ -16,23 +16,30 @@ elig = {r["record_id"]: r for r in csv.DictReader(open(H / "eligibility_final.cs
 core = json.load(open(H / "core_ids.json"))
 
 adv = lambda d: d.strip().lower() in ("include", "unsure")
-excluded_ta = [i for i in recs if not adv(claude[i]["decision"]) and not (i in codex and adv(codex[i]["decision"]))]
+# Sensitivity re-screen of exclusions made without a full abstract (audit/sensitivity_rescreen.csv).
+resc = {r["record_id"]: r for r in csv.DictReader(open(H / "audit" / "sensitivity_rescreen.csv", encoding="utf-8"))}
+excluded_ta = [i for i in recs if not adv(claude[i]["decision"]) and not (i in codex and adv(codex[i]["decision"]))
+               and not (i in resc and adv(resc[i]["decision"]))]
 reasons = collections.Counter((claude[i]["reason_code"] or "").strip().upper()[:2] or "NA" for i in excluded_ta)
-yes = [i for i, r in elig.items() if r["eligible"] == "yes" and i != "R2064"]
+yes = [i for i, r in elig.items() if r["eligible"] == "yes"]
 no_elig = [i for i, r in elig.items() if r["eligible"] != "yes"]
-no_reason = collections.Counter("no evidence" if (r.get("evidence", "").strip().lower() == "no") else "no core facet" for i, r in elig.items() if r["eligible"] != "yes")
+no_reason = collections.Counter(elig[i]["exclusion_reason"] for i in no_elig)
+core_stats = json.load(open(H / "core_stats.json")) if (H / "core_stats.json").exists() else {}
 
 prisma = {
     "search_date_utc": log["run_utc"],
     "identified_total": dd["retrieved_total"], "identified_openalex": dd["retrieved_openalex"], "identified_arxiv": dd["retrieved_arxiv"],
     "openalex_total_hits_all_queries": sum(q["openalex_total_hits"] for q in log["queries"]),
     "arxiv_total_hits_all_queries": sum(q["arxiv_total_hits"] for q in log["queries"]),
-    "removed_duplicates": dd["duplicates_removed"] + dd["removed_no_title"],
+    "removed_duplicates": dd["duplicates_removed"], "removed_no_title": dd["removed_no_title"],
     "screened_title_abstract": dd["unique_records"],
+    "screened_without_abstract": sum(not (r.get("abstract") or "") for r in recs.values()),
+    "screened_abstract_truncated_2500": sum(len(r.get("abstract") or "") > 2500 for r in recs.values()),
     "excluded_title_abstract": len(excluded_ta), "excluded_ta_reasons": dict(reasons),
     "assessed_eligibility": len(elig),
-    "excluded_eligibility": len(no_elig) + 1, "excluded_elig_reasons": {**dict(no_reason), "authors' own prior version": 1},
+    "excluded_eligibility": len(no_elig), "excluded_elig_reasons": dict(no_reason),
     "included_mapping": len(yes), "included_core": len(core),
+    "core_local_rag": len(core_stats.get("local_rag_ids", [])),
 }
 json.dump(prisma, open(H / "prisma.json", "w"), indent=1)
 

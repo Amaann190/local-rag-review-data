@@ -5,23 +5,27 @@
  "identified_arxiv": 1693,
  "openalex_total_hits_all_queries": 108965,
  "arxiv_total_hits_all_queries": 5350,
- "removed_duplicates": 699,
+ "removed_duplicates": 698,
+ "removed_no_title": 1,
  "screened_title_abstract": 2994,
- "excluded_title_abstract": 640,
+ "screened_without_abstract": 98,
+ "screened_abstract_truncated_2500": 50,
+ "excluded_title_abstract": 632,
  "excluded_ta_reasons": {
   "E3": 219,
-  "E2": 240,
+  "E2": 233,
   "E1": 121,
   "E4": 52,
-  "E6": 8
+  "E6": 7
  },
- "assessed_eligibility": 2354,
- "excluded_eligibility": 1095,
+ "assessed_eligibility": 2362,
+ "excluded_eligibility": 1101,
  "excluded_elig_reasons": {
-  "no evidence": 371,
-  "no core facet": 723,
-  "authors' own prior version": 1
+  "no_evidence": 374,
+  "no_core_facet": 726,
+  "authors_prior": 1
  },
- "included_mapping": 1259,
- "included_core": 108
+ "included_mapping": 1261,
+ "included_core": 108,
+ "core_local_rag": 85
 }

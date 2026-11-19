@@ -1,0 +1,29 @@
+record_id,issue,decision,reason_code,note
+R0026,no_abstract,exclude,E3,Summarization survey; no retrieval component evident.
+R0078,no_abstract,exclude,E3,Merge conflict resolution with LLMs; no retrieval.
+R0116,no_abstract,exclude,E1,LLMs for recommendation survey; recommender systems.
+R0242,no_abstract,unsure,,Title ambiguous: RAG for governance mapping may be application only or evaluated.
+R0318,truncated,unsure,,Scoping review of RAG in stomatology; synthesizes retrieval methods and evaluation; check full text.
+R0321,truncated,unsure,,Scoping review mapping RAG retrieval characteristics and evaluation methods in nursing; check full text.
+R0374,truncated,unsure,,Domain RAG framework but compares RAG vs no-RAG and baselines; borderline E2.
+R0559,truncated,exclude,E4,Thesis abstract; domain RAG agent over knowledge graph.
+R0763,truncated,exclude,E2,Patient-education RAG chatbot; domain application with user evaluation.
+R0794,no_abstract,exclude,E3,General LLM cognition work; no retrieval.
+R0858,truncated,exclude,E2,Clinical summary application; generation via cloud API; no RAG evaluation.
+R0865,no_abstract,unsure,,Title suggests evaluating RAG effectiveness; could be application only.
+R0947,no_abstract,exclude,E3,Fake news detection via LLM knowledge distillation; no retrieval.
+R1114,truncated,exclude,E3,Fine-tuning and model merging; no retrieval or inference-efficiency focus.
+R1325,no_abstract,exclude,E3,General LLM survey; no retrieval.
+R1393,truncated,exclude,E2,Dietary supplement KG-RAG application; evaluation only vs standalone LLMs.
+R1441,truncated,unsure,,Domain ADE extraction but evaluates RAG vs non-RAG with error analysis; borderline E2.
+R1525,no_abstract,exclude,E3,Clinical meeting summarization with LLM; no retrieval.
+R1724,no_abstract,unsure,,Offline document retrieval personalization; possibly I1/I4 or recommender-like.
+R1742,truncated,exclude,E2,Mineral multimodal model using RAG as component; domain application.
+R1834,no_abstract,exclude,E1,Multimodal sequential recommendation; recommender systems.
+R1876,truncated,unsure,,Evaluates reliability of RAG-LLM tool (NotebookLM) on risk-of-bias task; borderline E2/I3.
+R1881,no_abstract,exclude,E2,Firewall auditing application using RAG for mapping.
+R2224,truncated,exclude,E2,Skincare chatbot application; functional black-box testing only.
+R2229,no_abstract,exclude,E3,Extractive summarization via rank fusion; not retrieval for QA.
+R2315,truncated,exclude,E2,Photodetector design application using RAG as component.
+R2736,no_abstract,exclude,E3,Reporting guideline for LLM studies; no retrieval.
+R2828,no_abstract,exclude,E3,Maintenance scheduling optimization; no retrieval.

@@ -4,3 +4,4 @@ core_bib.tex
 # Per-batch scratch scripts
 extraction/w*/
 __pycache__/
+_paper_review/

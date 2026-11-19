@@ -1,0 +1,16 @@
+# Audit coding for the 108 core studies
+
+Added after an independent review found that several headline statistics were computed from free-text notes or from fields too broad for the claims made. Each study gets the columns below, coded **only from the existing row in `extraction.csv`** (all fields, including `models`, `datasets`, `hardware`, `key_result`, `notes`). No new sources are read. When the row does not say, use the stated fallback value; do not guess.
+
+| Column | Values | Rule |
+|---|---|---|
+| `rag_pipeline` | yes / no | **yes** if the study builds or evaluates a pipeline in which retrieved passages are given to a language model to generate an answer (RAG, agentic RAG, RAG chatbot, RAG QA). **no** for retrieval-only or embedding studies, quantization or inference work without retrieval-augmented generation, and surveys. |
+| `generator_location` | local / cloud / both / n.a. | Where the answer-generating LLM runs in the reported experiments. **local** = on the authors' own hardware (laptop, workstation, on-prem GPU, phone, Kaggle/Colab-style single machine running open weights). **cloud** = commercial API (OpenAI, Gemini, Anthropic, DeepSeek API, etc.). **both** = local and cloud generators compared. **n.a.** = no generator, or not stated. |
+| `judge_location` | cloud_llm / local_llm / human / metrics_only / none / n.a. | How answers were scored. **cloud_llm** = a commercial API model judged outputs (alone or with others). **local_llm** = an open model run locally judged outputs. **human** = human raters only. **metrics_only** = automatic non-LLM metrics only (EM, F1, Recall@k, nDCG, ROUGE, latency). **none** = no answer evaluation. **n.a.** = not stated. |
+| `hybrid` | yes / no | Sparse (e.g. BM25) and dense retrieval are combined or fused in the system studied. |
+| `reranker` | yes / no | A reranking stage (cross-encoder, LLM reranker) is part of the system studied. |
+| `hardware_specified` | yes / no | **yes** only if a specific device, CPU, GPU model, or RAM amount is named. Vague entries ("a laptop", "GPU", "not reported ...") are **no**. |
+| `public_benchmark` | yes / no | The evaluation uses at least one public dataset or a named public RAG evaluation framework (e.g. BEIR, SQuAD, NQ, HotpotQA, MS MARCO, RAGAS, RGB). Private or self-built test sets only = **no**. |
+| `attack_test` | yes / no | The study runs an adversarial or security experiment (poisoning, prompt injection, extraction/leakage attack, SSRF test). Privacy *design* without an attack experiment = **no**. |
+| `numeric_inconsistency` | yes / no / not_assessable | Only for `source = fulltext`. **yes** if `notes` record a *numeric* value that disagrees between two places in the same paper (abstract vs table, text vs table, two tables), or a stated arithmetic that does not hold. Non-numeric issues (naming, venue, wording, missing code, unsupported claims without numbers) are **no**. Rows with `source = abstract` are **not_assessable**. |
+| `inconsistency_detail` | text ≤ 25 words | For `yes`, the specific numeric disagreement. Otherwise empty. |
