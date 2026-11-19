@@ -13,7 +13,7 @@ Everything needed to check or re-run the review is here: the executed queries an
 | Stage 1: title/abstract screening | 2,362 advanced (incl. 8 from the sensitivity re-screen) | `screening_codebook.md`, `screening_input.csv`, `screening_claude.csv`, `screening_codex*.csv`, `audit/sensitivity_*.csv` |
 | Stage 2: research-question eligibility | 1,261 eligible | `eligibility_codebook.md`, `eligibility_final.csv` (with `exclusion_reason`), `eligibility_batches/` |
 | Core set (local deployment + another facet) | 108 extracted (54 full text, 54 abstract) | `extraction_codebook.md`, `extraction.csv`, `extraction/` |
-| Local RAG set (core studies that build or evaluate a RAG pipeline) | 85 | `audit_codebook.md`, `audit/`, `core_stats.json` |
+| Local RAG set (RAG pipeline with a confirmed local generator) | 73 | `audit_codebook.md`, `audit/`, `core_stats.json` |
 
 PRISMA counts are in `prisma.json`; facet and year counts in `mapping.json`; all core and local-RAG statistics, with the record IDs behind each count, in `core_stats.json`; figures in `fig_*.pdf`.
 
@@ -35,7 +35,7 @@ Screeners saw at most 2,500 abstract characters; 98 records had no abstract. The
 
 ## Audit coding of the core set
 
-After an independent review of the manuscript, every core study was coded with explicit variables (`audit_codebook.md`): whether it is a RAG pipeline, where the generator and any judge run, hybrid and reranker use, named hardware, public benchmark, attack experiment, and (full-text studies only) numeric inconsistency with the specific discrepancy. Two coders coded half each; their numeric-inconsistency rates differed, so the authors re-applied one rule to all full-text studies. Every change is logged in `audit/ADJUDICATION.md` (`audit/adjudicate.py`). `core_stats.py` merges the coding into `extraction.csv` and writes `core_stats.json`.
+After an independent review of the manuscript, every core study was coded with explicit variables (`audit_codebook.md`): whether it is a RAG pipeline, where the generator and any judge run, hybrid and reranker use, named hardware, public benchmark, attack experiment, and (full-text studies only) numeric inconsistency with the specific discrepancy. Two coders coded half each; their numeric-inconsistency rates differed, so the authors re-applied one rule to all full-text studies. Every change is logged in `audit/ADJUDICATION.md` (`audit/adjudicate.py`); the coders' original files are in `audit/original/`. `core_stats.py` merges the coding into `extraction.csv` and writes `core_stats.json`.
 
 Other data corrections are scripted and documented: `fix_eligibility_reasons.py` (explicit exclusion reasons, including the authors' own prior version, R2064) and `fix_peer_review.py` (two studies accepted at peer-reviewed venues).
 

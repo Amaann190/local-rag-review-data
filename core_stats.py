@@ -70,10 +70,15 @@ def summarize(rows):
     return out
 
 
-rag = [r for r in ext if r["rag_pipeline"] == "yes"]
-stats = {"core_all": summarize(ext), "local_rag": summarize(rag),
+# Local RAG set: builds or evaluates a RAG pipeline AND the generator runs locally (alone or compared with cloud).
+pipelines = [r for r in ext if r["rag_pipeline"] == "yes"]
+rag = [r for r in pipelines if r["generator_location"] in ("local", "both")]
+stats = {"core_all": summarize(ext), "rag_pipelines": summarize(pipelines), "local_rag": summarize(rag),
          "local_rag_ids": sorted(r["record_id"] for r in rag),
-         "excluded_from_local_rag_ids": sorted(r["record_id"] for r in ext if r["rag_pipeline"] != "yes")}
+         "pipeline_not_local_ids": sorted(r["record_id"] for r in pipelines if r not in rag),
+         "excluded_from_local_rag_ids": sorted(r["record_id"] for r in ext if r not in rag),
+         "fulltext_partly_read_ids": sorted(r["record_id"] for r in rag if r["source"].lower().startswith("full")
+                                            and any(k in r["notes"].lower() for k in ("first ~", "truncated", "unread", "partly", "only first", "read except")))}
 json.dump(stats, open(H / "core_stats.json", "w"), indent=1)
 print(json.dumps({k: v for k, v in stats["local_rag"].items() if not k.endswith("_ids") and k != "attack_test_yes"}, indent=1))
 print("core n", len(ext), "local RAG n", len(rag))
