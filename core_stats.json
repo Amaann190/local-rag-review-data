@@ -23,8 +23,8 @@
    "cloud": 2
   },
   "execution_host": {
-   "local_unspecified": 14,
-   "not_stated": 13,
+   "local_unspecified": 12,
+   "not_stated": 15,
    "device": 25,
    "server": 13,
    "n.a.": 35,
@@ -105,7 +105,7 @@
    "R2836"
   ],
   "fulltext_assessed": 54,
-  "end_to_end_local_ids": [
+  "no_cloud_recorded_ids": [
    "R0015",
    "R0134",
    "R0269",
@@ -174,7 +174,7 @@
    "R2915"
   ],
   "attack_test_yes_n": 7,
-  "end_to_end_local_n": 41,
+  "no_cloud_recorded_n": 41,
   "cloud_judge_n": 6,
   "cloud_generator_n": 14,
   "numeric_inconsistency_n": 23
@@ -201,8 +201,8 @@
    "cloud": 2
   },
   "execution_host": {
-   "local_unspecified": 14,
-   "not_stated": 13,
+   "local_unspecified": 12,
+   "not_stated": 15,
    "device": 25,
    "server": 13,
    "n.a.": 12,
@@ -277,7 +277,7 @@
    "R2836"
   ],
   "fulltext_assessed": 42,
-  "end_to_end_local_ids": [
+  "no_cloud_recorded_ids": [
    "R0015",
    "R0134",
    "R0269",
@@ -337,7 +337,7 @@
    "R2836"
   ],
   "attack_test_yes_n": 6,
-  "end_to_end_local_n": 37,
+  "no_cloud_recorded_n": 37,
   "cloud_judge_n": 3,
   "cloud_generator_n": 14,
   "numeric_inconsistency_n": 18
@@ -361,8 +361,8 @@
    "both": 12
   },
   "execution_host": {
-   "local_unspecified": 14,
-   "not_stated": 13,
+   "local_unspecified": 12,
+   "not_stated": 15,
    "device": 25,
    "server": 13,
    "hosted": 8
@@ -434,7 +434,7 @@
    "R2836"
   ],
   "fulltext_assessed": 38,
-  "end_to_end_local_ids": [
+  "no_cloud_recorded_ids": [
    "R0015",
    "R0134",
    "R0269",
@@ -494,58 +494,58 @@
    "R2836"
   ],
   "attack_test_yes_n": 6,
-  "end_to_end_local_n": 37,
+  "no_cloud_recorded_n": 37,
   "cloud_judge_n": 3,
   "cloud_generator_n": 12,
   "numeric_inconsistency_n": 18
  },
  "local_rag": {
-  "n": 52,
-  "source_fulltext": 28,
-  "source_abstract": 24,
+  "n": 50,
+  "source_fulltext": 27,
+  "source_abstract": 23,
   "contribution_type": {
-   "empirical-study": 17,
+   "empirical-study": 16,
    "system": 24,
-   "method": 11
+   "method": 10
   },
   "local_execution": {
-   "yes": 37,
-   "partial": 14,
+   "yes": 36,
+   "partial": 13,
    "n.a.": 1
   },
   "generator_location": {
-   "local": 43,
-   "both": 9
+   "local": 42,
+   "both": 8
   },
   "execution_host": {
-   "local_unspecified": 14,
+   "local_unspecified": 12,
    "device": 25,
    "server": 13
   },
   "judge_location": {
-   "metrics_only": 31,
-   "n.a.": 14,
+   "metrics_only": 30,
+   "n.a.": 13,
    "local_llm": 3,
    "human": 1,
    "cloud_llm": 3
   },
-  "hybrid_yes": 27,
+  "hybrid_yes": 26,
   "reranker_yes": 19,
   "hybrid_and_reranker": 11,
   "abstention": {
-   "no": 37,
+   "no": 36,
    "partial": 8,
-   "yes": 7
+   "yes": 6
   },
   "citation": {
-   "no": 36,
+   "no": 34,
    "partial": 9,
    "yes": 7
   },
   "security_privacy": {
    "no": 14,
    "yes": 18,
-   "partial": 20
+   "partial": 18
   },
   "attack_test_yes": [
    "R2264",
@@ -554,20 +554,20 @@
    "R2825",
    "R2836"
   ],
-  "public_benchmark_yes": 24,
+  "public_benchmark_yes": 23,
   "multilingual": {
-   "none": 44,
+   "none": 42,
    "multilingual": 8
   },
   "hardware_specified_yes": 23,
-  "peer_reviewed_yes": 19,
+  "peer_reviewed_yes": 18,
   "quality": {
-   "1": 10,
+   "1": 9,
    "2": 8,
-   "4": 22,
+   "4": 21,
    "3": 12
   },
-  "quality_mean": 2.88,
+  "quality_mean": 2.9,
   "cloud_judge_ids": [
    "R1366",
    "R1642",
@@ -579,13 +579,12 @@
    "R0594",
    "R0773",
    "R2318",
-   "R2346",
    "R2360",
    "R2595",
    "R2836"
   ],
-  "fulltext_assessed": 28,
-  "end_to_end_local_ids": [
+  "fulltext_assessed": 27,
+  "no_cloud_recorded_ids": [
    "R0015",
    "R0134",
    "R0269",
@@ -621,7 +620,6 @@
   ],
   "numeric_inconsistency_ids": [
    "R0691",
-   "R0929",
    "R1242",
    "R1366",
    "R1642",
@@ -636,10 +634,10 @@
    "R2836"
   ],
   "attack_test_yes_n": 5,
-  "end_to_end_local_n": 32,
+  "no_cloud_recorded_n": 32,
   "cloud_judge_n": 3,
-  "cloud_generator_n": 9,
-  "numeric_inconsistency_n": 14
+  "cloud_generator_n": 8,
+  "numeric_inconsistency_n": 13
  },
  "local_rag_ids": [
   "R0015",
@@ -660,7 +658,6 @@
   "R0790",
   "R0869",
   "R0895",
-  "R0929",
   "R0966",
   "R0970",
   "R0988",
@@ -687,7 +684,6 @@
   "R2269",
   "R2298",
   "R2318",
-  "R2346",
   "R2360",
   "R2521",
   "R2559",
@@ -712,10 +708,12 @@
   "R0617",
   "R0749",
   "R0799",
+  "R0929",
   "R1342",
   "R1384",
   "R1407",
   "R1714",
+  "R2346",
   "R2377",
   "R2567",
   "R2695"
@@ -760,6 +758,7 @@
   "R0810",
   "R0854",
   "R0855",
+  "R0929",
   "R1000",
   "R1101",
   "R1161",
@@ -775,6 +774,7 @@
   "R1714",
   "R1719",
   "R2247",
+  "R2346",
   "R2363",
   "R2377",
   "R2440",

@@ -3,7 +3,8 @@
 Added after the third independent review: the `generator_location=local` rule counted hosted runtimes
 (Kaggle, RunPod, shared research clouds) and studies that never state where inference ran as "local".
 Coded from the extraction row (hardware, local_execution, notes) and, for local_unspecified, an explicit
-statement in the saved abstract (records_dedup.json); the evidence column quotes it. See audit_codebook.md.
+statement in the saved abstract or notes, stored as an exact, verified excerpt (evidence_type=exact_quote);
+all other evidence cells are coder summaries of the extraction row (evidence_type=coder_summary). See audit_codebook.md.
 Writes audit/execution_host.csv.
 """
 import csv, pathlib
@@ -40,7 +41,7 @@ CODES = {
     "R0799": (UNSTATED, "simulation in NetworkX, no real devices"),
     "R0869": (DEVICE, "MacBook Pro device side"),
     "R0895": (SERVER, "two H100"),
-    "R0929": (CLAIMED, "abstract: small, locally deployed models"),
+    "R0929": (UNSTATED, "abstract gives local deployment as a privacy requirement, not where experiments ran"),
     "R0966": (CLAIMED, "abstract: on-premises system; served locally"),
     "R0970": (CLAIMED, "abstract: locally deployed RAG pipeline"),
     "R0988": (DEVICE, "Android smartphones"),
@@ -71,7 +72,7 @@ CODES = {
     "R2269": (SERVER, "in-house enterprise GPUs"),
     "R2298": (DEVICE, "consumer-grade workstation"),
     "R2318": (DEVICE, "consumer laptops via Ollama"),
-    "R2346": (CLAIMED, "abstract: locally deployable LLM; on-premise deployment"),
+    "R2346": (UNSTATED, "abstract calls the model locally deployable; where experiments ran not stated"),
     "R2360": (CLAIMED, "abstract: locally-deployed LLMs compared with API models"),
     "R2377": (UNSTATED, "notes: execution environment not stated"),
     "R2441": (HOSTED, "Grid'5000 shared research testbed"),
@@ -85,9 +86,39 @@ CODES = {
     "R2825": (DEVICE, "Raspberry Pi 5"),
     "R2836": (CLAIMED, "notes: generator self-hosted on vLLM"),
 }
+# For local_unspecified the evidence is an exact excerpt, checked verbatim (whitespace-normalized) against its source.
+QUOTES = {
+    "R0015": ("abstract", "the Llama3 model running locally through Ollama"),
+    "R0069": ("abstract", "a lightweight local language model (Qwen3-4B)"),
+    "R0767": ("abstract", "using a locally deployed Large Language Model (LLM)"),
+    "R0773": ("abstract", "queries are first answered on the edge"),
+    "R0966": ("abstract", "served locally, so that no health-record content left the machine"),
+    "R0970": ("abstract", "a locally deployed retrieval-augmented generation pipeline"),
+    "R1378": ("abstract", "a locally hosted, open-source Retrieval-Augmented Generation (RAG) system"),
+    "R1394": ("abstract", "locally hosted models through Ollama"),
+    "R2264": ("abstract", "served by a small local model (qwen2.5:3b)"),
+    "R2360": ("abstract", "four large language models (both API-based and locally-deployed)"),
+    "R2521": ("abstract", "four local LLMs"),
+    "R2836": ("extraction_notes", "Generator self-hosted on vLLM"),
+}
+import json, re
+norm = lambda t: re.sub(r"\s+", " ", t or "")
+P = H.parent
+recs = json.load(open(P / "records_dedup.json", encoding="utf-8"))
+recs = recs if isinstance(recs, list) else recs.get("records", recs)
+abstracts = {r["record_id"]: norm(r.get("abstract")) for r in recs}
+notes = {r["record_id"]: norm(r["notes"]) for r in csv.DictReader(open(P / "extraction.csv", encoding="utf-8"))}
+claimed = sorted(k for k, v in CODES.items() if v[0] == CLAIMED)
+assert claimed == sorted(QUOTES), (claimed, sorted(QUOTES))
+for k, (src, q) in QUOTES.items():
+    text = abstracts[k] if src == "abstract" else notes[k]
+    assert norm(q) in text, (k, q)
 with open(H / "execution_host.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
-    w.writerow(["record_id", "execution_host", "evidence"])
+    w.writerow(["record_id", "execution_host", "evidence_type", "evidence_source", "evidence"])
     for k in sorted(CODES):
-        w.writerow([k, *CODES[k]])
-print(len(CODES), "coded")
+        if k in QUOTES:
+            w.writerow([k, CODES[k][0], "exact_quote", QUOTES[k][0], QUOTES[k][1]])
+        else:
+            w.writerow([k, CODES[k][0], "coder_summary", "extraction_row", CODES[k][1]])
+print(len(CODES), "coded;", len(QUOTES), "quotes verified")
