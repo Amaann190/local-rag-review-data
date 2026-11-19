@@ -1,36 +1,36 @@
 record_id,execution_host,evidence
-R0015,local_unspecified,local execution stated; hardware not reported
+R0015,local_unspecified,abstract: Llama3 model running locally through Ollama
 R0029,not_stated,notes: local execution not stated
 R0048,not_stated,notes: local execution not stated
-R0069,local_unspecified,local execution partly stated; hardware not reported
+R0069,local_unspecified,abstract: lightweight local language model (Qwen3-4B)
 R0134,device,single consumer-grade GPU
 R0269,server,institutional hardware
 R0287,hosted,Kaggle P100
 R0326,hosted,H100 on Jetstream2 research cloud
 R0336,device,Apple M1 laptop; x86 desktop without GPU
-R0339,local_unspecified,local deployment claimed; hardware not reported
+R0339,not_stated,abstract: locally deployable model; where experiments ran not stated
 R0365,device,MacBook Air M3
 R0372,server,single 24 GB GPU machine
 R0396,hosted,Kaggle 2x T4
 R0526,hosted,free-tier Kaggle T4
 R0587,server,on-premises H100
 R0594,device,Core i5 8 GB edge system
-R0617,local_unspecified,local model compared with cloud; hardware not reported
+R0617,not_stated,unnamed small LLM vs GPT; no host stated
 R0629,device,i9 + RTX 2070 device machine
 R0667,hosted,Kaggle T4
 R0691,device,i5 laptop target
 R0742,device,local-only deployment on several hardware platforms
-R0749,local_unspecified,open-source models compared with commercial; hardware not reported
+R0749,not_stated,open-source vs commercial LLMs; no host stated
 R0750,device,three machines incl. laptop without GPU
-R0767,local_unspecified,local execution stated; hardware not reported
-R0773,local_unspecified,edge side of edge-cloud system; hardware not reported
+R0767,local_unspecified,abstract: locally deployed LLM
+R0773,local_unspecified,abstract: edge devices keep local documents; raw data not exposed
 R0790,server,RTX A6000
 R0799,not_stated,"simulation in NetworkX, no real devices"
 R0869,device,MacBook Pro device side
 R0895,server,two H100
-R0929,local_unspecified,local small model; hardware not reported
-R0966,local_unspecified,local execution stated; hardware not reported
-R0970,local_unspecified,local deployment stated; hardware not reported
+R0929,local_unspecified,"abstract: small, locally deployed models"
+R0966,local_unspecified,abstract: on-premises system; served locally
+R0970,local_unspecified,abstract: locally deployed RAG pipeline
 R0988,device,Android smartphones
 R1095,device,Jetson Orin Nano
 R1242,device,"i7 desktop, GTX 1070 Ti"
@@ -39,15 +39,15 @@ R1334,device,consumer-grade hardware
 R1342,not_stated,notes: local execution not explicit
 R1355,server,"CUDA GPU, model not reported"
 R1366,server,2x RTX A6000
-R1378,local_unspecified,locally hosted claimed; hardware not reported
+R1378,local_unspecified,abstract: locally hosted RAG system
 R1384,not_stated,notes: local execution not stated
-R1394,local_unspecified,local execution stated; hardware not reported
+R1394,local_unspecified,abstract: locally hosted models through Ollama
 R1407,not_stated,notes: local execution not stated
 R1598,server,server-side V100; no on-device runs
 R1642,device,RTX 4050 laptop
 R1667,device,PC-grade hardware
 R1673,device,commodity Android device
-R1714,local_unspecified,local/private framing; hardware not reported
+R1714,not_stated,private-QA framing; no host stated
 R1812,server,"CUDA GPU, model not reported"
 R1833,device,RTX 4060 Ti desktop
 R1870,server,single-GPU engine
@@ -55,20 +55,20 @@ R1895,server,generation on A800 servers
 R1898,device,MacBook Air M3
 R1925,device,consumer-grade local computer
 R2025,device,Samsung Galaxy S23 Ultra
-R2264,local_unspecified,local execution stated; hardware not reported
+R2264,local_unspecified,abstract: served by a small local model
 R2269,server,in-house enterprise GPUs
 R2298,device,consumer-grade workstation
 R2318,device,consumer laptops via Ollama
-R2346,local_unspecified,local execution stated; hardware not reported
-R2360,local_unspecified,local execution partly stated; hardware not reported
+R2346,local_unspecified,abstract: locally deployable LLM; on-premise deployment
+R2360,local_unspecified,abstract: locally-deployed LLMs compared with API models
 R2377,not_stated,notes: execution environment not stated
 R2441,hosted,Grid'5000 shared research testbed
-R2521,local_unspecified,local execution stated; hardware not reported
+R2521,local_unspecified,"abstract: four local LLMs, locally deployed assistants"
 R2559,device,Raspberry Pi 5; RTX 4090 desktop; MacBook Air M2
-R2567,local_unspecified,local execution partly stated; hardware not reported
+R2567,not_stated,notes: local execution implied by 4-bit quantization only
 R2595,device,consumer-grade hardware under 4 GB
 R2695,not_stated,notes: local execution on user hardware not verified
 R2748,hosted,RAG backend on RunPod A5000 via ngrok
 R2760,hosted,Kaggle P100
 R2825,device,Raspberry Pi 5
-R2836,local_unspecified,local execution partly stated; hardware not reported
+R2836,local_unspecified,notes: generator self-hosted on vLLM

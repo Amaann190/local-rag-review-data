@@ -13,7 +13,7 @@ Everything needed to check or re-run the review is here: the executed queries an
 | Stage 1: title/abstract screening | 2,362 advanced (incl. 8 from the sensitivity re-screen) | `screening_codebook.md`, `screening_input.csv`, `screening_claude.csv`, `screening_codex*.csv`, `audit/sensitivity_*.csv` |
 | Stage 2: research-question eligibility | 1,261 eligible | `eligibility_codebook.md`, `eligibility_final.csv` (with `exclusion_reason`), `eligibility_batches/` |
 | Core set (local deployment + another facet) | 108 extracted (54 full text, 54 abstract) | `extraction_codebook.md`, `extraction.csv`, `extraction/` |
-| Local RAG set (RAG pipeline with a local generator on user-controlled hardware) | 57 (of 73 with a local generator: 8 on hosted GPUs and 8 with no stated execution host set aside) | `audit_codebook.md`, `audit/`, `core_stats.json` |
+| Local RAG set (RAG pipeline with a local generator on user-controlled hardware) | 52 (of 73 with a local generator: 8 on hosted GPUs and 13 with no stated execution host set aside; host requires named hardware or an explicit local-execution statement, quoted in `audit/execution_host.csv`) | `audit_codebook.md`, `audit/`, `core_stats.json` |
 
 PRISMA counts are in `prisma.json`; facet and year counts in `mapping.json`; all core and local-RAG statistics, with the record IDs behind each count, in `core_stats.json`; figures in `fig_*.pdf`.
 
@@ -62,7 +62,7 @@ python mapping_stats.py
 
 ### Building the paper
 
-The paper's LaTeX source sits one folder above this repository and is not part of it. It loads the figures with `\graphicspath{{review-protocol/}{./}}`, so compile it from that parent folder (the folder containing both the `.tex` file and `review-protocol/`):
+The paper's LaTeX source sits one folder above this repository and is not part of it. It loads the figures with `\graphicspath{{review-protocol/}{../}{./}}`, so it builds from that parent folder (the folder containing both the `.tex` file and `review-protocol/`) or from any direct subfolder of `review-protocol/`:
 
 ```bash
 pdflatex DocMind_AI_Review_Paper_v3.tex

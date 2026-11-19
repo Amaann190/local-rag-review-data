@@ -67,9 +67,13 @@ def summarize(rows):
         "cloud_judge_ids": ids(rows, lambda r: r["judge_location"] == "cloud_llm"),
         "cloud_generator_ids": ids(rows, lambda r: r["generator_location"] in ("cloud", "both")),
         "fulltext_assessed": len(ft),
+        # No cloud component noted anywhere: local execution coded yes, local-only generator, no cloud judge.
+        "end_to_end_local_ids": ids(rows, lambda r: r["local_execution"].lower().startswith("yes")
+                                    and r["generator_location"] == "local" and r["judge_location"] != "cloud_llm"),
         "numeric_inconsistency_ids": ids(ft, lambda r: r["numeric_inconsistency"] == "yes"),
     }
     out["attack_test_yes_n"] = len(out["attack_test_yes"])
+    out["end_to_end_local_n"] = len(out["end_to_end_local_ids"])
     out["cloud_judge_n"] = len(out["cloud_judge_ids"])
     out["cloud_generator_n"] = len(out["cloud_generator_ids"])
     out["numeric_inconsistency_n"] = len(out["numeric_inconsistency_ids"])
