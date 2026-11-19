@@ -22,6 +22,14 @@
    "both": 12,
    "cloud": 2
   },
+  "execution_host": {
+   "local_unspecified": 19,
+   "not_stated": 8,
+   "device": 25,
+   "server": 13,
+   "n.a.": 35,
+   "hosted": 8
+  },
   "judge_location": {
    "metrics_only": 59,
    "n.a.": 27,
@@ -148,6 +156,14 @@
    "both": 12,
    "cloud": 2
   },
+  "execution_host": {
+   "local_unspecified": 19,
+   "not_stated": 8,
+   "device": 25,
+   "server": 13,
+   "n.a.": 12,
+   "hosted": 8
+  },
   "judge_location": {
    "metrics_only": 48,
    "n.a.": 25,
@@ -242,7 +258,7 @@
   "cloud_generator_n": 14,
   "numeric_inconsistency_n": 18
  },
- "local_rag": {
+ "open_weight_rag": {
   "n": 73,
   "source_fulltext": 38,
   "source_abstract": 35,
@@ -259,6 +275,13 @@
   "generator_location": {
    "local": 61,
    "both": 12
+  },
+  "execution_host": {
+   "local_unspecified": 19,
+   "not_stated": 8,
+   "device": 25,
+   "server": 13,
+   "hosted": 8
   },
   "judge_location": {
    "metrics_only": 45,
@@ -352,26 +375,128 @@
   "cloud_generator_n": 12,
   "numeric_inconsistency_n": 18
  },
+ "local_rag": {
+  "n": 57,
+  "source_fulltext": 29,
+  "source_abstract": 28,
+  "contribution_type": {
+   "empirical-study": 20,
+   "system": 24,
+   "method": 13
+  },
+  "local_execution": {
+   "yes": 37,
+   "partial": 19,
+   "n.a.": 1
+  },
+  "generator_location": {
+   "local": 46,
+   "both": 11
+  },
+  "execution_host": {
+   "local_unspecified": 19,
+   "device": 25,
+   "server": 13
+  },
+  "judge_location": {
+   "metrics_only": 34,
+   "n.a.": 16,
+   "local_llm": 3,
+   "human": 1,
+   "cloud_llm": 3
+  },
+  "hybrid_yes": 29,
+  "reranker_yes": 19,
+  "hybrid_and_reranker": 11,
+  "abstention": {
+   "no": 40,
+   "yes": 9,
+   "partial": 8
+  },
+  "citation": {
+   "no": 41,
+   "partial": 9,
+   "yes": 7
+  },
+  "security_privacy": {
+   "no": 18,
+   "yes": 18,
+   "partial": 21
+  },
+  "attack_test_yes": [
+   "R2264",
+   "R2521",
+   "R2559",
+   "R2825",
+   "R2836"
+  ],
+  "public_benchmark_yes": 27,
+  "multilingual": {
+   "none": 47,
+   "multilingual": 10
+  },
+  "hardware_specified_yes": 23,
+  "peer_reviewed_yes": 22,
+  "quality": {
+   "1": 12,
+   "2": 10,
+   "4": 23,
+   "3": 12
+  },
+  "quality_mean": 2.81,
+  "cloud_judge_ids": [
+   "R1366",
+   "R1642",
+   "R1833"
+  ],
+  "cloud_generator_ids": [
+   "R0336",
+   "R0372",
+   "R0594",
+   "R0617",
+   "R0749",
+   "R0773",
+   "R2318",
+   "R2346",
+   "R2360",
+   "R2595",
+   "R2836"
+  ],
+  "fulltext_assessed": 29,
+  "numeric_inconsistency_ids": [
+   "R0691",
+   "R0929",
+   "R1242",
+   "R1366",
+   "R1642",
+   "R1812",
+   "R1833",
+   "R1870",
+   "R1895",
+   "R2269",
+   "R2318",
+   "R2559",
+   "R2825",
+   "R2836"
+  ],
+  "attack_test_yes_n": 5,
+  "cloud_judge_n": 3,
+  "cloud_generator_n": 11,
+  "numeric_inconsistency_n": 14
+ },
  "local_rag_ids": [
   "R0015",
-  "R0029",
-  "R0048",
   "R0069",
   "R0134",
   "R0269",
-  "R0287",
-  "R0326",
   "R0336",
   "R0339",
   "R0365",
   "R0372",
-  "R0396",
-  "R0526",
   "R0587",
   "R0594",
   "R0617",
   "R0629",
-  "R0667",
   "R0691",
   "R0742",
   "R0749",
@@ -379,7 +504,6 @@
   "R0767",
   "R0773",
   "R0790",
-  "R0799",
   "R0869",
   "R0895",
   "R0929",
@@ -390,13 +514,10 @@
   "R1242",
   "R1315",
   "R1334",
-  "R1342",
   "R1355",
   "R1366",
   "R1378",
-  "R1384",
   "R1394",
-  "R1407",
   "R1598",
   "R1642",
   "R1667",
@@ -415,19 +536,34 @@
   "R2318",
   "R2346",
   "R2360",
-  "R2377",
-  "R2441",
   "R2521",
   "R2559",
   "R2567",
   "R2595",
-  "R2695",
-  "R2748",
-  "R2760",
   "R2825",
   "R2836"
  ],
- "pipeline_not_local_ids": [
+ "hosted_ids": [
+  "R0287",
+  "R0326",
+  "R0396",
+  "R0526",
+  "R0667",
+  "R2441",
+  "R2748",
+  "R2760"
+ ],
+ "host_not_stated_ids": [
+  "R0029",
+  "R0048",
+  "R0799",
+  "R1342",
+  "R1384",
+  "R1407",
+  "R2377",
+  "R2695"
+ ],
+ "generator_not_local_ids": [
   "R0271",
   "R0399",
   "R0527",
@@ -442,17 +578,25 @@
   "R2861"
  ],
  "excluded_from_local_rag_ids": [
+  "R0029",
+  "R0048",
   "R0271",
+  "R0287",
+  "R0326",
   "R0359",
+  "R0396",
   "R0399",
   "R0406",
   "R0449",
   "R0450",
   "R0452",
+  "R0526",
   "R0527",
   "R0640",
+  "R0667",
   "R0789",
   "R0792",
+  "R0799",
   "R0810",
   "R0854",
   "R0855",
@@ -462,15 +606,23 @@
   "R1255",
   "R1281",
   "R1323",
+  "R1342",
+  "R1384",
+  "R1407",
   "R1424",
   "R1448",
   "R1464",
   "R1719",
   "R2247",
   "R2363",
+  "R2377",
   "R2440",
+  "R2441",
   "R2570",
   "R2613",
+  "R2695",
+  "R2748",
+  "R2760",
   "R2783",
   "R2813",
   "R2819",

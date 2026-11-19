@@ -1,5 +1,9 @@
-"""Reconstruct the two coders' original (pre-adjudication) files from ADJUDICATION.md and keep them alongside
-the adjudicated files, so the initial coding and every correction can be checked directly."""
+"""Reconstruct the two coders' original (pre-adjudication) coding from ADJUDICATION.md.
+
+The coders' own exports were overwritten during adjudication and were not kept. These files are therefore
+RECONSTRUCTIONS: the adjudicated files with each logged change reversed. They restore the coded values
+(e.g. the initial 3/24 and 26/30 numeric-inconsistency counts) but not the coders' free-text
+`inconsistency_detail`, which the log did not record. See original/README.md."""
 import csv, pathlib, re
 
 A = pathlib.Path(__file__).parent
@@ -15,7 +19,7 @@ for p in sorted(A.glob("audit_part*.csv")):
     for r in rows:
         for col, old in log.get(r["record_id"], {}).items():
             r[col] = old
-    with open(A / "original" / p.name.replace(".csv", "_coder.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(A / "original" / p.name.replace(".csv", "_coder_reconstructed.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(rows)

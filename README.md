@@ -13,7 +13,7 @@ Everything needed to check or re-run the review is here: the executed queries an
 | Stage 1: title/abstract screening | 2,362 advanced (incl. 8 from the sensitivity re-screen) | `screening_codebook.md`, `screening_input.csv`, `screening_claude.csv`, `screening_codex*.csv`, `audit/sensitivity_*.csv` |
 | Stage 2: research-question eligibility | 1,261 eligible | `eligibility_codebook.md`, `eligibility_final.csv` (with `exclusion_reason`), `eligibility_batches/` |
 | Core set (local deployment + another facet) | 108 extracted (54 full text, 54 abstract) | `extraction_codebook.md`, `extraction.csv`, `extraction/` |
-| Local RAG set (RAG pipeline with a confirmed local generator) | 73 | `audit_codebook.md`, `audit/`, `core_stats.json` |
+| Local RAG set (RAG pipeline with a local generator on user-controlled hardware) | 57 (of 73 with a local generator: 8 on hosted GPUs and 8 with no stated execution host set aside) | `audit_codebook.md`, `audit/`, `core_stats.json` |
 
 PRISMA counts are in `prisma.json`; facet and year counts in `mapping.json`; all core and local-RAG statistics, with the record IDs behind each count, in `core_stats.json`; figures in `fig_*.pdf`.
 
@@ -35,7 +35,7 @@ Screeners saw at most 2,500 abstract characters; 98 records had no abstract. The
 
 ## Audit coding of the core set
 
-After an independent review of the manuscript, every core study was coded with explicit variables (`audit_codebook.md`): whether it is a RAG pipeline, where the generator and any judge run, hybrid and reranker use, named hardware, public benchmark, attack experiment, and (full-text studies only) numeric inconsistency with the specific discrepancy. Two coders coded half each; their numeric-inconsistency rates differed, so the authors re-applied one rule to all full-text studies. Every change is logged in `audit/ADJUDICATION.md` (`audit/adjudicate.py`); the coders' original files are in `audit/original/`. `core_stats.py` merges the coding into `extraction.csv` and writes `core_stats.json`.
+After an independent review of the manuscript, every core study was coded with explicit variables (`audit_codebook.md`): whether it is a RAG pipeline, where the generator and any judge run, the execution host (user device, own server, hosted service, or not stated; `audit/execution_host.csv`), hybrid and reranker use, named hardware, public benchmark, attack experiment, and (full-text studies only) numeric inconsistency with the specific discrepancy. Two coders coded half each; their numeric-inconsistency rates differed, so the authors re-applied one rule to all full-text studies. Every change is logged in `audit/ADJUDICATION.md` (`audit/adjudicate.py`). The coders' own exports were not kept; `audit/original/` holds reconstructions made by reversing the log, which restore the coded values but not the coders' free-text discrepancy details (see `audit/original/README.md`). `core_stats.py` merges the coding into `extraction.csv` and writes `core_stats.json`.
 
 Other data corrections are scripted and documented: `fix_eligibility_reasons.py` (explicit exclusion reasons, including the authors' own prior version, R2064) and `fix_peer_review.py` (two studies accepted at peer-reviewed venues).
 
@@ -55,15 +55,27 @@ Python 3.10+ with `matplotlib`:
 python search.py          # re-runs the search (results will differ as the indexes grow)
 python dedup.py
 python agreement.py screening_claude.csv screening_codex_sample.csv claude codex_sample
-python core_stats.py
+python audit/code_execution_host.py
+python core_stats.py      # run before mapping_stats.py, which reads core_stats.json
 python mapping_stats.py
 ```
+
+### Building the paper
+
+The paper's LaTeX source sits one folder above this repository and is not part of it. It loads the figures with `\graphicspath{{review-protocol/}{./}}`, so compile it from that parent folder (the folder containing both the `.tex` file and `review-protocol/`):
+
+```bash
+pdflatex DocMind_AI_Review_Paper_v3.tex
+pdflatex DocMind_AI_Review_Paper_v3.tex
+```
+
+To build elsewhere, copy `fig_facets.pdf` and `fig_years.pdf` next to the `.tex` file.
 
 Re-running `search.py` queries live APIs, so it will not return exactly the same records. The saved `raw/` files are the records this review used.
 
 ## Limitations
 
-The search covered two databases with top-200 relevance truncation per query. Both screeners are AI models; the second screener covered random samples rather than every record. Half of the core studies were extracted from abstracts only, and audit variables were coded from the extraction records rather than re-read from the papers. See the paper's Threats to Validity section.
+The search covered two databases with top-200 relevance truncation per query. Both screeners are AI models; the second screener covered random samples rather than every record. Half of the core studies were extracted from abstracts only, and audit variables (including the execution host) were coded from the extraction records rather than re-read from the papers, so the numeric-discrepancy count reflects only what extractors noted. See the paper's Threats to Validity section.
 
 ## License
 
