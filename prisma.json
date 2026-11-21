@@ -21,8 +21,9 @@
  "assessed_eligibility": 2362,
  "excluded_eligibility": 1101,
  "excluded_elig_reasons": {
-  "no_evidence": 374,
-  "no_core_facet": 726,
+  "no_evidence": 151,
+  "no_core_facet": 930,
+  "out_of_scope": 19,
   "authors_prior": 1
  },
  "included_mapping": 1261,

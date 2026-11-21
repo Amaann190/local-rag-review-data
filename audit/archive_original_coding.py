@@ -11,7 +11,7 @@ log = {}
 for line in (A / "ADJUDICATION.md").read_text(encoding="utf-8").splitlines():
     m = re.match(r"\| (R\d{4}) \| (\w+) \| ([^|]*) \| ([^|]*) \|", line)
     if m:
-        log.setdefault(m.group(1), {})[m.group(2)] = m.group(3).strip()
+        log.setdefault(m.group(1), {}).setdefault(m.group(2), m.group(3).strip())  # first logged value = the coder's (Round-2 rows log the Round-1 value, which equals the coder's)
 (A / "original").mkdir(exist_ok=True)
 for p in sorted(A.glob("audit_part*.csv")):
     rows = list(csv.DictReader(open(p, encoding="utf-8")))

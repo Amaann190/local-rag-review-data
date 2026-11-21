@@ -1,6 +1,6 @@
 # Local Hybrid RAG Review: Protocol and Data
 
-Data and scripts for the systematic mapping review *Hybrid Retrieval-Augmented Generation on Local Hardware: A Systematic Mapping Review with Evidence-Based Design Requirements* (Halani, Shaikh, Shaikh, Singh, Shaikh; St. John College of Engineering & Management, 2026).
+Data and scripts for the systematic mapping review *Hybrid Retrieval-Augmented Generation on Local Hardware: A Systematic Mapping Review with Testable Design Requirements* (Halani, Shaikh, Shaikh, Singh, Shaikh; St. John College of Engineering & Management, 2026).
 
 Everything needed to check or re-run the review is here: the executed queries and the normalized records they returned, both screeners' decisions, agreement statistics, eligibility decisions with exclusion reasons, the data extracted from the core studies, the audit coding, and the scripts behind every number in the paper.
 
@@ -9,13 +9,14 @@ Everything needed to check or re-run the review is here: the executed queries an
 | Stage | Records | Files |
 |---|---|---|
 | Search (OpenAlex + arXiv, 17 Nov 2026, 10 queries, top 200 per query) | 3,693 | `queries.json`, `search.py`, `raw/` |
-| Deduplication (DOI, arXiv id, normalized title) | 2,994 unique (698 duplicates + 1 untitled removed) | `dedup.py`, `records_dedup.json`, `dedup_stats.json` |
+| Deduplication (DOI, arXiv id, normalized title) | 2,994 unique (698 duplicates removed, plus 1 record whose non-Latin title `dedup.py`'s ASCII title normalization emptied) | `dedup.py`, `records_dedup.json`, `dedup_stats.json` |
 | Stage 1: title/abstract screening | 2,362 advanced (incl. 8 from the sensitivity re-screen) | `screening_codebook.md`, `screening_input.csv`, `screening_claude.csv`, `screening_codex*.csv`, `audit/sensitivity_*.csv` |
 | Stage 2: research-question eligibility | 1,261 eligible | `eligibility_codebook.md`, `eligibility_final.csv` (with `exclusion_reason`), `eligibility_batches/` |
 | Core set (local deployment + another facet) | 108 extracted (54 full text, 54 abstract) | `extraction_codebook.md`, `extraction.csv`, `extraction/` |
 | Local RAG set (RAG pipeline with a local generator on user-controlled hardware) | 50 (of 73 with a local generator: 8 on hosted GPUs and 15 with no stated execution host set aside; a host needs named hardware or an explicit statement that the tested system ran locally, stored as a verified exact quote in `audit/execution_host.csv`) | `audit_codebook.md`, `audit/`, `core_stats.json` |
+| Strict local RAG subset (the host is also backed by named hardware or a verified exact quote) | 35 (22 full text) | `core_stats.json` (`local_rag_strict`, `local_rag_strict_ids`) |
 
-PRISMA counts are in `prisma.json`; facet and year counts in `mapping.json`; all core and local-RAG statistics, with the record IDs behind each count, in `core_stats.json`; figures in `fig_*.pdf`.
+PRISMA counts are in `prisma.json`; facet, year, facet-overlap and facet-by-query counts in `mapping.json` (the facet-by-query table also in `facet_by_query.csv`); all core and local-RAG statistics, with the record IDs behind each count, in `core_stats.json`; figures in `fig_*.pdf`.
 
 `raw/records_raw.json` holds the normalized records parsed from the API responses (title, abstract, authors, venue, year, identifiers, query). The original API payloads were not archived.
 
@@ -29,6 +30,8 @@ Screener A (Claude, Anthropic) screened every record at both stages. Screener B 
 | Title/abstract (seeded random) | 500 | 88.4% | 0.66 | `screening_input_sample.csv`, `screening_codex_sample.csv`, `agreement_claude_vs_codex_sample.json` |
 | Eligibility (seeded random) | 300 | 82.7% | 0.65 | `eligibility_input_sample.csv`, `eligibility_codex_sample.csv`, `agreement_eligibility_claude_vs_codex.json` |
 
+Facet-level kappas for the eligibility sample (`facet_agreement.py`, `facet_agreement.json`) use one convention: a screener's facets are blanked for every record that screener judged ineligible, and kappa is computed over all 300 records; this reproduces the facet kappas stored in `agreement_eligibility_claude_vs_codex.json`. The script also reports, for comparison, the kappas when facets are compared only over the 129 records both screeners judged eligible.
+
 Disagreements are listed in `disagreements_*.csv`. The prompts given to Screener B are in `CODEX_*_PROMPT.md`.
 
 Screeners saw at most 2,500 abstract characters; 98 records had no abstract. The 28 exclusions affected by this were re-screened with the full abstract or title (`sensitivity_prep.py`, `apply_sensitivity.py`): 8 advanced to Stage 2 and 2 were eligible.
@@ -37,13 +40,21 @@ Screeners saw at most 2,500 abstract characters; 98 records had no abstract. The
 
 After an independent review of the manuscript, every core study was coded with explicit variables (`audit_codebook.md`): whether it is a RAG pipeline, where the generator and any judge run, the execution host (user device, own server, hosted service, or not stated; `audit/execution_host.csv`), hybrid and reranker use, named hardware, public benchmark, attack experiment, and (full-text studies only) numeric inconsistency with the specific discrepancy. Two coders coded half each; their numeric-inconsistency rates differed, so the authors re-applied one rule to all full-text studies. Every change is logged in `audit/ADJUDICATION.md` (`audit/adjudicate.py`). The coders' own exports were not kept; `audit/original/` holds reconstructions made by reversing the log, which restore the coded values but not the coders' free-text discrepancy details (see `audit/original/README.md`). `core_stats.py` merges the coding into `extraction.csv` and writes `core_stats.json`.
 
-Other data corrections are scripted and documented: `fix_eligibility_reasons.py` (explicit exclusion reasons, including the authors' own prior version, R2064) and `fix_peer_review.py` (two studies accepted at peer-reviewed venues).
+A second pass (`audit/adjudicate_round2.py`, logged under "Round 2" in `audit/ADJUDICATION.md`) re-read every full-text study coded `yes` against the same rule, so that rounding differences, unit or format slips, naming differences and claim-versus-number contradictions are never counted as numeric inconsistencies; it changed three rows and trimmed the discrepancy detail of seven others.
+
+Statistics for the local RAG set are reported for the whole set (50), for a strict subset (35: the host is backed by named hardware or a verified exact quote in `audit/execution_host.csv`), and separately for its full-text (27) and abstract-only (23) studies (`local_rag`, `local_rag_strict`, `local_rag_fulltext`, `local_rag_abstract` in `core_stats.json`). The "no cloud use recorded" row uses the literal definition: the generator is coded local only and the judge is not coded `cloud_llm`; `no_cloud_recorded_judge_na_n` counts how many of those have no stated judge.
+
+Other data corrections are scripted and documented: `fix_eligibility_reasons.py` (explicit exclusion reasons, assigned facet-first: `no_core_facet` when no facet is assigned, `no_evidence` when a facet is assigned but the study has no quantitative evaluation or explicit-search survey, `out_of_scope` when a facet and evidence are present but the study is still ineligible, and `authors_prior` for the authors' own prior version, R2064) and `fix_peer_review.py` (two studies accepted at peer-reviewed venues).
 
 ## Other files
 
-- `effect_sizes.csv`: results quoted in the paper, with the table or section each value was copied from.
+- `effect_sizes.csv`: results quoted in the paper, with the table or section each value was copied from ("Not recorded" where the extraction kept only the value; rows for core studies added by `audit/add_effect_sizes.py`).
+- `facet_by_query.csv`: for the eligible studies, how many of each facet were returned by each query Q1-Q10, how many by the facet's own queries (F1 Q1-Q3, F2 Q5-Q6, F3 Q4 and Q9, F4 Q10, F5 Q8, F6 Q7), and how many by those queries alone.
+- `facet_agreement.py`: facet-level kappas for the eligibility sample under the blanking convention described above, plus the both-eligible alternative.
+- `audit/hybrid_comparisons.csv`: for each local-set study coded hybrid (and two retrieval-only core studies), whether the extraction reports a hybrid-versus-single-channel retrieval comparison, the metrics and the direction.
+- `audit/local_vs_cloud.csv`: the eight local-set studies that compare a local and a cloud generator, with models, metric, values and direction as recorded in `extraction.csv` (both files built by `audit/build_comparison_tables.py`).
 - `core_ids.json`: record IDs of the 108 core studies.
-- `mapping_stats.py`: produces `prisma.json`, `mapping.json`, and the figures.
+- `mapping_stats.py`: produces `prisma.json`, `mapping.json`, `facet_by_query.csv` and the figures.
 - `agreement.py`: computes agreement and κ between any two screening files.
 - `make_core_bib.py`: drafts reference entries for cited core studies from metadata (entries in the paper were then normalized by hand).
 
@@ -56,8 +67,11 @@ python search.py          # re-runs the search (results will differ as the index
 python dedup.py
 python agreement.py screening_claude.csv screening_codex_sample.csv claude codex_sample
 python audit/code_execution_host.py
+python fix_eligibility_reasons.py
 python core_stats.py      # run before mapping_stats.py, which reads core_stats.json
 python mapping_stats.py
+python facet_agreement.py
+python audit/build_comparison_tables.py
 ```
 
 ### Building the paper

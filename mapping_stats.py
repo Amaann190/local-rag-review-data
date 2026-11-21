@@ -57,8 +57,32 @@ for i in yes:
         for b in fs:
             if a < b:
                 pairs[(a, b)] += 1
+# Facet-by-query yield. Each facet's "own" queries are the ones written to target it (queries.json, paper Table 1):
+# F1 Q1-Q3, F2 Q5-Q6, F3 Q4+Q9, F4 Q10, F5 Q8, F6 Q7. "Alone" = found by own queries only and by no other query.
+OWN = {"F1": ["Q1", "Q2", "Q3"], "F2": ["Q5", "Q6"], "F3": ["Q4", "Q9"], "F4": ["Q10"], "F5": ["Q8"], "F6": ["Q7"]}
+QS = [f"Q{k}" for k in range(1, 11)]
+fbq = {}
+for f in OWN:
+    members = [i for i in yes if f in elig[i]["facets"].split(";")]
+    row = {"eligible_total": len(members), "own_queries": "+".join(OWN[f])}
+    for q in QS:
+        row[q] = sum(q in recs[i]["found_by_queries"] for i in members)
+    row["found_by_own_query"] = sum(any(q in OWN[f] for q in recs[i]["found_by_queries"]) for i in members)
+    row["found_by_own_query_alone"] = sum(set(recs[i]["found_by_queries"]) <= set(OWN[f]) for i in members)
+    fbq[f] = row
+with open(H / "facet_by_query.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.writer(fh)
+    cols = ["facet", "eligible_total", "own_queries"] + QS + ["found_by_own_query", "found_by_own_query_alone"]
+    w.writerow(cols)
+    for f, row in fbq.items():
+        w.writerow([f] + [row[c] for c in cols[1:]])
+nfac = [len({x for x in elig[i]["facets"].split(";") if x}) for i in yes]
+yrs = collections.Counter(recs[i].get("year") for i in yes)
 mapping = {"facets": dict(fac), "pairs": {f"{a}&{b}": n for (a, b), n in pairs.items()},
-           "years": dict(collections.Counter(recs[i].get("year") for i in yes)),
+           "years": {str(y): yrs[y] for y in sorted(yrs)},
+           "multi_facet_n": sum(n >= 2 for n in nfac), "multi_facet_share": round(sum(n >= 2 for n in nfac) / len(nfac), 3),
+           "mean_facets_per_study": round(sum(nfac) / len(nfac), 3),
+           "facet_by_query": fbq,
            "preprint_share": round(sum(recs[i].get("type") == "preprint" or recs[i]["source_db"] == "arXiv" for i in yes) / len(yes), 3)}
 json.dump(mapping, open(H / "mapping.json", "w"), indent=1)
 
@@ -81,12 +105,14 @@ for sp in ax.spines.values():
     sp.set_visible(False)
 fig.tight_layout(); fig.savefig(H / "fig_facets.pdf", bbox_inches="tight"); plt.close(fig)
 
-# Facets by year
-years = [y for y in sorted({recs[i].get("year") for i in yes}) if y and y >= 2023]
+# Facets by year (all years, hatched so the series stay distinguishable in grayscale)
+years = [y for y in sorted({recs[i].get("year") for i in yes}) if y]
+HATCH = ["", "////", "\\\\\\\\", "xxxx", "....", "++++"]
 fig, ax = plt.subplots(figsize=(3.4, 1.9))
 w = 0.13
 for k, f in enumerate(F):
-    ax.bar([x + (k - 2.5) * w for x in range(len(years))], [fy[(f, y)] for y in years], w, label=f)
+    ax.bar([x + (k - 2.5) * w for x in range(len(years))], [fy[(f, y)] for y in years], w, label=f,
+           hatch=HATCH[k], edgecolor="black", linewidth=0.3)
 ax.set_xticks(range(len(years))); ax.set_xticklabels(years)
 ax.set_ylabel("Eligible studies")
 ax.legend(ncol=6, fontsize=7, frameon=False, loc="lower center", bbox_to_anchor=(0.5, 1.0), handlelength=1.2, columnspacing=1.0)
